@@ -30,7 +30,7 @@
 			</nav>
 
 			<div class="search">
-				<input type="search" placeholder="Поиск по товарам...">
+				<input type="search" placeholder="Поиск по товарам..." autofocus>
 			</div>
 
 			<form id="authorization-form" method="post">
@@ -169,18 +169,29 @@
 		</main>
 
 		<footer>
-			<div class="foot">
-				<form class="feedback">
-					<strong>Отправить нам сообщение</strong><br>
-					<textarea rows="300" maxlength="1000" placeholder="Max символов 1000"></textarea><br>
-					<input type="submit" value="Отправить" name="btn-comment">
-				</form>
-				<nav class="menu-footer">
-					<a href="">Товары</a>
-					<a href="">Контактная информация</a>
-					<a href="">О нас</a>
-				</nav>
-			</div>
+			<form class="feedback">
+				<strong>Отправить нам сообщение</strong><br>
+				<textarea rows="300" maxlength="1000" placeholder="Max символов 1000"></textarea><br>
+				<input type="submit" value="Отправить" name="btn-comment">
+			</form>
+			<nav class="menu-footer">
+				<a href="">Товары</a><br>
+				<a href="">Контактная информация</a><br>
+				<a href="">О нас</a>
+			</nav>
+			<form class="registration">
+				<label>Логин </label><br>
+				<input type="text" name="registration"><br>
+				<label>Пароль </label><br>
+				<input type="password" name="registration"><br>
+				<label>Повторите пароль </label><br>
+				<input type="password" name="registration"><br>
+				<label>E-mail</label><br>
+				<input type="email" name="registration"><br>
+				<label>Ваш телефон</label><br>
+				<input type="tel" name="registration"><br>
+				<input type="submit" value="Зарегистрироваться" name="sub-reg">
+			</form>
 		</footer>			
 	</body>
 </html>
