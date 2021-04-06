@@ -54,14 +54,17 @@ header{
 	margin-left: 12px;
 }
 .menu-header a{
-	color: rgb(56, 56, 56);
-	line-height: 69px;
+	color: #000000;
 	font-family: FlowExt;
+	line-height: 69px;
 	margin-left: 10px;
+	padding: 23px 0;
 	text-decoration: none;
+	transition: all 0.2s ease-out 0s;
 }
 .menu-header a:hover{
-	text-decoration: underline;
+	background: rgba(85, 183, 175, 0.5);
+	color: #f5f6f8;
 }
 
 
