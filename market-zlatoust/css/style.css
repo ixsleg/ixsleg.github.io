@@ -226,12 +226,12 @@ input[name="btn-comment"]:hover{
 	line-height: 25px;
 	margin: 0 auto;
 }
-input[name="registration"]{
+input[name="registr"]{
 	background: #f5f6f8;
 	border: 1px solid #000000;
 	outline: none;
 }
-input[name="registration"]:focus{
+input[name="registr"]:focus{
 	background: #fff;
 	border-color: #50a2de;
 }
