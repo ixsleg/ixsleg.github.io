@@ -221,7 +221,7 @@ header{
 	line-height: 52px;
 	text-decoration: none;
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
 	.logo-name{
 		display: none;
 	}
@@ -311,7 +311,7 @@ header{
 .close-modal-catalog:hover{
 	transform: rotate(360deg);
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
 	.open-catalog{
 		display: none;
 	}
