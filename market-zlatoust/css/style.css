@@ -265,9 +265,8 @@ header{
 }
 .modal-catalog-content{
 	background: #f5f6f8;
-	border: 1px solid rgba(0, 0, 0, 0.5);
 	height: auto;
-	left: 50%;
+	left: 637px;
 	margin: 0;
 	outline: none;
 	padding: 10px;
@@ -276,43 +275,95 @@ header{
 	top: -100%;
 	transform: translate(-50%, -500%);
 	transition: transform 0.6s ease-out;
-	width: 50%;
+	width: 500px;
 	z-index: 20;
-}
-.modal-catalog-content h4{
-	font-weight: normal;
-	line-height: 27px;
-}
-.modal-catalog-content img{
-	float: left;
-	margin-right: 5px;
 }
 .overlay:target + .modal-catalog-content{
 	transform: translate(-50%, 0);
 	top: 5.5%;
 }
-.close-modal-catalog{
-	background: rgba(61, 61, 61, 0.8);
-	border: 2px solid #ccc;
-	border-radius: 15px;
-	color: #f5f6f8;
-	height: 20px;
-	font-size: 9px;
-	font-weight: bold;
-	padding: 0;
-	position: absolute;
-	right: -10px;
-	text-align: center;
-	text-decoration: none;
-	top: -10px;
-	transition: all ease .8s;
-	width: 20px;
-}
-.close-modal-catalog:hover{
-	transform: rotate(360deg);
-}
 @media(max-width: 1500px){
 	.open-catalog{
 		display: none;
 	}
+}
+
+.modal-catalog-menu{
+	list-style: none;
+}
+.modal-catalog-menu img{
+	float: left;
+	margin-right: 10px;
+}
+.modal-catalog-menu a{
+	color: #1e90ff;
+	font-size: 14px;
+	line-height: 30px;
+	text-decoration: none;
+}
+.modal-catalog a:hover{
+	color: #ff4500;
+	text-decoration: underline;
+}
+
+.search{
+	display: flex;
+	margin-left: 10px;
+	margin-top: 9px;
+}
+input[name="search"]{
+	border: none;
+	border-radius: 2px;
+	height: 35px;
+	outline: none;
+	padding: 4px 8px;
+	width: 800px;
+}
+input[name="btn-search"]{
+	background: rgba(0, 232, 64, 0.7);
+	border: none;
+	border-radius: 2px;
+	color: #f5f6f8;
+	cursor: pointer;
+	height: 35px;
+	font-size: 18px;
+	outline: none;
+	padding: 4px 14px;
+	transition: all 0.5s;
+}
+input[name="btn-search"]:hover{
+	background: rgba(0, 232, 64, 0.8);
+}
+@media(max-width: 1500px){
+	input[name="search"]{
+		width: 200px;
+	}
+	input[name="btn-search"]{
+		display: none;
+	}
+}
+
+.log-in{
+	margin-left: 200px;
+}
+.log-in div{
+	padding: 10px;
+	transition: all 0.5s;
+}
+.log-in div:hover{
+	background: rgba(255, 255, 255, 0.2);
+}
+@media(max-width: 1500px){
+	.log-in{
+		display: none;
+	}
+}
+
+.basket{
+	margin-left: 10px;
+	padding: 10px;
+	transition: all 0.5s;
+}
+.basket:hover{
+	background: rgba(255, 255, 255, 0.2);
 }
