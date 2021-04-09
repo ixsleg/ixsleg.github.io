@@ -336,7 +336,7 @@ input[name="btn-search"]:hover{
 }
 @media(max-width: 1500px){
 	input[name="search"]{
-		width: 275px;
+		width: 255px;
 	}
 	input[name="btn-search"]{
 		display: none;
