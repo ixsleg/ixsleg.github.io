@@ -224,11 +224,11 @@ header{
 	line-height: 52px;
 	text-decoration: none;
 }
-/*@media(max-width: 1500px){
+@media(max-width: 400px){
 	.logo-name{
 		display: none;
 	}
-}*/
+}
 
 
 .open-catalog{
