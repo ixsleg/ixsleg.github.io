@@ -229,7 +229,7 @@ header{
 		display: none;
 	}
 }
-@media(max-width: 700px){
+@media(max-width: 750px){
 	.logo-name{
 		display: none;
 	}
@@ -295,7 +295,7 @@ header{
 		display: none;
 	}
 }
-@media(max-width: 700px){
+@media(max-width: 750px){
 	.open-catalog{
 		display: none;
 	}
@@ -355,7 +355,7 @@ input[name="btn-search"]:hover{
 		display: none;
 	}
 }
-@media(max-width: 700px){
+@media(max-width: 750px){
 	input[name="search"]{
 		width: 480px;
 	}
@@ -379,7 +379,7 @@ input[name="btn-search"]:hover{
 		display: none;
 	}
 }
-@media(max-width: 700px){
+@media(max-width: 750px){
 	.log-in{
 		display: none;
 	}
