@@ -229,7 +229,7 @@ header{
 		display: none;
 	}
 }
-@media(max-width: 800px){
+@media(max-width: 768px){
 	.logo-name{
 		display: none;
 	}
@@ -295,7 +295,7 @@ header{
 		display: none;
 	}
 }
-@media(max-width: 800px){
+@media(max-width: 768px){
 	.open-catalog{
 		display: none;
 	}
@@ -350,15 +350,15 @@ input[name="btn-search"]:hover{
 @media(max-width: 400px){
 	input[name="search"]{
 		max-width: 255px;
-		width: 660px;
+		width: 631px;
 	}
 	input[name="btn-search"]{
 		display: none;
 	}
 }
-@media(max-width: 800px){
+@media(max-width: 768px){
 	input[name="search"]{
-		width: 660px;
+		width: 631px;
 	}
 	input[name="btn-search"]{
 		display: none;
@@ -380,7 +380,7 @@ input[name="btn-search"]:hover{
 		display: none;
 	}
 }
-@media(max-width: 800px){
+@media(max-width: 768px){
 	.log-in{
 		display: none;
 	}
