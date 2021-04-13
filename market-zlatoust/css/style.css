@@ -229,6 +229,11 @@ header{
 		display: none;
 	}
 }
+@media(max-width: 625px){
+	.logo-name{
+		display: none;
+	}
+}
 
 
 .open-catalog{
@@ -285,7 +290,12 @@ header{
 	transform: translate(-50%, 0);
 	top: 5.5%;
 }
-@media(max-width: 1500px){
+@media(max-width: 400px){
+	.open-catalog{
+		display: none;
+	}
+}
+@media(max-width: 625px){
 	.open-catalog{
 		display: none;
 	}
@@ -337,9 +347,17 @@ input[name="btn-search"]{
 input[name="btn-search"]:hover{
 	background: rgba(0, 232, 64, 0.8);
 }
-@media(max-width: 1500px){
+@media(max-width: 400px){
 	input[name="search"]{
 		width: 255px;
+	}
+	input[name="btn-search"]{
+		display: none;
+	}
+}
+@media(max-width: 625px){
+	input[name="search"]{
+		width: 480px;
 	}
 	input[name="btn-search"]{
 		display: none;
@@ -356,7 +374,12 @@ input[name="btn-search"]:hover{
 .log-in div:hover{
 	background: rgba(255, 255, 255, 0.2);
 }
-@media(max-width: 1500px){
+@media(max-width: 400px){
+	.log-in{
+		display: none;
+	}
+}
+@media(max-width: 625px){
 	.log-in{
 		display: none;
 	}
