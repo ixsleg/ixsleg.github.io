@@ -55,6 +55,7 @@ header{
 .panel-name-market{
 	font-family: Soup of Justice;
 	line-height: 50px;
+	margin-left: 10px;
 }
 .panel-name-market img{
 	float: left;
@@ -64,6 +65,7 @@ header{
 
 .panel-contact{
 	line-height: 30px;
+	margin-left: 10px;
 }
 .panel-contact img{
 	margin-right: 10px;
@@ -75,6 +77,7 @@ header{
 }
 .panel-log-in img{
 	float: left;
+	margin-left: 10px;
 	margin-right: 40px;
 	margin-top: 20px;
 }
