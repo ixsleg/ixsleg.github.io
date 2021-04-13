@@ -349,7 +349,8 @@ input[name="btn-search"]:hover{
 }
 @media(max-width: 400px){
 	input[name="search"]{
-		width: 255px;
+		max-width: 255px;
+		width: 660px;
 	}
 	input[name="btn-search"]{
 		display: none;
@@ -357,7 +358,7 @@ input[name="btn-search"]:hover{
 }
 @media(max-width: 800px){
 	input[name="search"]{
-		width: 480px;
+		width: 660px;
 	}
 	input[name="btn-search"]{
 		display: none;
