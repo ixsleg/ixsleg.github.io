@@ -115,7 +115,7 @@ header{
 	float: right;
 }
 .panel-btn-in-premium-name{
-	margin-left: 5px;
+	margin-left: 10px;
 	float: left;
 }
 .panel-btn-in-premium-text{
@@ -224,11 +224,11 @@ header{
 	line-height: 52px;
 	text-decoration: none;
 }
-@media(max-width: 1500px){
+/*@media(max-width: 1500px){
 	.logo-name{
 		display: none;
 	}
-}
+}*/
 
 
 .open-catalog{
