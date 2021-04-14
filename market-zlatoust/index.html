@@ -8,6 +8,149 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 		<title>Барахолка Златоуст</title>
+
+		<style>
+			aside{
+				background: rgba(215, 244, 228, 0.6);
+				border-right: 1px solid rgba(0, 0, 0, 0.2);
+				height: 100%;
+				left: 0;
+				position: fixed;
+				top: 55px;
+				width: 300px;
+				z-index: 1;
+			}
+			aside hr{
+				margin-top: 10px;
+				opacity: 0.2;
+			}
+
+
+			.aside-panel-menu{
+				margin-left: 8px;
+				margin-top: 9px;
+			}
+			.aside-panel-menu li{
+				margin-top: 5px;
+			}
+			.aside-panel-menu img{
+				float: left;
+				margin-right: 4px;
+			}
+			.aside-panel-menu a{
+				color: #1e90ff;
+				font-size: 15px;
+				line-height: 25px;
+				text-decoration: none;
+			}
+			.aside-panel-menu a:hover{
+				color: #ff4500;
+				text-decoration: underline;
+			}
+
+			.aside-help-center-btn{
+				margin-left: 8px;
+				margin-top: 9px;
+			}
+			.aside-help-center-btn a{
+				color: #1e90ff;
+				font-size: 15px;
+				line-height: 25px;
+				text-decoration: none;
+			}
+			.aside-help-center-btn a:hover{
+				color: #ff4500;
+			}
+			.aside-help-center-btn img{
+				float: left;
+				margin-right: 4px;
+			}
+
+
+			.aside-log-in{
+				margin-left: 8px;
+				margin-top: 9px;
+			}
+			.aside-log-in h4{
+				padding-left: 60px;
+			}
+			.aside-log-in p{
+				font-size: 12px;
+				font-weight: normal;
+				padding-top: 10px;
+				text-align: center;
+			}
+			.aside-log-in button{
+				background: rgb(19, 107, 187);
+				border: none;
+				border-radius: 5px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 16px;
+				margin-left: 30px;
+				margin-top: 12px;
+				outline: none;
+				padding: 5px;
+				transition: all 0.5s;
+			}
+			.aside-log-in button:hover{
+				background: rgba(19, 107, 187, 0.7);
+			}
+
+
+			.aside-social-networks{
+				margin-left: 8px;
+				margin-top: 9px;
+			}
+			.aside-social-networks p{
+				font-size: 13px;
+				font-weight: bold;
+			}
+			.aside-social-networks-icons{
+				margin-left: 69px;
+				margin-top: 15px;
+			}
+			.aside-social-networks-icons a{
+				opacity: 0.8;
+				transition: all 0.5s;
+			}
+			.aside-social-networks-icons a:hover{
+				opacity: 1;
+			}
+
+			.aside-panel-menu0{
+				margin-left: 8px;
+				margin-top: 9px;
+			}
+			.aside-panel-menu0 p{
+				font-size: 12px;
+				font-weight: bold;
+				line-height: 40px;
+			}
+			.aside-panel-menu0-submenu{
+				list-style: none;
+				margin-left: 5px;
+			}
+			.aside-panel-menu0-submenu a{
+				color: #1e90ff;
+				font-size: 15px;
+				text-decoration: none;
+			}
+			.aside-panel-menu0-submenu a:hover{
+				color: #ff4500;
+				text-decoration: underline;
+			}
+			@media(max-width: 400px){
+				aside{
+					display: none;
+				}
+			}
+			@media(max-width: 768px){
+				aside{
+					display: none;
+				}
+			}
+		</style>
 	<body>
 		<header>
 			<input type="checkbox" id="panel-checkbox">
@@ -70,7 +213,6 @@
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
 						<li><a href=""><img src="img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры</a></li>
-						<span></span>
 						<li><a href=""><img src="img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, ТВ и электроника</a></li>
 						<li><a href=""><img src="img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника</a></li>
 						<li><a href=""><img src="img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома</a></li>
@@ -83,10 +225,10 @@
 				</div>
 			</div>
 
-			<div class="search">
-				<input type="search" name="search" placeholder="Ищу...">
-				<input type="submit" name="btn-search" value="Найти">
-			</div>
+			<form class="search" action="index.html">
+				<input id="searchBtn" type="search" name="search" placeholder="Ищу...">
+				<input for="searchBtn" type="submit" name="btn-search" value="Найти">
+			</form>
 
 			<div class="log-in">
 				<div>
@@ -98,5 +240,56 @@
 				<a href=""><img src="img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
+		<main>
+			<aside>
+				<ul class="aside-panel-menu">
+					<li><a href=""><img src="img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, ТВ и электроника<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right; margin-right: 5px;">></span></a></li>
+				</ul><hr>
+
+				<div class="aside-help-center-btn"><a href=""><img src="img/question-black.png" width="25" height="25">Справочный центр</a></div><hr>
+
+				<div class="aside-log-in">
+					<h4>Добро пожаловать !</h4>
+					<p>Войдите, чтобы получать рекомендации, персональные бонусы и скидки.</p>
+					<button>Войдите в личный кабинет</button><hr>
+				</div>
+
+				<div class="aside-social-networks">
+					<p>Мы в социальных сетях</p>
+					<div class="aside-social-networks-icons">
+						<a href=""><img src="img/social-networks-icons/facebook.png" width="30" height="30"></a>
+						<a href=""><img src="img/social-networks-icons/vk.png" width="30" height="30"></a>
+						<a href=""><img src="img/social-networks-icons/instagram.png" width="30" height="30"></a>
+						<a href=""><img src="img/social-networks-icons/twitter.png" width="30" height="30"></a>
+					</div>
+				</div><hr>
+
+				<div class="aside-panel-menu0">
+					<p>Помощь</p>
+					<ul class="aside-panel-menu0-submenu">
+						<li><a href="">Доставка и оплата</a></li>
+						<li><a href="">Гарантия</a></li>
+						<li><a href="">Возврат товара</a></li>
+						<li><a href="">Сервисные центры</a></li>
+						<li><a href="">Отследить заказ</a></li>
+					</ul>
+					<p>Информация</p>
+					<ul class="aside-panel-menu0-submenu">
+						<li><a href="">О нас</a></li>
+						<li><a href="">Условия использования сайта</a></li>
+						<li><a href="">Вакансии</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+			</aside>
+		</main>
 	</body>
 </html>
