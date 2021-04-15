@@ -14,11 +14,10 @@
 				background: rgba(215, 244, 228, 0.6);
 				border-right: 1px solid rgba(0, 0, 0, 0.2);
 				height: 100%;
-				left: 0;
+				float: left;
 				position: fixed;
 				top: 55px;
 				width: 300px;
-				z-index: 1;
 			}
 			aside hr{
 				margin-top: 10px;
@@ -150,6 +149,175 @@
 					display: none;
 				}
 			}
+
+			section{
+				margin-left: 300px;
+			}
+			section h1{
+				font-style: italic;
+				line-height: 50px;
+				text-align: center;
+				word-spacing: 5px;
+			}
+			@media(max-width: 400px){
+				section{
+					margin-left: 0;
+				}
+				section h1{
+					font-size: 20px;
+				}
+			}
+			@media(max-width: 768px){
+				section{
+					margin-left: 0;
+				}
+				section h1{
+					font-size: 21px;
+				}
+			}
+
+			.bg-section{
+				background: rgba(211, 211, 211, 0.4);
+				height: auto;
+				width: 100%;
+			}
+
+			.section-popular-catalog{
+				display: flex;
+				margin-left: 150px;
+				flex-wrap: wrap;
+				overflow: hidden;
+			}
+			@media(max-width: 400px){
+				.section-popular-catalog{
+					margin-left: 35px;
+				}
+			}
+
+			.popular-catalog-template{
+				list-style: none;
+				margin: 0 auto;
+				max-width: 1000px;
+  				padding: 1em 0 4em;
+  				position: relative;
+  				text-align: center;
+			}
+			.popular-catalog-template figure{
+				background: #3085a3;
+				border: 2px solid #000000;
+				cursor: pointer;
+				float: left;
+				margin: 10px 1%;
+				max-height: 360px;
+				max-width: 480px;
+				min-width: 320px;
+				position: relative;
+				overflow: hidden;
+				text-align: center;
+				width: 48%;
+			}
+			.popular-catalog-template figure{
+				display: block;
+				max-width: 100%;
+				min-height: 100%;
+				position: relative;
+				opacity: 0.8;
+			}
+			.popular-catalog-template figcaption{
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				color: #f5f6f8;
+				padding: 2em;
+				text-transform: uppercase;
+			}
+			.popular-catalog-template figure figcaption::before,
+			.popular-catalog-template figure figcaption::after{
+				pointer-events: none;
+			}
+			.popular-catalog-template figure figcaption,
+			.popular-catalog-template figure figcaption > a{
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+			.popular-catalog-template figure figcaption > a{
+				font-size: 0;
+				opacity: 0;
+				text-indent: 200%;
+				white-space: nowrap;
+				z-index: 1000;
+			}
+			.popular-catalog-template figure h2{
+				font-weight: 300;
+			}
+			.popular-catalog-template figure h2,
+			.popular-catalog-template figure p{
+				margin: 0;
+			}
+			.popular-catalog-template figure p{
+				font-size: 68.5%;
+				letter-spacing: 1px;
+			}
+
+			figure.effect-bubba{
+  				background: #9e5406;
+			}
+			figure.effect-bubba img{
+				opacity: 0.7;
+				transition: opacity 0.35s;
+				-webkit-transition: opacity 0.35s;
+			}
+			figure.effect-bubba:hover img{
+				opacity: 0.4;
+			}
+			figure.effect-bubba figcaption::before,
+			figure.effect-bubba figcaption::after{
+				bottom: 30px;
+				content: '';
+				left: 30px;
+				opacity: 0;
+				position: absolute;
+				right: 30px;
+				top: 30px;
+				transition: opacity 0.35s, transform 0.35s;
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			}
+			figure.effect-bubba figcaption::before{
+				border-bottom: 1px solid #f5f6f8;
+				border-top: 1px solid #f5f6f8;
+				transform: scale(1,0);
+				-webkit-transform: scale(1,0);
+
+			}
+			figure.effect-bubba h2{
+				padding-top: 30%;
+				transform: translate3d(0,-20px,0);
+				-webkit-transform: translate3d(0,-20px,0);
+				transition: transform 0.35s;
+				-webkit-transition: -webkit-transform 0.35s;
+			}
+			figure.effect-bubba p{
+				opacity: 0;
+				padding: 20px 2.5em;
+				transform: translate3d(0,20px,0);
+				-webkit-transform: translate3d(0,20px,0);
+				transition: opacity 0.35s, transform 0.35s;
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			}
+			figure.effect-bubba:hover figcaption::before,
+			figure.effect-bubba:hover figcaption::after{
+				opacity: 1;
+				transform: scale(1);
+				-webkit-transform: scale(1);
+			}
+			figure.effect-bubba:hover h2,
+			figure.effect-bubba:hover p{
+				opacity: 1;
+				transform: translate3d(0,0,0);
+				-webkit-transform: translate3d(0,0,0);
+			}
 		</style>
 	<body>
 		<header>
@@ -213,7 +381,7 @@
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
 						<li><a href=""><img src="img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры</a></li>
-						<li><a href=""><img src="img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, ТВ и электроника</a></li>
+						<li><a href=""><img src="img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника</a></li>
 						<li><a href=""><img src="img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника</a></li>
 						<li><a href=""><img src="img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома</a></li>
 						<li><a href=""><img src="img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород</a></li>
@@ -240,11 +408,12 @@
 				<a href=""><img src="img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
+
 		<main>
 			<aside>
 				<ul class="aside-panel-menu">
 					<li><a href=""><img src="img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right; margin-right: 5px;">></span></a></li>
-					<li><a href=""><img src="img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, ТВ и электроника<span style="float: right; margin-right: 5px;">></span></a></li>
+					<li><a href=""><img src="img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right; margin-right: 5px;">></span></a></li>
 					<li><a href=""><img src="img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right; margin-right: 5px;">></span></a></li>
 					<li><a href=""><img src="img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right; margin-right: 5px;">></span></a></li>
 					<li><a href=""><img src="img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right; margin-right: 5px;">></span></a></li>
@@ -290,6 +459,43 @@
 					</ul>
 				</div>
 			</aside>
+
+			<section>
+				<h1>Популярные категории</h1>
+				<div class="bg-section">
+					<div class="section-popular-catalog">
+						<div class="popular-catalog-template">
+							<figure class="effect-bubba">
+								<img src="img/popular-catalog/0.jpg" width="480" height="405">
+								<figcaption>
+									<h2 style="font-size: 18px;">Компьютеры и ноутбуки</h2>
+									<a href="">Перейти</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="popular-catalog-template">
+							<figure class="effect-bubba">
+								<img src="img/popular-catalog/1.jpg" width="480" height="405">
+								<figcaption>
+									<h2 style="font-size: 15px;">Смартфоны, TV и электроника</h2>
+									<a href="">Перейти</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="popular-catalog-template">
+							<figure class="effect-bubba">
+								<img src="img/popular-catalog/2.jpg" width="480" height="405">
+								<figcaption>
+									<h2 style="font-size: 16px;">Одежда, обувь и украшения</h2>
+									<a href="">Перейти</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
