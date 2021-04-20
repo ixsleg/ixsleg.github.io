@@ -6,6 +6,10 @@
 	font-family: Soup of Justice;
 	src: url(../fonts/soup-of-justice.ttf);
 }
+@font-face{
+	font-family: Rouble;
+	src: url(../fonts/rouble.otf) format("opentype");
+}
 
 *{
 	box-sizing: border-box;
@@ -393,4 +397,54 @@ input[name="btn-search"]:hover{
 }
 .basket:hover{
 	background: rgba(255, 255, 255, 0.2);
+}
+
+footer{
+	background: rgba(0, 0, 0, 0.9);
+	height: auto;
+	width: 100%;
+}
+
+.container{
+	color: #f5f6f8;
+	margin-left: 540px;
+	padding-top: 25px;
+}
+@media(max-width: 400px){
+	.container{
+		margin-left: 30px;
+	}
+}
+@media(max-width: 768px){
+	.container{
+		margin-left: 70px;
+	}
+}
+
+.footer-menu{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.footer-menu-block{
+	list-style: none;
+	margin-right: 50px;
+	margin-top: 10px;
+}
+@media(max-width: 400px){
+	.footer-menu-block{
+		margin-top: 25px;
+	}
+}
+.footer-menu-block li{
+	line-height: 25px;
+}
+.footer-menu-block a{
+	color: #f5f6f8;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+.footer-menu-block a:hover{
+	opacity: 0.5;
 }
