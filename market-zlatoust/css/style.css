@@ -278,16 +278,16 @@ header{
 .modal-catalog-content{
 	background: #f5f6f8;
 	height: auto;
-	left: 637px;
+	left: 275px;
 	margin: 0;
 	outline: none;
 	padding: 10px;
-	position: fixed;
+	position: absolute;
 	right: 0;
 	top: -100%;
 	transform: translate(-50%, -500%);
 	transition: transform 0.6s ease-out;
-	width: 500px;
+	width: 400px;
 	z-index: 20;
 }
 .overlay:target + .modal-catalog-content{
@@ -312,6 +312,9 @@ header{
 	float: left;
 	margin-right: 10px;
 }
+.modal-catalog-menu li:hover .modal-catalog-submenu{
+	display: block;
+}
 .modal-catalog-menu a{
 	color: #1e90ff;
 	font-size: 14px;
@@ -321,6 +324,28 @@ header{
 .modal-catalog a:hover{
 	color: #ff4500;
 	text-decoration: underline;
+}
+
+.modal-catalog-submenu{
+	background: #f5f6f8;
+	display: none;
+	height: 290px;
+	left: 400px;
+	position: absolute;
+	top: 0;
+	width: 1350px;
+}
+.modal-catalog-submenu-row{
+	display: flex;
+}
+.modal-catalog-submenu-block{
+	list-style: none;
+	padding: 10px;
+}
+.modal-catalog-submenu-block a{
+	color: #a9a9a9;
+	font-size: 13px;
+	font-style: italic;
 }
 
 .search{
