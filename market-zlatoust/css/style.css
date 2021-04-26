@@ -414,6 +414,41 @@ input[name="btn-search"]:hover{
 		display: none;
 	}
 }
+.modal-log-in-content{
+	background: #f5f6f8;
+	height: auto;
+	left: 650px;
+	outline: none;
+	padding: 10px;
+	position: absolute;
+	top: -100%;
+	transition: all 0.7s;
+	width: 650px;
+	z-index: 20;
+}
+.modal-log-in-content h2{
+	font-style: italic;
+	text-align: center;
+}
+.modal-log-in-btn{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 30px;
+}
+.modal-log-in-btn a{
+	color: #000000;
+	font-size: 20px;
+	line-height: 65px;
+	padding: 5px;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+.modal-log-in-btn a:hover{
+	background: rgba(0, 0, 0, 0.5);
+}
+.overlay:target + .modal-log-in-content{
+	top: 250px;
+}
 
 .basket{
 	margin-left: 10px;

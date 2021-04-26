@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="img/logo.png">
+		<link rel="stylesheet" href="css/style.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -415,7 +415,7 @@
 				</button>
 
 				<ul class="panel-menu">
-					<a href=""><li><img src="img/catalog.png" width="30" height="30">Каталог</li></a>
+					<a href="page/catalog/catalog.html"><li><img src="img/catalog.png" width="30" height="30">Каталог</li></a>
 					<a href=""><li><img src="img/question.png" width="30" height="30">Справочный центр</li></a>
 					<a href=""><li><img src="img/basket.png" width="30" height="30">Корзина</li></a>
 					<a href=""><li><img src="img/libra.png" width="30" height="30">Сравнения</li></a>
@@ -986,7 +986,14 @@
 
 			<div class="log-in">
 				<div>
-					<a href=""><img src="img/log-in.png" width="30" height="30"></a>
+					<a href="#open-modal-log-in"><img src="img/log-in.png" width="30" height="30"></a>
+				</div>
+			</div>
+			<div class="modal-log-in">
+				<a href="" class="overlay" id="open-modal-log-in"></a>
+				<div class="modal-log-in-content">
+					<h2>Личный кабинет</h2>
+					<div class="modal-log-in-btn"><a href="page/authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="page/registration.html">Зарегистрировать</a></div>
 				</div>
 			</div>
 
