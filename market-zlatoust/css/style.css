@@ -22,6 +22,7 @@ header{
 	background: rgba(0, 0, 0, 0.8);
 	display: flex;
 	height: auto;
+	justify-content: space-evenly;
 	width: 100%;
 }
 
@@ -228,11 +229,6 @@ header{
 	line-height: 52px;
 	text-decoration: none;
 }
-@media(max-width: 400px){
-	.logo-name{
-		display: none;
-	}
-}
 @media(max-width: 768px){
 	.logo-name{
 		display: none;
@@ -294,11 +290,6 @@ header{
 	transform: translate(-50%, 0);
 	top: 5.9%;
 }
-@media(max-width: 400px){
-	.open-catalog{
-		display: none;
-	}
-}
 @media(max-width: 768px){
 	.open-catalog{
 		display: none;
@@ -350,7 +341,6 @@ header{
 
 .search{
 	display: flex;
-	margin-left: 10px;
 	margin-top: 9px;
 }
 input[name="search"]{
@@ -394,20 +384,12 @@ input[name="btn-search"]:hover{
 	}
 }
 
-.log-in{
-	margin-left: 200px;
-}
 .log-in div{
 	padding: 10px;
 	transition: all 0.5s;
 }
 .log-in div:hover{
 	background: rgba(255, 255, 255, 0.2);
-}
-@media(max-width: 400px){
-	.log-in{
-		display: none;
-	}
 }
 @media(max-width: 768px){
 	.log-in{
@@ -451,12 +433,19 @@ input[name="btn-search"]:hover{
 }
 
 .basket{
-	margin-left: 10px;
+	margin-left: -50px;
+	margin-right: 50px;
 	padding: 10px;
 	transition: all 0.5s;
 }
 .basket:hover{
 	background: rgba(255, 255, 255, 0.2);
+}
+@media(max-width: 768px){
+	.basket{
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 footer{
