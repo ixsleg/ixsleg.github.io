@@ -58,7 +58,6 @@ header{
 }
 
 .panel-name-market{
-	font-family: Soup of Justice;
 	line-height: 50px;
 	margin-left: 10px;
 }
@@ -66,6 +65,11 @@ header{
 	float: left;
 	margin-right: 10px;
 	margin-top: 10px;
+}
+.panel-name-market a{
+	color: #f5f6f8;
+	font-family: Soup of Justice;
+	text-decoration: none;
 }
 
 .panel-contact{
