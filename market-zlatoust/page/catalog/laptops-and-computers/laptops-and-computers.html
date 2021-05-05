@@ -10,127 +10,67 @@
 		<title>Ноутбуки и компьютеры</title>
 
 		<style>
-			aside{
-				border-right: 1px solid rgba(0, 0, 0, 0.3);
-				height: auto;
-				float: left;
+			main h1{
+				font-weight: normal;
+			}
+			@media(max-width: 768px){
+				main h1{
+					font-size: 24px;
+					padding-left: 10px;
+				}
+			}
+			@media(min-width: 769px){
+				main h1{
+					padding-left: 200px;
+				}
+			}
+
+			.laptops-and-computers-menu-category{
+				margin-top: 100px;
+			}
+			.laptops-and-computers-menu-category a{
+				color: #1e90ff;
+				font-size: 17px;
 				font-style: italic;
-				width: 12%;
+				text-decoration: none;
 			}
-			@media(max-width: 768px){
-				aside{
-					display: none;
-				}
-			}
-
-			aside h5{
-				padding-top: 5px;
-				text-align: center;
+			.laptops-and-computers-menu-category a:hover{
+				color: #ff4500;
+				text-decoration: underline;
 			}
 
-			#filterCategory{
-				margin-left: 10px;
-				margin-top: 5px;
-			}
-			#filterCategory input{
-				margin-right: 3px;
-			}
-
-			main{
-				margin-left: 231px;
-				width: 87.5%;
-			}
-			@media(max-width: 768px){
-				main{
-					margin-left: 0;
-				}
-			}
-
-			.laptops-and-computers-content{
-				height: auto;
-				width: 100%;
-			}
-
-			.card-product-row{
+			.laptops-and-computers-menu-category-row{
 				display: flex;
 				justify-content: center;
-				margin-top: 5px;
-				overflow: hidden;
-			}
-			@media(max-width: 768px){
-				.card-product-row{
-					margin-left: 62px;
-					margin-top: 0;
-					width: 100%;
-				}
 			}
 
-			.card-product-colum{
+			.laptops-and-computers-menu-category-colum{
 				display: flex;
 				flex-direction: none;
 			}
 			@media(max-width: 400px){
-				.card-product-colum{
+				.laptops-and-computers-menu-category-colum{
 					flex-direction: column;
 				}
 			}
 			@media(max-width: 768px){
-				.card-product-colum{
+				.laptops-and-computers-menu-category-colum{
 					display: grid;
 					grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-					width: 100%;
 				}
 			}
 
-			.card-product{
-				background: rgba(255, 255, 255, 0.5);
-				border: 1px solid rgba(0, 0, 0, 0.2);
-				transition: 0.3s;
-				width: 280px;
+			.container-btn{
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+				padding-left: 16px;
+				padding-right: 16px;
 			}
 			@media(max-width: 768px){
-				.card-product{
-					margin-top: 3px;
+				.container-btn{
+					margin-top: 5px;
 				}
 			}
-			.card-product img{
-				border: 1px solid rgba(0, 0, 0, 0.2);
-			}
-			.card-product:hover{
-				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-			}
-			.card-product-main{
-				width: 100%;
-			}
-			.card-product-main h4{
-				padding: 1px 5px;
-			}
-			.card-product-main p{
-				padding: 2px 16px;
-			}
-			.card-product-discount{
-				color: red;
-				float: right;
-			}
-			.card-product-btn{
-				background: rgb(231, 198, 67);
-				border: 1px solid #000000;
-				border-radius: 2px;
-				color: #000000;
-				cursor: pointer;
-				font-weight: bold;
-				outline: none;
-				width: 100%;
-				transition: all 0.3s;
-			}
-			.card-product-btn:hover{
-				background: rgb(234, 64, 64);
-				border: 1px solid rgba(0, 0, 0, 0.5);
-				color: #f5f6f8;
-			}
 		</style>
-
-		<script src="../../../js/filterCategory.js"></script>
 	</head>
 	<body>
 		<header>
@@ -742,275 +682,52 @@
 			</div>
 		</header>
 
-		<aside>
-			<h5>Категории</h5>
-			<div id="filterCategory">
-				<div>
-					<input type="checkbox" id="laptops"><label for="laptops">Ноутбуки</label>
-				</div>
-
-				<div>
-					<input type="checkbox" id="computers"><label for="computers">Компьютеры</label>
-				</div>
-			</div>
-		</aside>
-
 		<main>
-			<div class="laptops-and-computers-content">
-				<div class="laptops-and-computers-container">
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<img src="../../../img/products/1/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Asus ROG Strix G15 G512LI-HN058 Black</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">78 461<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<h1>Компьютеры и ноутбуки</h1>
 
-							<div class="card-product">
-								<img src="../../../img/products/2/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Asus Laptop E410MA-EB268 Peacock Blue</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">30 571<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/3/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Asus Laptop X515MA-BR150 Slate Grey</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">37 877<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/4/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Asus VivoBook S S533EQ-BN147 Indie Black</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">77 111<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/5/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Asus ZenBook 14 UX435EA-A5006T Pine Grey</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">89 284<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/6/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Asus Laptop X515JP-BQ032 Transparent Silver</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">54 110<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="laptops-and-computers-menu-category">
+				<div class="laptops-and-computers-menu-category-row">
+					<div class="laptops-and-computers-menu-category-colum">
+						<div class="container-btn">
+							<a href="laptops/laptops.html">
+								<img src="../../../img/laptops-and-computers/0.png" width="224" height="168"><br>
+								<a href="laptops/laptops.html" style="padding-left: 65px;">Ноутбуки</a>
+							</a>
 						</div>
-					</div>
 
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<img src="../../../img/products/7/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук HP Pavilion 14-dv0002ua White/Silver</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">60 874<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/8/0.png" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук HP Pavilion Gaming 15-ec1055ur Dark Grey</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">82 519<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/9/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук HP Laptop 15s-eq1002ua Silver</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">64 933<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/10/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук HP Spectre x360 Convertible 13-aw0031ur Silver</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">116 340<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/11/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4 style="word-spacing: 2px;">Ноутбук HP 255 G7 Dark Ash Silver</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">65 436<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/12/0.png" width="280" height="300">
-								<div class="card-product-main">
-									<h4 style="word-spacing: 11px;">Ноутбук HP 14s-fq0022ur Black</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">37 877<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+						<div class="container-btn">
+							<a href="computers/computers.html">
+								<img src="../../../img/laptops-and-computers/1.png" width="224" height="168"><br>
+								<a href="computers/computers.html" style="padding-left: 52px;">Компьютеры</a>
+							</a>
 						</div>
-					</div>
 
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<img src="../../../img/products/13/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4 style="word-spacing: 13px;">Ноутбук Lenovo V145-15 Black</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">31 113<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/14/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4 style="word-spacing: 1px;">Ноутбук Lenovo V15-ADA Iron Grey</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">28 407<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/15/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Lenovo IdeaPad Gaming 3 15ARH05 Chameleon Blue</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">81 167<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/16/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Lenovo Legion 5 15IMH05 Phantom Black</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">91 988<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/17/0.png" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Lenovo ThinkPad X1 Yoga Gen 5 Iron Grey</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">241 435<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/18/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Lenovo IdeaPad 5 14ITL05 Graphite Grey</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">71 696<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+						<div class="container-btn">
+							<a href="">
+								<img src="../../../img/laptops-and-computers/2.png" width="224" height="168"><br>
+								<a href="" style="padding-left: 63px;">Мониторы</a>
+							</a>
 						</div>
-					</div>
 
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<img src="../../../img/products/19/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Apple MacBook Air 13" M1 256GB 2020 Space Gray</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">102 812<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+						<div class="container-btn">
+							<a href="">
+								<img src="../../../img/laptops-and-computers/3.png" width="224" height="168"><br>
+								<a href="" style="padding-left: 75px;">Gaming</a>
+							</a>
+						</div>
 
-							<div class="card-product">
-								<img src="../../../img/products/20/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Apple MacBook Air 13" M1 512GB 2020 Space Gray</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">140 690<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+						<div class="container-btn">
+							<a href="">
+								<img src="../../../img/laptops-and-computers/4.png" width="224" height="168"><br>
+								<a href="" style="padding-left: 44px;">Компьютерные<br> <span style="padding-left: 38px;">комплектующие</span></a>
+							</a>
+						</div>
 
-							<div class="card-product">
-								<img src="../../../img/products/21/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Apple MacBook Pro 16" 512GB 2019 Silver</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">224 565<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/22/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Apple MacBook Pro 13" M1 1TB 2020 Space Gray</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">190 745<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/23/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Apple MacBook Pro 13" A2251 Retina 1TB 2020 Space Gray</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">213 742<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<img src="../../../img/products/24/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Ноутбук Apple MacBook Air 13" M1 2TB 2020 Space Gray</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">205 626<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+						<div class="container-btn">
+							<a href="">
+								<img src="../../../img/laptops-and-computers/5.png" width="224" height="168"><br>
+								<a href="" style="padding-left: 15px;">Сетевое оборудование</a>
+							</a>
 						</div>
 					</div>
 				</div>
