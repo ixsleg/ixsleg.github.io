@@ -1,124 +1,240 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="icon" href="../../../../img/logo.png">
-		<link rel="stylesheet" href="../../../../css/style.css">
+		<link rel="icon" href="../../img/logo.png">
+		<link rel="stylesheet" href="../../css/style.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-		<title>Компьютеры</title>
+		<title>Ноутбук Apple MacBook Pro 16" 512GB 2019 Silver</title>
 
 		<style>
-			aside{
-				border-right: 1px solid rgba(0, 0, 0, 0.3);
-				height: auto;
-				float: left;
-				font-style: italic;
-				width: 11.3%;
+			.page-tabs{
+				padding: 30px 175px;
 			}
 			@media(max-width: 768px){
-				aside{
-					display: none;
+				.page-tabs{
+					padding: 10px 35px;
+				}	
+			}
+			.page-tabs a{
+				color: #1e90ff;
+				font-size: 14px;
+				font-style: italic;
+				text-decoration: none;
+			}
+			.page-tabs a:hover{
+				color: #ff4500;
+				text-decoration: underline;
+			}
+			.page-tabs span{
+				color: rgba(0, 0, 0, 0.5);
+				font-weight: bold;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			main h1{
+				font-size: 40px;
+				font-weight: normal;
+				padding: 15px 15px;
+				word-spacing: 10px;
+			}
+			@media(max-width: 768px){
+				main h1{
+					font-size: 33px;
+					padding: 0;
+					padding-left: 5px;
+					word-spacing: 0;
 				}
 			}
 
-			aside h5{
-				padding-top: 5px;
+			.photo-tabs{
+				display: flex;
+				justify-content: center;
+				margin: 25px 0;
+			}
+			.photo-tabs img{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			@media(max-width: 768px){
+				.photo-tabs img{
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					margin-left: 50px;
+				}
+			}
+
+			.under-the-description{
+				display: flex;
+				justify-content: center;
+				margin-top: 30px;
+			}
+			@media(max-width: 768px){
+				.under-the-description{
+					flex-direction: column;
+					margin-left: 20px;
+				}
+			}
+			.under-the-description-img{
+				margin-right: 10px;
+			}
+			.under-the-description-img img{
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			@media(max-width: 400px){
+				.under-the-description-img img{
+					margin-left: 4px;
+					margin-right: 4px;
+				}
+			}
+			.under-the-description-text{
+				font-size: 14px;
+				line-height: 22px;
+				width: 700px;
+				word-break: break-all;
+			}
+			@media(max-width: 400px){
+				.under-the-description-text{
+					width: 350px;
+				}
+			}
+
+			.price{
+				font-size: 30px;
+				font-weight: bold;
+				margin-top: 20px;
 				text-align: center;
 			}
 
-			main{
-				margin-left: 227px;
-				width: 87.8%;
-			}
-			@media(max-width: 768px){
-				main{
-					margin-left: 0;
-				}
-			}
-
-			.computers-content{
-				height: auto;
-				width: 100%;
-			}
-
-			.card-product-row{
+			.btn-buy{
 				display: flex;
 				justify-content: center;
-				margin-top: 5px;
-				overflow: hidden;
+				margin-top: 30px;
+			}
+			input[name="btn-buy0"]{
+				background: rgb(0, 232, 64);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-buy0"]:hover{
+				background: rgba(0, 232, 64, 0.8);
+			}
+
+			.btn-send-to-cart{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			input[name="btn-send-to-cart0"]{
+				background: rgb(19, 107, 187);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-send-to-cart0"]:hover{
+				background: rgba(19, 107, 187, 0.8);
+			}
+
+			main h2{
+				font-weight: normal;
+				padding-left: 100px;
+				padding-top: 30px;
 			}
 			@media(max-width: 768px){
-				.card-product-row{
-					margin-left: 62px;
-					margin-top: 0;
-					width: 100%;
+				main h2{
+					padding-left: 10px;
 				}
 			}
 
-			.card-product-colum{
+			.product-description{
 				display: flex;
-				flex-direction: none;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			.product-description-container{
+				margin-top: 10px;
 			}
 			@media(max-width: 400px){
-				.card-product-colum{
-					flex-direction: column;
+				.product-description-container img{
+					height: 550px;
+					max-height: 300px;
+					max-width: 400px;
+					width: 700px;
 				}
 			}
 			@media(max-width: 768px){
-				.card-product-colum{
-					display: grid;
-					grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-					width: 100%;
+				.product-description-container img{
+					height: 550px;
+					width: 700px;
+				}
+			}
+			.product-description-container p{
+				font-size: 14px;
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container p{
+					width: 370px;
 				}
 			}
 
-			.card-product{
-				background: rgba(255, 255, 255, 0.5);
-				border: 1px solid rgba(0, 0, 0, 0.2);
-				transition: 0.3s;
-				width: 280px;
+			.product-detail{
+				font-size: 25px;
+				font-weight: bold;
+				margin-top: 20px;
+				text-align: center;
 			}
-			@media(max-width: 768px){
-				.card-product{
-					margin-top: 3px;
+
+			.product-characteristics-table{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+				overflow-x: auto;
+			}
+			.product-characteristics-table table{
+				border: 1px solid #000000;
+				border-collapse: collapse;
+				border-spacing: 0;
+				width: 1000px;
+			}
+			@media(max-width: 400px){
+				.product-characteristics-table table{
+					max-width: 380px;
+					width: 750px;
 				}
 			}
-			.card-product img{
-				border: 1px solid rgba(0, 0, 0, 0.2);
+			@media(max-width: 768px){
+				.product-characteristics-table table{
+					width: 750px;
+				}
 			}
-			.card-product:hover{
-				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-			}
-			.card-product-main{
-				width: 100%;
-			}
-			.card-product-main h4{
-				padding: 1px 5px;
-			}
-			.card-product-main p{
-				padding: 2px 16px;
-			}
-			.card-product-discount{
-				color: red;
-				float: right;
-			}
-			.card-product-btn{
-				background: rgb(231, 198, 67);
+			.product-characteristics-table tr, th, td{
 				border: 1px solid #000000;
-				border-radius: 2px;
-				color: #000000;
-				cursor: pointer;
-				font-weight: bold;
-				outline: none;
-				width: 100%;
-				transition: all 0.3s;
+				padding: 5px 5px;
 			}
-			.card-product-btn:hover{
-				background: rgb(234, 64, 64);
-				border: 1px solid rgba(0, 0, 0, 0.5);
-				color: #f5f6f8;
+			.product-characteristics-table td{
+				font-size: 13px;
+				text-align: left;
+			}
+
+			footer{
+				margin-top: 10px;
 			}
 		</style>
 	</head>
@@ -128,13 +244,13 @@
 			<div class="panel">
 				<label class="panel-btn-close" for="panel-checkbox">&#215;</label>
 
-				<div class="panel-name-market"><img src="../../../../img/logo.png" width="30" height="30"><a href="../../../../index.html">Барахолка Златоуст</a></div><br>
+				<div class="panel-name-market"><img src="../../img/logo.png" width="30" height="30"><a href="../../index.html">Барахолка Златоуст</a></div><br>
 
-				<div class="panel-contact"><img src="../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
+				<div class="panel-contact"><img src="../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
 
 				<div class="panel-log-in">
-					<img src="../../../../img/log-in.png" width="30" height="30">
-					<p><a href="../../../authorization.html">Вход</a> | <a href="../../../registration.html">Регистрация</a></p>
+					<img src="../../img/log-in.png" width="30" height="30">
+					<p><a href="../../page/authorization.html">Вход</a> | <a href="../../page/registration.html">Регистрация</a></p>
 					<p class="panel-log-in-text">Авторизуйтесь для получения расширенных возможностей</p>
 				</div><br>
 
@@ -145,10 +261,10 @@
 				</button>
 
 				<ul class="panel-menu">
-					<a href="../../catalog.html"><li><img src="../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
-					<a href=""><li><img src="../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
-					<a href=""><li><img src="../../../../img/basket.png" width="30" height="30">Корзина</li></a>
-					<a href=""><li><img src="../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
+					<a href="../../page/catalog/catalog.html"><li><img src="../../img/catalog.png" width="30" height="30">Каталог</li></a>
+					<a href=""><li><img src="../../img/question.png" width="30" height="30">Справочный центр</li></a>
+					<a href=""><li><img src="../../img/basket.png" width="30" height="30">Корзина</li></a>
+					<a href=""><li><img src="../../img/libra.png" width="30" height="30">Сравнения</li></a>
 				</ul>
 
 				<hr>
@@ -162,7 +278,7 @@
 
 				<hr>
 
-				<div class="panel-call-help"><a href=""><img src="../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
+				<div class="panel-call-help"><a href=""><img src="../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
 			</div>
 
 			<div class="panel-btn-wrap">
@@ -173,21 +289,21 @@
 			</div>
 
 			<div class="logo-name">
-				<a href="../../../../index.html"><img src="../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
+				<a href="../../index.html"><img src="../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
 			</div>
 
 			<div class="open-catalog">
-				<a href="#open-modal-catalog"><img src="../../../../img/catalog.png" width="35" height="35">Каталог</a>
+				<a href="#open-modal-catalog"><img src="../../img/catalog.png" width="35" height="35">Каталог</a>
 			</div>
 			<div class="modal-catalog">
 				<a href="" class="overlay" id="open-modal-catalog"></a>
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
-						<li><a href="../laptops-and-computers.html"><img src="../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
+						<li><a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html"><img src="../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
 										<li><a href="">Asus</a></li>
 										<li><a href="">HP</a></li>
 										<li><a href="">Lenovo</a></li>
@@ -215,7 +331,7 @@
 									</ul>
 
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
 										<li><a href="">Мониторы</a></li>
 										<li><a href="">Мыши</a></li>
 										<li><a href="">Клавиатуры</a></li>
@@ -245,7 +361,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -305,7 +421,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -361,7 +477,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -419,7 +535,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -464,7 +580,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -530,7 +646,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -585,7 +701,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -646,7 +762,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -709,109 +825,299 @@
 				</div>
 			</div>
 
-			<form class="search" action="computers.html">
+			<form class="search" action="1.html">
 				<input id="searchBtn" type="search" name="search" placeholder="Ищу...">
 				<input for="searchBtn" type="submit" name="btn-search" value="Найти">
 			</form>
 
 			<div class="log-in">
 				<div>
-					<a href="#open-modal-log-in"><img src="../../../../img/log-in.png" width="30" height="30"></a>
+					<a href="#open-modal-log-in"><img src="../../img/log-in.png" width="30" height="30"></a>
 				</div>
 			</div>
 			<div class="modal-log-in">
 				<a href="" class="overlay" id="open-modal-log-in"></a>
 				<div class="modal-log-in-content">
 					<h2>Личный кабинет</h2>
-					<div class="modal-log-in-btn"><a href="page/authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="page/registration.html">Зарегистрировать</a></div>
+					<div class="modal-log-in-btn"><a href="../../page/authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../page/registration.html">Зарегистрировать</a></div>
 				</div>
 			</div>
 
 			<div class="basket">
-				<a href=""><img src="../../../../img/basket.png" width="30" height="30"></a>
+				<a href=""><img src="../../img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
 
-		<aside>
-			<h5>Категории</h5>
-			<div class="fliter-gategory">
-				<div>
-					<input type="checkbox" id="laptops"><label>Ноутбуки</label>
-				</div>
-				<div>
-					<input type="checkbox" id="computers"><label>Компьютеры</label>
+		<main>
+			<div class="page-tabs">
+				<a href="../../index.html" style=" font-size: 16px; font-style: normal;">☖</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html">Компьютеры и ноутбуки</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/laptops/laptops.html">Ноутбуки</a>
+			</div>
+
+			<h1>Ноутбук Apple MacBook Pro 16" 512GB 2019 Silver</h1>
+
+			<div class="photo-tabs">
+				<div class="photo-tabs-colum">
+					<img src="0.jpg" width="300" height="300">
+					<img src="1.jpg" width="300" height="300">
+					<img src="2.jpg" width="300" height="300">
+					<img src="3.jpg" width="300" height="300">
+					<img src="4.jpg" width="300" height="300">
 				</div>
 			</div>
-		</aside>
 
-		<main>
-			<div class="computers-content">
-				<div class="computers-container">
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<img src="../../../../products/24/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4 style="word-spacing: 18px;">Компьютер HP 290 G1 MT</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">42 206<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="under-the-description">
+				<div class="under-the-description-img">
+					<img src="icon.png" width="48" height="48">
+					<img src="icon.jpg" width="48" height="48">
+					<img src="icon0.png" width="48" height="48">
+					<img src="icon1.png" width="48" height="48">
+					<img src="icon2.png" width="48" height="48">
+					<img src="icon3.png" width="48" height="48">
+				</div>
+				<p class="under-the-description-text">Экран 16" IPS (3072x1920), глянцевый / Intel Core i7-9750H (2.6 - 4.5 ГГц) / RAM 16 ГБ / SSD 512 ГБ / AMD Radeon Pro 5300M, 4 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / macOS Catalina / 2.0 кг / серебристый</p>
+			</div>
 
-							<div class="card-product">
-								<img src="../../../../products/25/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Компьютер ARTLINE Gaming X51 v12</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">80527<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="price">
+				<p>224 565 <span style="font-family: Rouble">i</span></p>
+			</div>
 
-							<div class="card-product">
-								<img src="../../../../products/26/0.png" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Компьютер Lenovo IdeaCentre G5 Gaming 14IMB05</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">88 201<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="btn-buy">
+				<input type="submit" name="btn-buy0" value="Купить">
+			</div>
 
-							<div class="card-product">
-								<img src="../../../../products/27/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4 style="word-spacing: 10px;">Компьютер Everest Home 4070</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">62 227<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="btn-send-to-cart">
+				<input type="submit" name="btn-send-to-cart0" value="Отправить в корзину">
+			</div>
 
-							<div class="card-product">
-								<img src="../../../../products/28/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Компьютер HP ProDesk 600 G3 SFF</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">35 171<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<h2>Описание</h2>
 
-							<div class="card-product">
-								<img src="../../../../products/29/0.jpg" width="280" height="300">
-								<div class="card-product-main">
-									<h4>Компьютер ARTLINE Business B25 v26 Windows 10 Pro</h4>
-									<p style="font-size: 13px; color: green;">В наличии</p>
-									<p style="font-weight: bold">21 064<span style="font-family: Rouble">i</span></p>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-						</div>
+			<div class="product-description">
+				<div class="product-description-colum">
+					<div class="product-description-container">
+						<h4>MacBook Pro. Машина для мечты.</h4>
+						<img src="0-0.jpg" width="800" height="600">
+						<p>Новый MacBook Pro — самый мощный ноутбук Apple, созданный для тех, кто меняет мир и раздвигает границы. Впечатляющий дисплей Retina 16 дюймов, невероятно быстрый процессор, графическая карта нового поколения, самый высокий ресурс аккумулятора для MacBook Pro, новая клавиатура Magic Keyboard и вместительный накопитель — это лучший профессиональный ноутбук для самых серьёзных профессионалов.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>"Это за рамками возможного" Крис Буркард</h4>
+						<img src="0-1.jpg" width="800" height="600">
+						<p>Новый MacBook Pro оснащён великолепным 16‑дюймовым дисплеем Retina — самым большим для ноутбуков Mac. На яркости 500 кд/м² светлые области с чистым белым цветом отображаются исключительно эффектно, а технология точного фотовыравнивания молекул жидких кристаллов дисплея позволяет добиться максимальной глубины чёрного. Благодаря широкому цветовому охвату P3 любое изображение выглядит невероятно красиво и реалистично. Где бы вы ни оказались, ваша работа предстанет в лучшем свете.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>Процессор и память. Работа со скоростью мысли.</h4>
+						<img src="0-2.jpg" width="800" height="600">
+						<p>MacBook Pro 16 дюймов задаёт совершенно новый стандарт производительности ноутбуков. Благодаря улучшенной системе охлаждения процессор ноутбука способен дольше обеспечивать высокую производительность. Работа с десятками аудиотреков и эффектов, рендеринг 3D‑моделей или компиляция и тестирование кода — любые процессы будут выполняться предельно быстро.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>Улучшенная система охлаждения способствует повышению производительности</h4>
+						<img src="0-3.jpg" width="800" height="600">
+						<p>Система охлаждения MacBook Pro была полностью переработана: увеличенные вентиляторы с усовершенствованными лопастями оптимизируют воздушный поток, а большее количество теплообменных пластин позволяет эффективнее охлаждать компьютер. Благодаря этому максимальная постоянная мощность MacBook Pro увеличилась практически на 12 Вт.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>Графический процессор. Создавайте свои миры. Все условия созданы.</h4>
+						<img src="0-4.jpg" width="800" height="600">
+						<p>Графический процессор AMD Radeon Pro обеспечивает самую высокую скорость обработки графики среди всех MacBook Pro. Базовая модель 16‑дюймового MacBook Pro более чем в два раза быстрее базовой модели предыдущего поколения, что позволяет делать рендеринг быстрее и воспроизводить видео (в том числе Ultra HD) более плавно.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>Клавиатура. Работается волшебно.</h4>
+						<img src="0-5.jpg" width="800" height="600">
+						<p>MacBook Pro 16 дюймов выходит на новый уровень эргономичности. Клавиатура Magic Keyboard значительно усовершенствована — теперь у каждой клавиши улучшенный механизм «ножницы» и ход 1 мм, чтобы клавиатура была отзывчивее, удобнее и тише. Панель Touch Bar обеспечивает удобный доступ к самым полезным функциям и подсказкам, а Touch ID предназначен для быстрой аутентификации. С отдельной клавишей Escape вам будет удобнее переключаться между различными режимами и областями просмотра. И кроме того, клавиши со стрелками в виде перевёрнутой буквы «Т» полезны не только для навигации по коду или таблицам, но и для игр.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>Аудио. Бас мощнее. Микрофон лучше.</h4>
+						<p>MacBook Pro — это звучит громко. Система из шести динамиков выдаёт широкое стерео, заполняющее вашу комнату, — для ноутбука такое звучание просто удивительно. Два низкочастотных динамика с подавлением резонанса значительно снижают вибрацию, звучат чисто и естественно и добавляют пол‑октавы в басовом регистре. А система из трёх микрофонов студийного качества превосходит многие профессиональные микрофоны сторонних производителей. Записывайте подкасты или музыку там, где вам удобно, — звук будет чистым.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>Apple T2 Security Chip. Новое поколение безопасности.</h4>
+						<p>В каждом MacBook Pro есть Apple T2 Security Chip второго поколения — чип, разработанный для более надёжной защиты данных на Mac. Он оснащён модулем Secure Enclave, который обеспечивает работу Touch ID и функции безопасной загрузки, а также отвечает за хранение зашифрованных данных. В Apple T2 Security Chip интегрировано множество дискретных контроллеров, в том числе контроллер управления системой, аудиоконтроллер и SSD‑контроллер.</p>
+					</div>
+
+					<div class="product-description-container">
+						<h4>Накопитель. Ваша студия всегда под рукой.</h4>
+						<p>MacBook Pro 16 дюймов оснащается SSD‑накопителем — это максимальная ёмкость среди всех ноутбуков Apple. Куда бы вы ни отправились, ваши фото и видео будут под рукой. А благодаря невероятной скорости передачи данных профессиональные приложения открываются мгновенно и загрузка больших файлов занимает считанные секунды.</p>
+						<img src="0-6.jpg" width="800" height="600">
+					</div>
+
+					<div class="product-description-container">
+						<h4>Аккумулятор. Заряжен на великие дела.</h4>
+						<p>На MacBook Pro 16 дюймов устанавливается самый мощный аккумулятор для ноутбуков Apple. Литий-полимерный аккумулятор ёмкостью 100 Вт*ч не только обеспечивает питанием увеличенный дисплей и поддерживает более высокое значение максимальной постоянной мощности, но и позволяет ещё дольше работать без подзарядки — до 11 часов в интернете по беспроводной сети с просмотром видео. У вас будет ещё больше времени на свою важную работу.</p>
+						<img src="0-7.jpg" width="800" height="600">
+					</div>
+
+					<div class="product-description-container">
+						<h4>Thunderbolt 3. Самый мощный и универсальный порт.</h4>
+						<p>Высокоскоростной и универсальный порт Thunderbolt 3 объединяет высочайшую пропускную способность с функциональностью стандартного интерфейса USB‑C. Он позволяет передавать данные, заряжать устройства и выводить видео на дополнительные мониторы через один и тот же разъём. При этом его пропускная способность в два раза выше, чем у Thunderbolt 2, — до 40 Гбит/﻿с. У MacBook Pro четыре таких порта, поэтому подключать к нему аксессуары можно с любой стороны. Для подсоединения внешних устройств используйте специальный кабель или адаптер. А поскольку порт Thunderbolt 3 симметричный, при подключении вам не придётся думать, где у него верх и низ.</p>
+						<img src="0-8.jpg" width="800" height="600">
 					</div>
 				</div>
 			</div>
+
+			<p class="product-detail">Характеристики</p>
+			<div class="product-characteristics-table">
+				<table>
+					<tr>
+						<th colspan="2">Экран</th>
+					</tr>
+					<tr>
+						<td>Диагональ экрана</td>
+						<td>16" (3072x1920)</td>
+					</tr>
+					<tr>
+						<td>Тип экрана</td>
+						<td>Retina</td>
+					</tr>
+					<tr>
+						<td>Частота обновления экрана</td>
+						<td>60 Гц</td>
+					</tr>
+					<tr>
+						<th colspan="2">Процессор</th>
+					</tr>
+					<tr>
+						<td>Процессор</td>
+						<td>Шестиядерный Intel Core i7-9750H (2.6 - 4.5 ГГц)</td>
+					</tr>
+					<tr>
+						<td>Операционная система</td>
+						<td>macOS Catalina</td>
+					</tr>
+					<tr>
+						<td>Поколение процессора Intel</td>
+						<td>9-ое Coffee Lake</td>
+					</tr>
+					<tr>
+						<th colspan="2">Оперативная память</th>
+					</tr>
+					<tr>
+						<td>Объем оперативной памяти</td>
+						<td>16 ГБ</td>
+					</tr>
+					<tr>
+						<td>Количество слотов для оперативной памяти</td>
+						<td>Нет</td>
+					</tr>
+					<tr>
+						<td>Тип оперативной памяти</td>
+						<td>DDR4-2666 МГц</td>
+					</tr>
+					<tr>
+						<th colspan="2">Накопители данных</th>
+					</tr>
+					<tr>
+						<td>Объём накопителя</td>
+						<td>512 ГБ SSD</td>
+					</tr>
+					<tr>
+						<th colspan="2">Видеокарта</th>
+					</tr>
+					<tr>
+						<td>Объем памяти видеокарты</td>
+						<td>4 ГБ</td>
+					</tr>
+					<tr>
+						<td>Видеокарта</td>
+						<td>AMD Radeon Pro 5300M</td>
+					</tr>
+					<tr>
+						<th colspan="2">Корпус</th>
+					</tr>
+					<tr>
+						<td>Цвет</td>
+						<td>Серебристый</td>
+					</tr>
+					<tr>
+						<td>Вес</td>
+						<td>2.0 кг</td>
+					</tr>
+					<tr>
+						<td>Батарея</td>
+						<td>Несъемная</td>
+					</tr>
+					<tr>
+						<td>Емкость аккумулятора</td>
+						<td>100 Вт*ч</td>
+					</tr>
+					<tr>
+						<td>Характеристики батареи</td>
+						<td>Встроенный литий-полимерный аккумулятор ёмкостью 100 Вт*ч<br>До 11 часов работы в интернете по беспроводной сети<br>До 11 часов при воспроизведении фильмов из приложения Apple TV<br>До 30 дней в режиме ожидания</td>
+					</tr>
+					<tr>
+						<td>Габариты (Ш х Г х В)</td>
+						<td>357.9 x 245.9 x 16.2 мм</td>
+					</tr>
+					<tr>
+						<th colspan="2">Подключение</th>
+					</tr>
+					<tr>
+						<td>Сетевые адаптеры</td>
+						<td>Wi-Fi 802.11 ac, совместимость со стандартами IEEE 802.11 a/b/g/n<br>Bluetooth 5.0</td>
+					</tr>
+					<tr>
+						<td>Разъемы и порты ввода-вывода</td>
+						<td>4 x Thunderbolt, до 40 Гбит/﻿с (USB Type‑C 3.1 Gen2 (до 10 Гбит/﻿с), DisplayPort) / 1 x выход для наушников (3.5 мм)</td>
+					</tr>
+					<tr>
+						<td>Страна-производитель</td>
+						<td>Китай</td>
+					</tr>
+					<tr>
+						<td>Краткие характеристики</td>
+						<td>Экран 16" IPS (3072x1920), глянцевый / Intel Core i7-9750H (2.6 - 4.5 ГГц) / RAM 16 ГБ / SSD 512 ГБ / AMD Radeon Pro 5300M, 4 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / macOS Catalina / 2.0 кг / серебристый</td>
+					</tr>
+					<tr>
+						<td>Вид</td>
+						<td>Ноутбуки</td>
+					</tr>
+					<tr>
+						<td>Дополнительные возможности</td>
+						<td>HD‑камера FaceTime 720p<br>Система из шести динамиков Hi‑Fi, включая два низкочастотных с подавлением резонанса<br>Объёмный стереозвук<br>Поддержка воспроизведения контента в формате Dolby Atmos<br>Система из трёх направленных микрофонов с высоким коэффициентом сигнал/шум и поддержкой записи аудио студийного качества<br>Технология True Tone<br>Широкий цветовой охват (P3)<br>Полноразмерная клавиатура Magic Keyboard<br>Панель Touch Bar<br>Датчик Touch ID<br>Датчик внешней освещённости<br>Трекпад Force Touch для точного управления курсором и распознавания касаний</td>
+					</tr>
+					<tr>
+						<td>Комплект поставки</td>
+						<td>MacBook Air<br>Адаптер питания USB Type‑C мощностью 96 Вт<br>Кабель USB Type‑C для зарядки (2 м)<br>Документация</td>
+					</tr>
+					<tr>
+						<td>Страна регистрации бренда</td>
+						<td>США</td>
+					</tr>
+				</table>
+			</div>
 		</main>
+
+		<footer>
+			<div class="container">
+				<h4 class="footer-name-shop">Барахолка Златоуст — интернет-магазин с большим выбором</h4>
+
+				<div class="footer-menu">
+					<ul class="footer-menu-block">
+						<li><a href="">Блог</a></li>
+						<li><a href="">Партнерам</a></li>
+						<li><a href="">Как оформить заказ</a></li>
+						<li><a href="">Возврат товара</a></li>
+						<li><a href="">О компании</a></li>
+						<li><a href="">Правила и условие использование сайта</a></li>
+					</ul>
+
+					<ul class="footer-menu-block">
+						<li style="line-height: 32px;"><a href=""><img src="../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
+					</ul>
+
+					<ul class="footer-menu-block">
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
