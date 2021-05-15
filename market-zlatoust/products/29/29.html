@@ -1,128 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="icon" href="../../../../img/logo.png">
-		<link rel="stylesheet" href="../../../../css/style.css">
+		<link rel="icon" href="../../img/logo.png">
+		<link rel="stylesheet" href="../../css/style.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-		<title>Компьютеры</title>
+		<title>Компьютер ARTLINE Business B25 v26 Windows 10 Pro</title>
 
 		<style>
-			aside{
-				border-right: 1px solid rgba(0, 0, 0, 0.3);
-				height: 100px;
-				float: left;
-				font-style: italic;
-				width: 11.3%;
+			.page-tabs{
+				padding: 30px 175px;
 			}
 			@media(max-width: 768px){
-				aside{
-					display: none;
+				.page-tabs{
+					padding: 10px 35px;
+				}	
+			}
+			.page-tabs a{
+				color: #1e90ff;
+				font-size: 14px;
+				font-style: italic;
+				text-decoration: none;
+			}
+			.page-tabs a:hover{
+				color: #ff4500;
+				text-decoration: underline;
+			}
+			.page-tabs span{
+				color: rgba(0, 0, 0, 0.5);
+				font-weight: bold;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			main h1{
+				font-size: 40px;
+				font-weight: normal;
+				padding: 15px 15px;
+				word-spacing: 10px;
+			}
+			@media(max-width: 768px){
+				main h1{
+					font-size: 33px;
+					padding: 0;
+					padding-left: 5px;
+					word-spacing: 0;
 				}
 			}
 
-			aside h5{
-				padding-top: 5px;
+			.photo-tabs{
+				display: flex;
+				justify-content: center;
+				margin: 25px 0;
+			}
+			.photo-tabs img{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			@media(max-width: 768px){
+				.photo-tabs img{
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					margin-left: 50px;
+				}
+			}
+
+			.under-the-description{
+				display: flex;
+				justify-content: center;
+				margin-top: 30px;
+			}
+			@media(max-width: 768px){
+				.under-the-description{
+					flex-direction: column;
+					margin-left: 20px;
+				}
+			}
+			.under-the-description-img{
+				margin-right: 10px;
+			}
+			.under-the-description-img img{
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			@media(max-width: 400px){
+				.under-the-description-img img{
+					margin-left: 4px;
+					margin-right: 4px;
+				}
+			}
+			.under-the-description-text{
+				font-size: 14px;
+				line-height: 22px;
+				width: 700px;
+				word-break: break-all;
+			}
+			@media(max-width: 400px){
+				.under-the-description-text{
+					width: 350px;
+				}
+			}
+
+			.price{
+				font-size: 30px;
+				font-weight: bold;
+				margin-top: 20px;
 				text-align: center;
 			}
 
-			main{
-				margin-left: 227px;
-				width: 87.8%;
-			}
-			@media(max-width: 768px){
-				main{
-					margin-left: 0;
-				}
-			}
-
-			.computers-content{
-				height: auto;
-				width: 100%;
-			}
-
-			.card-product-row{
+			.btn-buy{
 				display: flex;
 				justify-content: center;
-				margin-top: 5px;
-				overflow: hidden;
+				margin-top: 30px;
+			}
+			input[name="btn-buy0"]{
+				background: rgb(0, 232, 64);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-buy0"]:hover{
+				background: rgba(0, 232, 64, 0.8);
+			}
+
+			.btn-send-to-cart{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			input[name="btn-send-to-cart0"]{
+				background: rgb(19, 107, 187);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-send-to-cart0"]:hover{
+				background: rgba(19, 107, 187, 0.8);
+			}
+
+			main h2{
+				font-weight: normal;
+				padding-left: 100px;
+				padding-top: 30px;
 			}
 			@media(max-width: 768px){
-				.card-product-row{
-					margin-left: 62px;
-					margin-top: 0;
-					width: 100%;
+				main h2{
+					padding-left: 10px;
 				}
 			}
 
-			.card-product-colum{
+			.product-description{
 				display: flex;
-				flex-direction: none;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			.product-description-container{
+				margin-top: 10px;
 			}
 			@media(max-width: 400px){
-				.card-product-colum{
-					flex-direction: column;
+				.product-description-container img{
+					height: 550px;
+					max-height: 300px;
+					max-width: 400px;
+					width: 700px;
 				}
 			}
 			@media(max-width: 768px){
-				.card-product-colum{
-					display: grid;
-					grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-					width: 100%;
+				.product-description-container img{
+					height: 550px;
+					width: 700px;
 				}
+			}
+			.product-description-container p{
+				font-size: 14px;
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container p{
+					width: 370px;
+				}
+			}
+			.product-description-container ul{
+				padding-left: 10px;
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container ul{
+					max-width: 370px;
+				}
+			}
+			.product-description-container ul li{
+				font-size: 14px;
+				line-height: 27px;
+			}
+			
+
+			.product-detail{
+				font-size: 25px;
+				font-weight: bold;
+				margin-top: 20px;
+				text-align: center;
 			}
 
-			.card-product{
-				background: rgba(255, 255, 255, 0.5);
-				border: 1px solid rgba(0, 0, 0, 0.2);
-				transition: 0.3s;
-				width: 280px;
+			.product-characteristics-table{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+				overflow-x: auto;
 			}
-			@media(max-width: 768px){
-				.card-product{
-					margin-top: 3px;
+			.product-characteristics-table table{
+				border: 1px solid #000000;
+				border-collapse: collapse;
+				border-spacing: 0;
+				width: 1000px;
+			}
+			@media(max-width: 400px){
+				.product-characteristics-table table{
+					max-width: 380px;
+					width: 750px;
 				}
 			}
-			.card-product a{
-				color: #000000;
-				text-decoration: none;
+			@media(max-width: 768px){
+				.product-characteristics-table table{
+					width: 750px;
+				}
 			}
-			.card-product img{
-				border: 1px solid rgba(0, 0, 0, 0.2);
-			}
-			.card-product:hover{
-				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-			}
-			.card-product-main{
-				width: 100%;
-			}
-			.card-product-main h4{
-				padding: 1px 5px;
-			}
-			.card-product-main p{
-				padding: 2px 16px;
-			}
-			.card-product-discount{
-				color: red;
-				float: right;
-			}
-			.card-product-btn{
-				background: rgb(231, 198, 67);
+			.product-characteristics-table tr, th, td{
 				border: 1px solid #000000;
-				border-radius: 2px;
-				color: #000000;
-				cursor: pointer;
-				font-weight: bold;
-				outline: none;
-				width: 100%;
-				transition: all 0.3s;
+				padding: 5px 5px;
 			}
-			.card-product-btn:hover{
-				background: rgb(234, 64, 64);
-				border: 1px solid rgba(0, 0, 0, 0.5);
-				color: #f5f6f8;
+			.product-characteristics-table td{
+				font-size: 13px;
+				text-align: left;
+			}
+
+			footer{
+				margin-top: 10px;
 			}
 		</style>
 	</head>
@@ -132,13 +258,13 @@
 			<div class="panel">
 				<label class="panel-btn-close" for="panel-checkbox">&#215;</label>
 
-				<div class="panel-name-market"><img src="../../../../img/logo.png" width="30" height="30"><a href="../../../../index.html">Барахолка Златоуст</a></div><br>
+				<div class="panel-name-market"><img src="../../img/logo.png" width="30" height="30"><a href="../../index.html">Барахолка Златоуст</a></div><br>
 
-				<div class="panel-contact"><img src="../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
+				<div class="panel-contact"><img src="../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
 
 				<div class="panel-log-in">
-					<img src="../../../../img/log-in.png" width="30" height="30">
-					<p><a href="../../../authorization.html">Вход</a> | <a href="../../../registration.html">Регистрация</a></p>
+					<img src="../../img/log-in.png" width="30" height="30">
+					<p><a href="../../page/authorization.html">Вход</a> | <a href="../../page/registration.html">Регистрация</a></p>
 					<p class="panel-log-in-text">Авторизуйтесь для получения расширенных возможностей</p>
 				</div><br>
 
@@ -149,10 +275,10 @@
 				</button>
 
 				<ul class="panel-menu">
-					<a href="../../catalog.html"><li><img src="../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
-					<a href=""><li><img src="../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
-					<a href=""><li><img src="../../../../img/basket.png" width="30" height="30">Корзина</li></a>
-					<a href=""><li><img src="../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
+					<a href="../../page/catalog/catalog.html"><li><img src="../../img/catalog.png" width="30" height="30">Каталог</li></a>
+					<a href=""><li><img src="../../img/question.png" width="30" height="30">Справочный центр</li></a>
+					<a href=""><li><img src="../../img/basket.png" width="30" height="30">Корзина</li></a>
+					<a href=""><li><img src="../../img/libra.png" width="30" height="30">Сравнения</li></a>
 				</ul>
 
 				<hr>
@@ -166,7 +292,7 @@
 
 				<hr>
 
-				<div class="panel-call-help"><a href=""><img src="../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
+				<div class="panel-call-help"><a href=""><img src="../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
 			</div>
 
 			<div class="panel-btn-wrap">
@@ -177,21 +303,21 @@
 			</div>
 
 			<div class="logo-name">
-				<a href="../../../../index.html"><img src="../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
+				<a href="../../index.html"><img src="../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
 			</div>
 
 			<div class="open-catalog">
-				<a href="#open-modal-catalog"><img src="../../../../img/catalog.png" width="35" height="35">Каталог</a>
+				<a href="#open-modal-catalog"><img src="../../img/catalog.png" width="35" height="35">Каталог</a>
 			</div>
 			<div class="modal-catalog">
 				<a href="" class="overlay" id="open-modal-catalog"></a>
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
-						<li><a href="../laptops-and-computers.html"><img src="../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
+						<li><a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html"><img src="../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
 										<li><a href="">Asus</a></li>
 										<li><a href="">HP</a></li>
 										<li><a href="">Lenovo</a></li>
@@ -219,7 +345,7 @@
 									</ul>
 
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
 										<li><a href="">Мониторы</a></li>
 										<li><a href="">Мыши</a></li>
 										<li><a href="">Клавиатуры</a></li>
@@ -249,7 +375,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -309,7 +435,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -365,7 +491,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -423,7 +549,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -468,7 +594,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -534,7 +660,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -589,7 +715,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -650,7 +776,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -713,205 +839,230 @@
 				</div>
 			</div>
 
-			<form class="search" action="computers.html">
+			<form class="search" action="">
 				<input id="searchBtn" type="search" name="search" placeholder="Ищу...">
 				<input for="searchBtn" type="submit" name="btn-search" value="Найти">
 			</form>
 
 			<div class="log-in">
 				<div>
-					<a href="#open-modal-log-in"><img src="../../../../img/log-in.png" width="30" height="30"></a>
+					<a href="#open-modal-log-in"><img src="../../img/log-in.png" width="30" height="30"></a>
 				</div>
 			</div>
 			<div class="modal-log-in">
 				<a href="" class="overlay" id="open-modal-log-in"></a>
 				<div class="modal-log-in-content">
 					<h2>Личный кабинет</h2>
-					<div class="modal-log-in-btn"><a href="../../../authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../../registration.html">Зарегистрировать</a></div>
+					<div class="modal-log-in-btn"><a href="../../page/authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../page/registration.html">Зарегистрировать</a></div>
 				</div>
 			</div>
 
 			<div class="basket">
-				<a href=""><img src="../../../../img/basket.png" width="30" height="30"></a>
+				<a href=""><img src="../../img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
 
-		<aside>
-			
-		</aside>
-
 		<main>
-			<div class="computers-content">
-				<div class="computers-container">
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/24/24.html">
-										<img src="../../../../products/24/0.jpg" width="280" height="300">
-										<h4 style="word-spacing: 18px;">Компьютер HP 290 G1 MT</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">42 206<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="page-tabs">
+				<a href="../../index.html" style=" font-size: 16px; font-style: normal;">☖</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html">Компьютеры и ноутбуки</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/computers/computers.html">Компьютеры</a>
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/25/25.html">
-										<img src="../../../../products/25/0.jpg" width="280" height="300">
-										<h4>Компьютер ARTLINE Gaming X51 v12</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">80 527<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<h1>Компьютер ARTLINE Business B25 v26 Windows 10 Pro</h1>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/26/26.html">
-										<img src="../../../../products/26/0.png" width="280" height="300">
-										<h4>Компьютер Lenovo IdeaCentre G5 Gaming 14IMB05</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">88 201<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="photo-tabs">
+				<div class="photo-tabs-colum">
+					<img src="0.jpg" width="300" height="300">
+					<img src="1.jpg" width="300" height="300">
+					<img src="2.jpg" width="300" height="300">
+					<img src="3.jpg" width="300" height="300">
+					<img src="4.jpg" width="300" height="300">
+				</div>
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/27/27.html">
-										<img src="../../../../products/27/0.jpg" width="280" height="300">
-										<h4 style="word-spacing: 10px;">Компьютер Everest Home 4070</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">62 227<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="under-the-description">
+				<div class="under-the-description-img">
+					<img src="icon.png" width="48" height="48">
+					<img src="icon0.png" width="48" height="48">
+				</div>
+				<p class="under-the-description-text">Intel Pentium Gold G6400 (4.0 ГГц) / RAM 4 ГБ / SSD 120 ГБ / Intel UHD Graphics 610 / без ОД / LAN / Windows 10 Pro</p>
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/28/28.html">
-										<img src="../../../../products/28/0.jpg" width="280" height="300">
-										<h4>Компьютер HP ProDesk 600 G3 SFF</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">35 171<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="price">
+				<p>21 064 <span style="font-family: Rouble">i</span></p>
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/29/29.html">
-										<img src="../../../../products/29/0.jpg" width="280" height="300">
-										<h4>Компьютер ARTLINE Business B25 v26 Windows 10 Pro</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">21 064<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-						</div>
+			<div class="btn-buy">
+				<input type="submit" name="btn-buy0" value="Купить">
+			</div>
+
+			<div class="btn-send-to-cart">
+				<input type="submit" name="btn-send-to-cart0" value="Отправить в корзину">
+			</div>
+
+			<h2>Описание</h2>
+
+			<div class="product-description">
+				<div class="product-description-colum">
+					<div class="product-description-container">
+						<p>Наличие компьютера в любом производстве или офисе – обязательное условие реалий XXI века, без него уже не обходится управление большинством технологических процессов. Порой таких "управленцев", даже для небольшого офиса, необходимо несколько. А чаще счет идет на десятки. И от корректной работы каждого такого звена-компьютера в этой цепи, непосредственно зависит стабильность вашего бизнеса.</p>
 					</div>
 
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/30/30.html">
-										<img src="../../../../products/30/0.jpg" width="280" height="300">
-										<h4>Компьютер Cobra Gaming I14F.16.H1S2.165.782</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">61 512<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/31/31.html">
-										<img src="../../../../products/31/0.jpg" width="280" height="300">
-										<h4><span style="word-spacing: 1px;">Компьютер Artline Gaming X35 v14</span></h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">44 705<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/32/32.html">
-										<img src="../../../../products/32/0.jpg" width="280" height="300">
-										<h4>Компьютер ARTLINE Business B10 v07 Windows 10 Pro</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">11 490<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/33/33.html">
-										<img src="../../../../products/33/0.jpg" width="280" height="300">
-										<h4>Компьютер Cobra I14F.32.H2S4.26.086</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">106 978<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/34/34.html">
-										<img src="../../../../products/34/0.jpg" width="280" height="300">
-										<h4>Моноблок Apple iMac 27" i7 512Gb 2020</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">246 053<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/35/35.html">
-										<img src="../../../../products/35/0.jpg" width="280" height="300">
-										<h4>Моноблок Lenovo IdeaCentre 5 27IMB05 Grey</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">115 002<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-						</div>
+					<div class="product-description-container">
+						<p>Закономерно, что к таким ПК покупатель предъявляет повышенные требования к надежности. И именно линейка <b>ARTLINE Business</b> обладает необходимым набором свойств: пониженным энергопотреблением и достаточной производительностью, что позволит минимальными затратами эффективно выполнять поставленные задачи.</p>
 					</div>
 
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../products/36/36.html">
-										<img src="../../../../products/36/0.jpg" width="280" height="300">
-										<h4>Моноблок ARTLINE Business M62 v12 Windows 10 Pro</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">28 532<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-						</div>
+					<div class="product-description-container">
+						<p>Разнообразие конфигураций линейки <b>Business</b> B25 позволит выбрать самый приемлемый вариант. Модель <b>Business B25 v26Win</b> включает:</p>
+						<ul>
+							<li>Intel Pentium Gold G6400 с 2 ядрами, 4 потоками и базовой частотойﾠ4.0 ГГц, построенный на архитектуре Comet Lake, и имеющий хорошую производительность на единицу стоимости.</li>
+							<li>Скоростной SSD на 120 ГБ для молниеносной загрузки системы, что позволит снизить время доступа к предустановленной ОС Windows 10 Pro и другим программам.ﾠ</li>
+							<li>Интегрированную графику Intel UHD Graphics 610.</li>
+							<li>4 ГБ памяти DDR4 с частотой 2666 МГц для комфортной работы за ПК.</li>
+							<li>Простой, но проверенный корпус универсального форм-фактора. Его внутреннего пространства вполне достаточно для циркуляции воздуха и охлаждения внутренних компонентов.</li>
+							<li>Профессиональную сборку и проверку специалистами. Длительный этап предпродажного тестирования сводит на нет возможные технические нюансы, влияющие на бесперебойную работу компьютера после покупки.</li>
+						</ul>
+					</div>
+
+					<div class="product-description-container">
+						<p>Персональные компьютеры <b>ARTLINE</b> зарекомендовали себя, как недорогие настольные компьютеры с необходимым набором функций для офисных пользователей и станут лучшим выбором для вашего бизнеса.</p>
 					</div>
 				</div>
 			</div>
+
+			<p class="product-detail">Характеристики</p>
+			<div class="product-characteristics-table">
+				<table>
+					<tr>
+						<td>Краткие технические характеристики</td>
+						<td>Intel Pentium Gold G6400 (4.0 ГГц) / RAM 4 ГБ / SSD 120 ГБ / Intel UHD Graphics 610 / без ОД / LAN / Windows 10 Pro</td>
+					</tr>
+					<tr>
+						<td>Процессор</td>
+						<td>Двухъядерный Intel Pentium Gold G6400 (4.0 ГГц)</td>
+					</tr>
+					<tr>
+						<td>Страна-производитель</td>
+						<td>Украина</td>
+					</tr>
+					<tr>
+						<td>Чипсет материнской платы</td>
+						<td>Intel H410</td>
+					</tr>
+					<tr>
+						<td>Объем оперативной памяти</td>
+						<td>4 ГБ</td>
+					</tr>
+					<tr>
+						<td>Порты</td>
+						<td><b>На передней панели:</b><br>2 х USB 2.0<br>Выход на наушники<br>Вход для микрофона<br><br><b>На задней панели (материнская плата):</b><br>1 х PS/2 для клавиатуры<br>1 х PS/2 для мыши<br>2 x USB 3.2 Gen 1<br>2 x USB 2.0<br>1 x HDMI<br>1 x DVI-D<br>1 x D-Sub<br>1 x LAN (RJ-45) порт<br>3 x аудиоразъема</td>
+					</tr>
+					<tr>
+						<td>Мощность БП</td>
+						<td>400 Вт</td>
+					</tr>
+					<tr>
+						<td>Видеокарта</td>
+						<td>Intel UHD Graphics 610</td>
+					</tr>
+					<tr>
+						<td>Охлаждение</td>
+						<td>BOX</td>
+					</tr>
+					<tr>
+						<td>Предустановленное ПО</td>
+						<td>Windows 10 Pro</td>
+					</tr>
+					<tr>
+						<td>Размеры</td>
+						<td>350 x 170 x 345 мм</td>
+					</tr>
+					<tr>
+						<td>Вес</td>
+						<td>6 кг</td>
+					</tr>
+					<tr>
+						<td>Комплект поставки</td>
+						<td>Компьютер<br>Техпаспорт<br>Клавиатура<br>Кабель питания</td>
+					</tr>
+					<tr>
+						<td>Объем SSD</td>
+						<td>120 ГБ</td>
+					</tr>
+					<tr>
+						<td>Диагональ дисплея</td>
+						<td>Нет дисплея</td>
+					</tr>
+					<tr>
+						<td>Тип видеокарты</td>
+						<td>Интегрированная</td>
+					</tr>
+					<tr>
+						<td>Предустановленный модуль WiFi</td>
+						<td>Нет</td>
+					</tr>
+					<tr>
+						<td>Оптический привод</td>
+						<td>Нет</td>
+					</tr>
+					<tr>
+						<td>Производитель GPU</td>
+						<td>Intel</td>
+					</tr>
+					<tr>
+						<td>Цвет</td>
+						<td>Черный</td>
+					</tr>
+					<tr>
+						<td>Частота ядра</td>
+						<td>4.0</td>
+					</tr>
+					<tr>
+						<td>Возможность крепления VESA</td>
+						<td>Без возможности крепления VESA</td>
+					</tr>
+					<tr>
+						<td>Страна регистрации бренда</td>
+						<td>Украина</td>
+					</tr>
+					<tr>
+						<td>Сетевой интерфейс</td>
+						<td>1 Гбит/с</td>
+					</tr>
+					<tr>
+						<td>Расположение БП</td>
+						<td>Верхнее</td>
+					</tr>
+				</table>
+			</div>
 		</main>
+
+		<footer>
+			<div class="container">
+				<h4 class="footer-name-shop">Барахолка Златоуст — интернет-магазин с большим выбором</h4>
+
+				<div class="footer-menu">
+					<ul class="footer-menu-block">
+						<li><a href="">Блог</a></li>
+						<li><a href="">Партнерам</a></li>
+						<li><a href="">Как оформить заказ</a></li>
+						<li><a href="">Возврат товара</a></li>
+						<li><a href="">О компании</a></li>
+						<li><a href="">Правила и условие использование сайта</a></li>
+					</ul>
+
+					<ul class="footer-menu-block">
+						<li style="line-height: 32px;"><a href=""><img src="../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
+					</ul>
+
+					<ul class="footer-menu-block">
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
