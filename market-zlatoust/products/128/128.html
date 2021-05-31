@@ -1,128 +1,273 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="icon" href="../../../../../img/logo.png">
-		<link rel="stylesheet" href="../../../../../css/style.css">
+		<link rel="icon" href="../../img/logo.png">
+		<link rel="stylesheet" href="../../css/style.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-		<title>Игры</title>
+		<title>Игра Mortal Kombat X - Хиты PlayStation для PS4</title>
 
 		<style>
-			aside{
-				border-right: 1px solid rgba(0, 0, 0, 0.3);
-				height: 100px;
-				float: left;
+			.page-tabs{
+				padding: 30px 175px;
+			}
+			@media(max-width: 768px){
+				.page-tabs{
+					padding: 10px 35px;
+				}	
+			}
+			.page-tabs a{
+				color: #1e90ff;
+				font-size: 14px;
 				font-style: italic;
-				width: 11.3%;
+				text-decoration: none;
+			}
+			.page-tabs a:hover{
+				color: #ff4500;
+				text-decoration: underline;
+			}
+			.page-tabs span{
+				color: rgba(0, 0, 0, 0.5);
+				font-weight: bold;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			main h1{
+				font-size: 40px;
+				font-weight: normal;
+				padding: 15px 15px;
+				word-spacing: 10px;
 			}
 			@media(max-width: 768px){
-				aside{
-					display: none;
+				main h1{
+					font-size: 33px;
+					padding: 0;
+					padding-left: 5px;
+					word-spacing: 0;
 				}
 			}
 
-
-			main{
-				margin-left: 227px;
-				width: 87.8%;
+			.photo-tabs{
+				display: flex;
+				justify-content: center;
+				margin: 25px 0;
+			}
+			.photo-tabs img{
+				margin-left: 10px;
+				margin-right: 10px;
 			}
 			@media(max-width: 768px){
-				main{
-					margin-left: 0;
+				.photo-tabs img{
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					margin-left: 50px;
 				}
+			}
+
+			.under-the-description{
+				display: flex;
+				justify-content: center;
+				margin-top: 30px;
+			}
+			@media(max-width: 768px){
+				.under-the-description{
+					flex-direction: column;
+					margin-left: 20px;
+				}
+			}
+			.under-the-description-img{
+				margin-right: 10px;
+			}
+			.under-the-description-img img{
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			@media(max-width: 400px){
+				.under-the-description-img img{
+					margin-left: 4px;
+					margin-right: 4px;
+				}
+			}
+			.under-the-description-text{
+				font-size: 14px;
+				line-height: 22px;
+				width: 700px;
+				word-break: break-all;
+			}
+			@media(max-width: 400px){
+				.under-the-description-text{
+					width: 350px;
+				}
+			}
+
+			.price{
+				font-size: 30px;
+				font-weight: bold;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			.btn-buy{
+				display: flex;
+				justify-content: center;
+				margin-top: 30px;
+			}
+			input[name="btn-buy0"]{
+				background: rgb(0, 232, 64);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-buy0"]:hover{
+				background: rgba(0, 232, 64, 0.8);
+			}
+
+			.btn-send-to-cart{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			input[name="btn-send-to-cart0"]{
+				background: rgb(19, 107, 187);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-send-to-cart0"]:hover{
+				background: rgba(19, 107, 187, 0.8);
+			}
+
+			main h2{
+				font-weight: normal;
+				padding-left: 100px;
+				padding-top: 30px;
+			}
+			@media(max-width: 768px){
+				main h2{
+					padding-left: 10px;
+				}
+			}
+
+			.product-description{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			.product-description-container{
+				margin-top: 10px;
+			}
+
+			.product-description-container h3{
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container h3{
+					max-width: 385px;
+				}
+			}
+
+			.product-description-container h4{
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container h4{
+					max-width: 385px;
+				}
+			}
+
+			@media(max-width: 400px){
+				.product-description-container img{
+					height: 550px;
+					max-height: 300px;
+					max-width: 400px;
+					width: 700px;
+				}
+			}
+			@media(max-width: 768px){
+				.product-description-container img{
+					height: 550px;
+					width: 700px;
+				}
+			}
+			.product-description-container p{
+				font-size: 14px;
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container p{
+					width: 370px;
+				}
+			}
+			.product-description-container ul{
+				padding-left: 10px;
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container ul{
+					max-width: 370px;
+				}
+			}
+			.product-description-container ul li{
+				font-size: 14px;
+				line-height: 27px;
+			}
+			
+
+			.product-detail{
+				font-size: 25px;
+				font-weight: bold;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			.product-characteristics-table{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+				overflow-x: auto;
+			}
+			.product-characteristics-table table{
+				border: 1px solid #000000;
+				border-collapse: collapse;
+				border-spacing: 0;
+				width: 1000px;
+			}
+			@media(max-width: 400px){
+				.product-characteristics-table table{
+					max-width: 380px;
+					width: 750px;
+				}
+			}
+			@media(max-width: 768px){
+				.product-characteristics-table table{
+					width: 750px;
+				}
+			}
+			.product-characteristics-table tr, th, td{
+				border: 1px solid #000000;
+				padding: 5px 5px;
+			}
+			.product-characteristics-table td{
+				font-size: 13px;
+				text-align: left;
 			}
 
 			footer{
-				margin-top: 20px;
-			}
-
-			.computers-content{
-				height: auto;
-				width: 100%;
-			}
-
-			.card-product-row{
-				display: flex;
-				justify-content: center;
-				margin-top: 5px;
-				overflow: hidden;
-			}
-			@media(max-width: 768px){
-				.card-product-row{
-					margin-left: 62px;
-					margin-top: 0;
-					width: 100%;
-				}
-			}
-
-			.card-product-colum{
-				display: flex;
-				flex-direction: none;
-			}
-			@media(max-width: 400px){
-				.card-product-colum{
-					flex-direction: column;
-				}
-			}
-			@media(max-width: 768px){
-				.card-product-colum{
-					display: grid;
-					grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-					width: 100%;
-				}
-			}
-
-			.card-product{
-				background: rgba(255, 255, 255, 0.5);
-				border: 1px solid rgba(0, 0, 0, 0.2);
-				transition: 0.3s;
-				width: 280px;
-			}
-			@media(max-width: 768px){
-				.card-product{
-					margin-top: 3px;
-				}
-			}
-			.card-product a{
-				color: #000000;
-				text-decoration: none;
-			}
-			.card-product img{
-				border: 1px solid rgba(0, 0, 0, 0.2);
-			}
-			.card-product:hover{
-				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-			}
-			.card-product-main{
-				width: 100%;
-			}
-			.card-product-main h4{
-				padding: 1px 5px;
-			}
-			.card-product-main p{
-				padding: 2px 16px;
-			}
-			.card-product-discount{
-				color: red;
-				float: right;
-			}
-			.card-product-btn{
-				background: rgb(231, 198, 67);
-				border: 1px solid #000000;
-				border-radius: 2px;
-				color: #000000;
-				cursor: pointer;
-				font-weight: bold;
-				outline: none;
-				width: 100%;
-				transition: all 0.3s;
-			}
-			.card-product-btn:hover{
-				background: rgb(234, 64, 64);
-				border: 1px solid rgba(0, 0, 0, 0.5);
-				color: #f5f6f8;
+				margin-top: 10px;
 			}
 		</style>
 	</head>
@@ -132,13 +277,13 @@
 			<div class="panel">
 				<label class="panel-btn-close" for="panel-checkbox">&#215;</label>
 
-				<div class="panel-name-market"><img src="../../../../../img/logo.png" width="30" height="30"><a href="../../../../../index.html">Барахолка Златоуст</a></div><br>
+				<div class="panel-name-market"><img src="../../img/logo.png" width="30" height="30"><a href="../../index.html">Барахолка Златоуст</a></div><br>
 
-				<div class="panel-contact"><img src="../../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
+				<div class="panel-contact"><img src="../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
 
 				<div class="panel-log-in">
-					<img src="../../../../../img/log-in.png" width="30" height="30">
-					<p><a href="../../../../authorization.html">Вход</a> | <a href="../../../../registration.html">Регистрация</a></p>
+					<img src="../../img/log-in.png" width="30" height="30">
+					<p><a href="../../page/authorization.html">Вход</a> | <a href="../../page/registration.html">Регистрация</a></p>
 					<p class="panel-log-in-text">Авторизуйтесь для получения расширенных возможностей</p>
 				</div><br>
 
@@ -149,10 +294,10 @@
 				</button>
 
 				<ul class="panel-menu">
-					<a href="../../../catalog.html"><li><img src="../../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
-					<a href=""><li><img src="../../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
-					<a href=""><li><img src="../../../../../img/basket.png" width="30" height="30">Корзина</li></a>
-					<a href=""><li><img src="../../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
+					<a href="../../page/catalog/catalog.html"><li><img src="../../img/catalog.png" width="30" height="30">Каталог</li></a>
+					<a href=""><li><img src="../../img/question.png" width="30" height="30">Справочный центр</li></a>
+					<a href=""><li><img src="../../img/basket.png" width="30" height="30">Корзина</li></a>
+					<a href=""><li><img src="../../img/libra.png" width="30" height="30">Сравнения</li></a>
 				</ul>
 
 				<hr>
@@ -166,7 +311,7 @@
 
 				<hr>
 
-				<div class="panel-call-help"><a href=""><img src="../../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
+				<div class="panel-call-help"><a href=""><img src="../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
 			</div>
 
 			<div class="panel-btn-wrap">
@@ -177,21 +322,21 @@
 			</div>
 
 			<div class="logo-name">
-				<a href="../../../../../index.html"><img src="../../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
+				<a href="../../index.html"><img src="../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
 			</div>
 
 			<div class="open-catalog">
-				<a href="#open-modal-catalog"><img src="../../../../../img/catalog.png" width="35" height="35">Каталог</a>
+				<a href="#open-modal-catalog"><img src="../../img/catalog.png" width="35" height="35">Каталог</a>
 			</div>
 			<div class="modal-catalog">
 				<a href="" class="overlay" id="open-modal-catalog"></a>
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
-						<li><a href="../../laptops-and-computers.html"><img src="../../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
+						<li><a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html"><img src="../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
 										<li><a href="">Asus</a></li>
 										<li><a href="">HP</a></li>
 										<li><a href="">Lenovo</a></li>
@@ -219,8 +364,8 @@
 									</ul>
 
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../../computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
-										<li><a href="../../monitors/monitors.html">Мониторы</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/monitors/monitors.html">Мониторы</a></li>
 										<li><a href="">Мыши</a></li>
 										<li><a href="">Клавиатуры</a></li>
 										<li><a href="">Комплект: клавиатура+мышь</a></li>
@@ -249,7 +394,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -309,7 +454,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -365,7 +510,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -423,7 +568,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -468,7 +613,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -534,7 +679,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -589,7 +734,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -650,7 +795,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -720,257 +865,130 @@
 
 			<div class="log-in">
 				<div>
-					<a href="#open-modal-log-in"><img src="../../../../../img/log-in.png" width="30" height="30"></a>
+					<a href="#open-modal-log-in"><img src="../../img/log-in.png" width="30" height="30"></a>
 				</div>
 			</div>
 			<div class="modal-log-in">
 				<a href="" class="overlay" id="open-modal-log-in"></a>
 				<div class="modal-log-in-content">
 					<h2>Личный кабинет</h2>
-					<div class="modal-log-in-btn"><a href="../../../../authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../../../registration.html">Зарегистрировать</a></div>
+					<div class="modal-log-in-btn"><a href="../../page/authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../page/registration.html">Зарегистрировать</a></div>
 				</div>
 			</div>
 
 			<div class="basket">
-				<a href=""><img src="../../../../../img/basket.png" width="30" height="30"></a>
+				<a href=""><img src="../../img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
 
-		<aside>
-			
-		</aside>
-
 		<main>
-			<div class="games-content">
-				<div class="games-container">
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/113/113.html">
-										<img src="../../../../../products/113/0.jpg" width="280" height="300">
-										<h4>Игра Assassin's Creed Valhalla для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">5 333<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="page-tabs">
+				<a href="../../index.html" style=" font-size: 16px; font-style: normal;">☖</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html">Компьютеры и ноутбуки</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/gaming/gaming.html">Товары для геймеров</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/gaming/games/games.html">Игры</a>
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/114/114.html">
-										<img src="../../../../../products/114/0.jpg" width="280" height="300">
-										<h4>Игра Minecraft. Playstation 4 Edition для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">2 318<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<h1>Игра Mortal Kombat X - Хиты PlayStation для PS4</h1>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/115/115.html">
-										<img src="../../../../../products/115/0.jpg" width="280" height="300">
-										<h4>Игра Grand Theft Auto V Premium Edition для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">2 532<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="photo-tabs">
+				<div class="photo-tabs-colum">
+					<img src="0.jpg" width="300" height="300">
+				</div>
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/116/116.html">
-										<img src="../../../../../products/116/0.jpg" width="280" height="300">
-										<h4>Игра Marvel Spider-Man: Miles Morales для PS5</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">4 532<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="under-the-description">
+				<!--<div class="under-the-description-img">
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/117/117.html">
-										<img src="../../../../../products/117/0.jpg" width="280" height="300">
-										<h4>Игра Marvel Spider-Man: Miles Morales для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">4 532<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+				</div>-->
+				<p class="under-the-description-text">Mortal Kombat X — десятая часть легендарного файтинга. Игра продолжает историю девятой части и рассказывает о событиях, произошедших через 20 лет после ее финала.</p>
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/118/118.html">
-										<img src="../../../../../products/118/0.jpg" width="280" height="300">
-										<h4>Игра Marvel Spider-Man: Miles Morales Ultimate Edition для PS5</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">6 133<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="price">
+				<p>1 732 <span style="font-family: Rouble">i</span></p>
+			</div>
 
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/119/119.html">
-										<img src="../../../../../products/119/0.jpg" width="280" height="300">
-										<h4>Игра Ghost of Tsushima для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">5 333<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="btn-buy">
+				<input type="submit" name="btn-buy0" value="Купить">
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/120/120.html">
-										<img src="../../../../../products/120/0.jpg" width="280" height="300">
-										<h4>Игра Demon's Souls для PS5</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">6 133<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<div class="btn-send-to-cart">
+				<input type="submit" name="btn-send-to-cart0" value="Отправить в корзину">
+			</div>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/121/121.html">
-										<img src="../../../../../products/121/0.jpg" width="280" height="300">
-										<h4>Need for Speed: Payback для ПК</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">1 187<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
+			<h2>Описание</h2>
 
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/122/122.html">
-										<img src="../../../../../products/122/0.jpg" width="280" height="300">
-										<h4>Игра The Sims 4 для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">3 199<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/123/123.html">
-										<img src="../../../../../products/123/0.jpg" width="280" height="300">
-										<h4>Игра Mafia Trilogy для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">4 799<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/124/124.html">
-										<img src="../../../../../products/124/0.jpg" width="280" height="300">
-										<h4>Игра God of War 2018 для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">1 598<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="card-product-row">
-						<div class="card-product-colum">
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/125/125.html">
-										<img src="../../../../../products/125/0.jpg" width="280" height="300">
-										<h4><span style="word-spacing: 6px;">Red Dead Redemption 2 для ПК</span></h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">2 398<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/126/126.html">
-										<img src="../../../../../products/126/0.jpg" width="280" height="300">
-										<h4><span style="word-spacing: 11px;">Игра Cyberpunk 2077 для PS4</span></h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">5 333<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/127/127.html">
-										<img src="../../../../../products/127/0.jpg" width="280" height="300">
-										<h4>Игра Call of Duty: Black Ops Cold War для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">5 333<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/128/128.html">
-										<img src="../../../../../products/128/0.jpg" width="280" height="300">
-										<h4>Игра Mortal Kombat X - Хиты PlayStation для PS4</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">1 732<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/129/129.html">
-										<img src="../../../../../products/129/0.jpg" width="280" height="300">
-										<h4>Игра Assassin's Creed Valhalla для PS5</h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">5 333<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-
-							<div class="card-product">
-								<div class="card-product-main">
-									<a href="../../../../../products/130/130.html">
-										<img src="../../../../../products/130/0.jpg" width="280" height="300">
-										<h4><span style="word-spacing: 28px;">Игра FIFA 21 для PS4</span></h4>
-										<p style="font-size: 13px; color: green;">В наличии</p>
-										<p style="font-weight: bold">5 999<span style="font-family: Rouble">i</span></p>
-									</a>
-									<button class="card-product-btn">В корзину</button>
-								</div>
-							</div>
-						</div>
+			<div class="product-description">
+				<div class="product-description-colum">
+					<div class="product-description-container">
+						<p><b>Mortal Kombat X</b> – файтинг нового поколения и очередная глава легендарной серии от знаменитой студии NetherRealm Studios. Разработчикам удалось создать самый зрелищный и глубокий файтинг в истории <b>Mortal Kombat</b>, в котором жестокие поединки кинематографического качества объединились с новыми геймплейными элементами. Отличительная особенность <b>Mortal Kombat X</b> – постоянное подключение к единому сетевому ресурсу, где каждая победа или поражение будут учитываться в глобальной статистике. Впервые <b>Mortal Kombat X</b> позволит игрокам выбирать одну из форм боя, которой будет следовать любимый персонаж, что гарантирует большое разнообразие в выборе стратегии и стиля каждого поединка.</p>
+						<br>
+						<p>Захватывающая сюжетная кампания познакомит с запутанной историей множества персонажей, среди которых как легендарные бойцы, известные каждому поклоннику файтингов, так и новички, впервые выходящие на смертельную битву.</p>
+						<br>
+						<h4>Особенности:</h4>
+						<br>
+						<ul>
+							<li>К знаменитым Скорпиону, Саб-Зиро, Рэйдену и Кэно присоединились новые персонажи: Кэсси Кейдж, Котал Кан, Ди’Вора и Ферра-Торр.</li>
+							<li>Каждый герой Mortal Kombat X сражается в одной из трех боевых форм, определяющих стратегию поединка, его набор спецприемов и способностей.</li>
+							<li>События увлекательной сюжетной кампании происходят в течение 25 лет после окончания предыдущей игры серии. В новой мрачной истории заметную роль играют новые персонажи, такие как Кэсси Кейдж – дочь Джонни Кейджа и Сони Блейд.</li>
+							<li>В Mortal Kombat X нашлось место как знаменитым приемам X-ray, так и легендарным добиваниям Fatality. С улучшенной анимацией и графикой нового поколения увлекательные поединки выглядят особенно впечатляюще.</li>
+						</ul>
+						<br>
+						<br>
+						<p><b>Комплектация:</b> 1 диск Blu-ray в пластиковом боксе, руководство пользователя.</p>
 					</div>
 				</div>
+			</div>
+
+			<p class="product-detail">Характеристики</p>
+			<div class="product-characteristics-table">
+				<table>
+					<tr>
+						<td>Платформа</td>
+						<td>PlayStation 4</td>
+					</tr>
+					<tr>
+						<td>Страна-производитель</td>
+						<td>Австрия</td>
+					</tr>
+					<tr>
+						<td>Жанр</td>
+						<td>Файтинг (fighting)</td>
+					</tr>
+					<tr>
+						<td>Дата мирового релиза</td>
+						<td>14 апреля 2015 года</td>
+					</tr>
+					<tr>
+						<td>Локализация</td>
+						<td>С русскими субтитрами</td>
+					</tr>
+					<tr>
+						<td>Тип носителя</td>
+						<td>Blu-ray</td>
+					</tr>
+					<tr>
+						<td>Рекомендуемые системные требования</td>
+						<td>Платформа PlayStation 4<br>При наличии многопользовательского сетевого режима игры через Интернет, потребуется подписка PlayStation Plus (приобретается отдельно) и подключение игровой консоли к сети Интернет</td>
+					</tr>
+					<tr>
+						<td>Упаковка</td>
+						<td>Blu-ray Box</td>
+					</tr>
+					<tr>
+						<td>Издатель</td>
+						<td>Warner Bros. Games</td>
+					</tr>
+					<tr>
+						<td>Разработчик</td>
+						<td>NetherRealm Studios</td>
+					</tr>
+					<tr>
+						<td>Особенности</td>
+						<td>С мультиплеером</td>
+					</tr>
+					<tr>
+						<td>Страна регистрации бренда</td>
+						<td>США</td>
+					</tr>
+				</table>
 			</div>
 		</main>
 
@@ -989,15 +1007,15 @@
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
 					</ul>
 				</div>
 			</div>
