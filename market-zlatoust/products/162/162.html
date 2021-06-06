@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="icon" href="../../../../img/logo.png">
-		<link rel="stylesheet" href="../../../../css/style.css">
+		<link rel="icon" href="../../img/logo.png">
+		<link rel="stylesheet" href="../../css/style.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-		<title>Gaming</title>
+		<title>Gigabyte PCI-Ex GeForce RTX 3080 Turbo 10G 10GB GDDR6X</title>
 
 		<style>
 			.page-tabs{
@@ -50,49 +50,224 @@
 				}
 			}
 
-			.gaming-menu-catalog{
-				margin-top: 50px;
-			}
-			.gaming-menu-catalog a{
-				color: #1e90ff;
-				font-size: 17px;
-				font-style: italic;
-				text-decoration: none;
-			}
-			.gaming-menu-catalog a:hover{
-				color: #ff4500;
-				text-decoration: underline;
-			}
-
-			.gaming-menu-catalog-row{
+			.photo-tabs{
 				display: flex;
 				justify-content: center;
-				margin-top: 50px;
+				margin: 25px 0;
+			}
+			.photo-tabs img{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			@media(max-width: 768px){
+				.photo-tabs img{
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					margin-left: 50px;
+				}
 			}
 
-			.gaming-menu-catalog-colum{
+			.under-the-description{
 				display: flex;
-				flex-direction: none;
+				justify-content: center;
+				margin-top: 30px;
 			}
 			@media(max-width: 768px){
-				.gaming-menu-catalog-colum{
+				.under-the-description{
 					flex-direction: column;
+					margin-left: 20px;
+				}
+			}
+			.under-the-description-img{
+				margin-right: 10px;
+			}
+			.under-the-description-img img{
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			@media(max-width: 400px){
+				.under-the-description-img img{
+					margin-left: 4px;
+					margin-right: 4px;
+				}
+			}
+			.under-the-description-text{
+				font-size: 14px;
+				line-height: 22px;
+				width: 700px;
+				word-break: break-all;
+			}
+			@media(max-width: 400px){
+				.under-the-description-text{
+					width: 350px;
 				}
 			}
 
-			.container-btn{
-				border-right: 1px solid rgba(0, 0, 0, 0.1);
-				padding-left: 16px;
-				padding-right: 16px;
+			.price{
+				font-size: 30px;
+				font-weight: bold;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			.btn-buy{
+				display: flex;
+				justify-content: center;
+				margin-top: 30px;
+			}
+			input[name="btn-buy0"]{
+				background: rgb(0, 232, 64);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-buy0"]:hover{
+				background: rgba(0, 232, 64, 0.8);
+			}
+
+			.btn-send-to-cart{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			input[name="btn-send-to-cart0"]{
+				background: rgb(19, 107, 187);
+				border: 0;
+				border-radius: 4px;
+				color: #f5f6f8;
+				cursor: pointer;
+				font-size: 18px;
+				outline: none;
+				padding: 5px 10px;
+				transition: all 0.3s;
+				width: 1000px;
+			}
+			input[name="btn-send-to-cart0"]:hover{
+				background: rgba(19, 107, 187, 0.8);
+			}
+
+			main h2{
+				font-weight: normal;
+				padding-left: 100px;
+				padding-top: 30px;
 			}
 			@media(max-width: 768px){
-				.container-btn{
-					margin-top: 5px;
+				main h2{
+					padding-left: 10px;
 				}
+			}
+
+			.product-description{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+			}
+			.product-description-container{
+				margin-top: 10px;
+			}
+
+			.product-description-container h3{
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container h3{
+					max-width: 385px;
+				}
+			}
+
+			.product-description-container h4{
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container h4{
+					max-width: 385px;
+				}
+			}
+
+			@media(max-width: 400px){
+				.product-description-container img{
+					height: 550px;
+					max-height: 300px;
+					max-width: 400px;
+					width: 700px;
+				}
+			}
+			@media(max-width: 768px){
+				.product-description-container img{
+					height: 550px;
+					width: 700px;
+				}
+			}
+			.product-description-container p{
+				font-size: 14px;
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container p{
+					width: 370px;
+				}
+			}
+			.product-description-container ul{
+				padding-left: 10px;
+				width: 700px;
+			}
+			@media(max-width: 400px){
+				.product-description-container ul{
+					max-width: 370px;
+				}
+			}
+			.product-description-container ul li{
+				font-size: 14px;
+				line-height: 27px;
+			}
+			
+
+			.product-detail{
+				font-size: 25px;
+				font-weight: bold;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			.product-characteristics-table{
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
+				overflow-x: auto;
+			}
+			.product-characteristics-table table{
+				border: 1px solid #000000;
+				border-collapse: collapse;
+				border-spacing: 0;
+				width: 1000px;
+			}
+			@media(max-width: 400px){
+				.product-characteristics-table table{
+					max-width: 380px;
+					width: 750px;
+				}
+			}
+			@media(max-width: 768px){
+				.product-characteristics-table table{
+					width: 750px;
+				}
+			}
+			.product-characteristics-table tr, th, td{
+				border: 1px solid #000000;
+				padding: 5px 5px;
+			}
+			.product-characteristics-table td{
+				font-size: 13px;
+				text-align: left;
 			}
 
 			footer{
-				margin-top: 20px;
+				margin-top: 10px;
 			}
 		</style>
 	</head>
@@ -102,13 +277,13 @@
 			<div class="panel">
 				<label class="panel-btn-close" for="panel-checkbox">&#215;</label>
 
-				<div class="panel-name-market"><img src="../../../../img/logo.png" width="30" height="30"><a href="../../../../index.html">Барахолка Златоуст</a></div><br>
+				<div class="panel-name-market"><img src="../../img/logo.png" width="30" height="30"><a href="../../index.html">Барахолка Златоуст</a></div><br>
 
-				<div class="panel-contact"><img src="../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
+				<div class="panel-contact"><img src="../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
 
 				<div class="panel-log-in">
-					<img src="../../../../img/log-in.png" width="30" height="30">
-					<p><a href="../../../authorization.html">Вход</a> | <a href="../../../registration.html">Регистрация</a></p>
+					<img src="../../img/log-in.png" width="30" height="30">
+					<p><a href="../../page/authorization.html">Вход</a> | <a href="../../page/registration.html">Регистрация</a></p>
 					<p class="panel-log-in-text">Авторизуйтесь для получения расширенных возможностей</p>
 				</div><br>
 
@@ -119,10 +294,10 @@
 				</button>
 
 				<ul class="panel-menu">
-					<a href="../../catalog.html"><li><img src="../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
-					<a href=""><li><img src="../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
-					<a href=""><li><img src="../../../../img/basket.png" width="30" height="30">Корзина</li></a>
-					<a href=""><li><img src="../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
+					<a href="../../page/catalog/catalog.html"><li><img src="../../img/catalog.png" width="30" height="30">Каталог</li></a>
+					<a href=""><li><img src="../../img/question.png" width="30" height="30">Справочный центр</li></a>
+					<a href=""><li><img src="../../img/basket.png" width="30" height="30">Корзина</li></a>
+					<a href=""><li><img src="../../img/libra.png" width="30" height="30">Сравнения</li></a>
 				</ul>
 
 				<hr>
@@ -136,7 +311,7 @@
 
 				<hr>
 
-				<div class="panel-call-help"><a href=""><img src="../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
+				<div class="panel-call-help"><a href=""><img src="../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
 			</div>
 
 			<div class="panel-btn-wrap">
@@ -147,21 +322,21 @@
 			</div>
 
 			<div class="logo-name">
-				<a href="../../../../index.html"><img src="../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
+				<a href="../../index.html"><img src="../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
 			</div>
 
 			<div class="open-catalog">
-				<a href="#open-modal-catalog"><img src="../../../../img/catalog.png" width="35" height="35">Каталог</a>
+				<a href="#open-modal-catalog"><img src="../../img/catalog.png" width="35" height="35">Каталог</a>
 			</div>
 			<div class="modal-catalog">
 				<a href="" class="overlay" id="open-modal-catalog"></a>
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
-						<li><a href="../laptops-and-computers.html"><img src="../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
+						<li><a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html"><img src="../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
 										<li><a href="">Asus</a></li>
 										<li><a href="">HP</a></li>
 										<li><a href="">Lenovo</a></li>
@@ -189,8 +364,8 @@
 									</ul>
 
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
-										<li><a href="">Мониторы</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
+										<li><a href="../../page/catalog/laptops-and-computers/monitors/monitors.html">Мониторы</a></li>
 										<li><a href="">Мыши</a></li>
 										<li><a href="">Клавиатуры</a></li>
 										<li><a href="">Комплект: клавиатура+мышь</a></li>
@@ -219,7 +394,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -279,7 +454,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -335,7 +510,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -393,7 +568,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -438,7 +613,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -504,7 +679,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -559,7 +734,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -620,7 +795,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -683,132 +858,195 @@
 				</div>
 			</div>
 
-			<form class="search" action="computers.html">
+			<form class="search" action="">
 				<input id="searchBtn" type="search" name="search" placeholder="Ищу...">
 				<input for="searchBtn" type="submit" name="btn-search" value="Найти">
 			</form>
 
 			<div class="log-in">
 				<div>
-					<a href="#open-modal-log-in"><img src="../../../../img/log-in.png" width="30" height="30"></a>
+					<a href="#open-modal-log-in"><img src="../../img/log-in.png" width="30" height="30"></a>
 				</div>
 			</div>
 			<div class="modal-log-in">
 				<a href="" class="overlay" id="open-modal-log-in"></a>
 				<div class="modal-log-in-content">
 					<h2>Личный кабинет</h2>
-					<div class="modal-log-in-btn"><a href="../../../authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../../registration.html">Зарегистрировать</a></div>
+					<div class="modal-log-in-btn"><a href="../../page/authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../page/registration.html">Зарегистрировать</a></div>
 				</div>
 			</div>
 
 			<div class="basket">
-				<a href=""><img src="../../../../img/basket.png" width="30" height="30"></a>
+				<a href=""><img src="../../img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
 
 		<main>
 			<div class="page-tabs">
-				<a href="../../../../index.html" style=" font-size: 16px; font-style: normal;">☖</a> <span>></span> <a href="../laptops-and-computers.html">Компьютеры и ноутбуки</a>
+				<a href="../../index.html" style=" font-size: 16px; font-style: normal;">☖</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/laptops-and-computers.html">Компьютеры и ноутбуки</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/gaming/gaming.html">Товары для геймеров</a> <span>></span> <a href="../../page/catalog/laptops-and-computers/gaming/accessories-for-gamers/accessories-for-gamers.html">Комплектующие для геймеров</a>
 			</div>
 
-			<h1>Товары для геймеров</h1>
+			<h1>Gigabyte PCI-Ex GeForce RTX 3080 Turbo 10G 10GB GDDR6X</h1>
 
-			<div class="gaming-menu-catalog">
-				<div class="gaming-menu-catalog-row">
-					<div class="gaming-menu-catalog-colum">
-						<div class="container-btn">
-							<a href="gaming-consoles/gaming-consoles.html">
-								<img src="../../../../img/laptops-and-computers/gaming/0.jpg" width="352" height="184"><br>
-								<a href="gaming-consoles/gaming-consoles.html" style="padding-left: 89px;">Игровые приставки</a>
-							</a>
-						</div>
+			<div class="photo-tabs">
+				<div class="photo-tabs-colum">
+					<img src="0.jpg" width="300" height="300">
+					<img src="1.jpg" width="300" height="300">
+					<img src="2.jpg" width="300" height="300">
+					<img src="3.jpg" width="300" height="300">
+					<img src="4.jpg" width="300" height="300">
+				</div>
+			</div>
 
-						<div class="container-btn">
-							<a href="gaming-laptops/gaming-laptops.html">
-								<img src="../../../../img/laptops-and-computers/gaming/1.jpg" width="352" height="184"><br>
-								<a href="gaming-laptops/gaming-laptops.html" style="padding-left: 97px;">Игровые ноутбуки</a>
-							</a>
-						</div>
+			<div class="under-the-description">
+				<!--<div class="under-the-description-img">
+					
+				</div>-->
+				<p class="under-the-description-text">Графический чип: GeForce RTX 3080<br>Объем памяти: 10 ГБ<br>Разрядность шины памяти: 320 бит<br>Тип памяти: GDDRX<br>Тип системы охлаждения: Активная</p>
+			</div>
 
-						<div class="container-btn">
-							<a href="gaming-computers/gaming-computers.html">
-								<img src="../../../../img/laptops-and-computers/gaming/2.jpg" width="352" height="184"><br>
-								<a href="gaming-computers/gaming-computers.html" style="padding-left: 78px;">Игровые компьютеры</a>
-							</a>
-						</div>
+			<div class="price">
+				<p>267 449 <span style="font-family: Rouble">i</span></p>
+			</div>
 
-						<div class="container-btn">
-							<a href="gaming-monitors/gaming-monitors.html">
-								<img src="../../../../img/laptops-and-computers/gaming/3.jpg" width="352" height="184"><br>
-								<a href="gaming-monitors/gaming-monitors.html" style="padding-left: 90px;">Игровые мониторы</a>
-							</a>
-						</div>
+			<div class="btn-buy">
+				<input type="submit" name="btn-buy0" value="Купить">
+			</div>
+
+			<div class="btn-send-to-cart">
+				<input type="submit" name="btn-send-to-cart0" value="Отправить в корзину">
+			</div>
+
+			<h2>Описание</h2>
+
+			<div class="product-description">
+				<div class="product-description-colum">
+					<div class="product-description-container">
+						<h4>Система охлаждения Turbo Fan</h4>
+						<p>Модель GIGABYTE TURBO идеально подходит для конфигураций с несколькими графическими платами в корпусе с ограниченным пространством. Металлический кожух особой формы и 80-мм вентилятор обеспечивают оптимальное распределение потока. Благодаря медному радиатору с тепловыми трубками, испарительной камере прямого контакта с графическим процессором и мощному вентилятору турбинного типа, система охлаждения демонстрирует максимальную эффективность теплоотвода.<br>
+						<br>
+						<h4>Оптимальное распределение потока</h4>
+						<p>Конструктив кожуха с перепадом высот не препятствует притоку воздушных масс в зоне вентилятора, даже если рядом установлена еще одна графическая плата. Таким образом, обеспечивается надлежащее охлаждение и эффективное рассеивание тепла в условиях ограниченного пространства.</p>
+						<br>
+						<h4>Компоненты охлаждения из меди, металлический кожух</h4>
+						<p>Изготовленные из меди испарительная камера и радиатор с тепловыми трубками отличает исключительно высокая теплопроводность и эффективная схема рассеивания тепла от ключевых компонентов. Тепловые трубки особой формы помогают быстро отводить тепло с поверхности кристалла ГП. Черный металлический кожух также вносит свой вклад в охлаждение критически важных компонентов, повышая интегральную эффективность всего контура.</p>
+						<br>
+						<h4>Два подшипника качения</h4>
+						<p>Два шарикоподшипника в составе конструктива каждого вентилятора обеспечивают продолжительный срок службы этих компонентов и безотказную работу системы охлаждения графической платы в целом.</p>
+						<br>
+						<h4>Исключительная надежность</h4>
+						<p>Дизайн подсистемы питания на базе силовых КМОП RDSon транзисторов c пониженным сопротивлением при переключении предусматривает сбалансированную нагрузку на каждый транзистор, позволяет ключевым компонентам в составе VRM-модуля функционировать в комфортном температурном режиме. Сертифицированные в рамках программы Ultra Durable высококачественные дроссели и конденсаторы обеспечивают превосходную производительность видеоподсистемы и увеличивают срок службы изделия.</p>
+						<br>
+						<h4>Космические технологии защиты печатной платы</h4>
+						<p>Пыленепроницаемая – защита от пыли, воздействия насекомых, попадая элементов крепежа, стружки и иного абразива.<br>
+						Влагостойкая – защита токопроводящих элементов от повреждений и воздействия различного рода жидких сред.<br>
+						Устойчивая к коррозии – защита от химически активных аэрозолей, влажности и коррозии.</p>
+						<br>
+						<h4>Защитная металлическая пластина на тыльной стороне печатной платы</h4>
+						<p>Тыльная поверхность печатной платы накрыта металлической пластиной, которая надежно защищает конструктив в целом и распаянные на плате компоненты в частности, от повреждений, например, в случае падения изделия, а также помогает минимизировать нагрузки на изгиб и кручение.</p>
+						<br>
+						<h4>Интеллектуальный дизайн печатной платы</h4>
+						<p>Полностью автоматизированный производственный процесс гарантирует высокое качество печатных плат и устраняет возможность возникновения острых выступов разъемов для пайки, которые находятся на поверхности печатной платы. Продуманная конструкция предотвращает ваши руки от порезов или непреднамеренных повреждений компонентов при создании системы.</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="gaming-menu-catalog-row">
-					<div class="gaming-menu-catalog-colum">
-						<div class="container-btn">
-							<a href="games/games.html">
-								<img src="../../../../img/laptops-and-computers/gaming/4.jpg" width="352" height="184"><br>
-								<a href="games/games.html" style="padding-left: 157px;">Игры</a>
-							</a>
-						</div>
-
-						<div class="container-btn">
-							<a href="accessories-for-gamers/accessories-for-gamers.html">
-								<img src="../../../../img/laptops-and-computers/gaming/5.jpg" width="352" height="184"><br>
-								<a href="accessories-for-gamers/accessories-for-games.html" style="padding-left: 40px;">Комплектующие для геймеров</a>
-							</a>
-						</div>
-
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../img/laptops-and-computers/gaming/6.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 90px;">Игровая периферия</a>
-							</a>
-						</div>
-
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../img/laptops-and-computers/gaming/7.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 6px;">Очки и шлемы виртуальной реальности</a>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="gaming-menu-catalog-row">
-					<div class="gaming-menu-catalog-colum">
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../img/laptops-and-computers/gaming/8.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 85px;">Кресла для геймеров</a>
-							</a>
-						</div>
-
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../img/laptops-and-computers/gaming/9.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 95px;">Геймерские столы</a>
-							</a>
-						</div>
-
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../img/laptops-and-computers/gaming/10.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 58px;">Игровые маршрутизаторы</a>
-							</a>
-						</div>
-
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../img/laptops-and-computers/gaming/11.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 75px;">Атрибутика и сувениры</a>
-							</a>
-						</div>
-					</div>
-				</div>
+			<p class="product-detail">Характеристики</p>
+			<div class="product-characteristics-table">
+				<table>
+					<tr>
+						<td>Страна-производитель</td>
+						<td>Китай</td>
+					</tr>
+					<tr>
+						<td>Частота памяти</td>
+						<td>19000 МГц</td>
+					</tr>
+					<tr>
+						<td>Графический чип</td>
+						<td>GeForce RTX 3080</td>
+					</tr>
+					<tr>
+						<td>Частота ядра</td>
+						<td>1710 МГц</td>
+					</tr>
+					<tr>
+						<td>Система охлаждения</td>
+						<td>Turbo Fan</td>
+					</tr>
+					<tr>
+						<td>Пропускная способность памяти</td>
+						<td>7‎60 Гбит/с</td>
+					</tr>
+					<tr>
+						<td>Объем памяти</td>
+						<td>10 ГБ</td>
+					</tr>
+					<tr>
+						<td>Разъемы</td>
+						<td>DisplayPort<br>HDMI</td>
+					</tr>
+					<tr>
+						<td>Максимально поддерживаемое разрешение</td>
+						<td>7680x4320</td>
+					</tr>
+					<tr>
+						<td>Поддерживаемые 3D API</td>
+						<td>DirectX 12, OpenGL 4.6</td>
+					</tr>
+					<tr>
+						<td>Разрядность шины памяти</td>
+						<td>320 бит</td>
+					</tr>
+					<tr>
+						<td>Минимально необходимая мощность БП</td>
+						<td>750 Вт</td>
+					</tr>
+					<tr>
+						<td>Тип памяти</td>
+						<td>GDDR6X</td>
+					</tr>
+					<tr>
+						<td>Размеры</td>
+						<td>267 х 111 х 40 мм мм</td>
+					</tr>
+					<tr>
+						<td>Интерфейс</td>
+						<td>PCI-Express x16 4.0</td>
+					</tr>
+					<tr>
+						<td>Форм-фактор</td>
+						<td>Дискретная (Стандартная)</td>
+					</tr>
+					<tr>
+						<td>Тип системы охлаждения</td>
+						<td>Активная</td>
+					</tr>
+					<tr>
+						<td>Комплект поставки</td>
+						<td>Видеокарта<br>Документация</td>
+					</tr>
+					<tr>
+						<td>Дополнительное питание</td>
+						<td>8 + 8 pin</td>
+					</tr>
+					<tr>
+						<td>Особенности</td>
+						<td>Поддержка UHD 4K<br>Поддержка UHD 8K<br>Поддержка VR<br>Поддержка от 3 мониторов<br>С бэкплейтом</td>
+					</tr>
+					<tr>
+						<td>Страна регистрации бренда</td>
+						<td>Китай (Тайвань)</td>
+					</tr>
+					<tr>
+						<td>Количество вентиляторов</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Занимаемых слотов</td>
+						<td>2</td>
+					</tr>
+				</table>
 			</div>
 		</main>
 
@@ -827,15 +1065,15 @@
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
 					</ul>
 				</div>
 			</div>
