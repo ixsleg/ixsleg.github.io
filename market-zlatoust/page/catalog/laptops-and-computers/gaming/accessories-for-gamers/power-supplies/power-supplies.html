@@ -1,142 +1,128 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="icon" href="../../../../../img/logo.png">
-		<link rel="stylesheet" href="../../../../../css/style.css">
+		<link rel="icon" href="../../../../../../img/logo.png">
+		<link rel="stylesheet" href="../../../../../../css/style.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-		<title>Комплектующие для геймеров</title>
+		<title>Блоки питания</title>
 
 		<style>
-			.page-tabs{
-				padding: 30px 175px;
-			}
-			@media(max-width: 768px){
-				.page-tabs{
-					padding: 10px 35px;
-				}	
-			}
-			.page-tabs a{
-				color: #1e90ff;
-				font-size: 14px;
+			aside{
+				border-right: 1px solid rgba(0, 0, 0, 0.3);
+				height: 100px;
+				float: left;
 				font-style: italic;
-				text-decoration: none;
-			}
-			.page-tabs a:hover{
-				color: #ff4500;
-				text-decoration: underline;
-			}
-			.page-tabs span{
-				color: rgba(0, 0, 0, 0.5);
-				font-weight: bold;
-				padding-left: 10px;
-				padding-right: 10px;
-			}
-
-			main h1{
-				font-size: 40px;
-				font-weight: normal;
-				padding: 15px 15px;
-				word-spacing: 10px;
+				width: 11.3%;
 			}
 			@media(max-width: 768px){
-				main h1{
-					font-size: 33px;
-					padding: 0;
-					padding-left: 5px;
-					word-spacing: 0;
+				aside{
+					display: none;
 				}
 			}
 
-			.accessories-for-gamers-menu-catalog{
-				margin-top: 50px;
-			}
-			.accessories-for-gamers-menu-catalog a{
-				color: #1e90ff;
-				font-size: 17px;
-				font-style: italic;
-				text-decoration: none;
-			}
-			.accessories-for-gamers-menu-catalog a:hover{
-				color: #ff4500;
-				text-decoration: underline;
-			}
 
-			.accessories-for-gamers-menu-catalog-row{
-				display: flex;
-				justify-content: center;
-				margin-top: 50px;
-			}
-
-			.accessories-for-gamers-menu-catalog-colum{
-				display: flex;
-				flex-direction: none;
+			main{
+				margin-left: 227px;
+				width: 87.8%;
 			}
 			@media(max-width: 768px){
-				.accessories-for-gamers-menu-catalog-colum{
-					flex-direction: column;
-				}
-			}
-
-			.container-btn{
-				border-right: 1px solid rgba(0, 0, 0, 0.1);
-				padding-left: 16px;
-				padding-right: 16px;
-			}
-			@media(max-width: 768px){
-				.container-btn{
-					margin-top: 5px;
-				}
-			}
-			@media(max-width: 400px){
-				.container-btn img{
-					width: 360px;
-				}
-			}
-
-			.page-description{
-				display: flex;
-				font-size: 14px;
-				justify-content: center;
-				margin-top: 30px;
-			}
-
-			.page-description-container{
-				width: 1200px;
-			}
-			@media(max-width: 400px){
-				.page-description-container p{
-					max-width: 395px;
-					width: 755px;
-				}
-			}
-			@media(max-width: 768px){
-				.page-description-container p{
-					padding-left: 3px;
-					width: 755px;
-				}
-			}
-			.page-description-container ul{
-				font-size: 13px;
-				padding-left: 15px;
-			}
-			@media(max-width: 400px){
-				.page-description-container ul{
-					max-width: 395px;
-					width: 755px;
-				}
-			}
-			@media(max-width: 768px){
-				.page-description-container ul{
-					padding-left: 19px;
-					width: 755px;
+				main{
+					margin-left: 0;
 				}
 			}
 
 			footer{
 				margin-top: 20px;
+			}
+
+			.computers-content{
+				height: auto;
+				width: 100%;
+			}
+
+			.card-product-row{
+				display: flex;
+				justify-content: center;
+				margin-top: 5px;
+				overflow: hidden;
+			}
+			@media(max-width: 768px){
+				.card-product-row{
+					margin-left: 62px;
+					margin-top: 0;
+					width: 100%;
+				}
+			}
+
+			.card-product-colum{
+				display: flex;
+				flex-direction: none;
+			}
+			@media(max-width: 400px){
+				.card-product-colum{
+					flex-direction: column;
+				}
+			}
+			@media(max-width: 768px){
+				.card-product-colum{
+					display: grid;
+					grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+					width: 100%;
+				}
+			}
+
+			.card-product{
+				background: rgba(255, 255, 255, 0.5);
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				transition: 0.3s;
+				width: 280px;
+			}
+			@media(max-width: 768px){
+				.card-product{
+					margin-top: 3px;
+				}
+			}
+			.card-product a{
+				color: #000000;
+				text-decoration: none;
+			}
+			.card-product img{
+				border: 1px solid rgba(0, 0, 0, 0.2);
+			}
+			.card-product:hover{
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+			}
+			.card-product-main{
+				width: 100%;
+			}
+			.card-product-main h4{
+				padding: 1px 5px;
+			}
+			.card-product-main p{
+				padding: 2px 16px;
+			}
+			.card-product-discount{
+				color: red;
+				float: right;
+			}
+			.card-product-btn{
+				background: rgb(231, 198, 67);
+				border: 1px solid #000000;
+				border-radius: 2px;
+				color: #000000;
+				cursor: pointer;
+				font-weight: bold;
+				outline: none;
+				width: 100%;
+				transition: all 0.3s;
+			}
+			.card-product-btn:hover{
+				background: rgb(234, 64, 64);
+				border: 1px solid rgba(0, 0, 0, 0.5);
+				color: #f5f6f8;
 			}
 		</style>
 	</head>
@@ -146,13 +132,13 @@
 			<div class="panel">
 				<label class="panel-btn-close" for="panel-checkbox">&#215;</label>
 
-				<div class="panel-name-market"><img src="../../../../../img/logo.png" width="30" height="30"><a href="../../../../../index.html">Барахолка Златоуст</a></div><br>
+				<div class="panel-name-market"><img src="../../../../../../img/logo.png" width="30" height="30"><a href="../../../../../../index.html">Барахолка Златоуст</a></div><br>
 
-				<div class="panel-contact"><img src="../../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
+				<div class="panel-contact"><img src="../../../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
 
 				<div class="panel-log-in">
-					<img src="../../../../../img/log-in.png" width="30" height="30">
-					<p><a href="../../../../authorization.html">Вход</a> | <a href="../../../../registration.html">Регистрация</a></p>
+					<img src="../../../../../../img/log-in.png" width="30" height="30">
+					<p><a href="../../../../../authorization.html">Вход</a> | <a href="../../../../../registration.html">Регистрация</a></p>
 					<p class="panel-log-in-text">Авторизуйтесь для получения расширенных возможностей</p>
 				</div><br>
 
@@ -163,10 +149,10 @@
 				</button>
 
 				<ul class="panel-menu">
-					<a href="../../../catalog.html"><li><img src="../../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
-					<a href=""><li><img src="../../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
-					<a href=""><li><img src="../../../../../img/basket.png" width="30" height="30">Корзина</li></a>
-					<a href=""><li><img src="../../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
+					<a href="../../../../catalog.html"><li><img src="../../../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
+					<a href=""><li><img src="../../../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
+					<a href=""><li><img src="../../../../../../img/basket.png" width="30" height="30">Корзина</li></a>
+					<a href=""><li><img src="../../../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
 				</ul>
 
 				<hr>
@@ -180,7 +166,7 @@
 
 				<hr>
 
-				<div class="panel-call-help"><a href=""><img src="../../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
+				<div class="panel-call-help"><a href=""><img src="../../../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
 			</div>
 
 			<div class="panel-btn-wrap">
@@ -191,21 +177,21 @@
 			</div>
 
 			<div class="logo-name">
-				<a href="../../../../../index.html"><img src="../../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
+				<a href="../../../../../../index.html"><img src="../../../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
 			</div>
 
 			<div class="open-catalog">
-				<a href="#open-modal-catalog"><img src="../../../../../img/catalog.png" width="35" height="35">Каталог</a>
+				<a href="#open-modal-catalog"><img src="../../../../../../img/catalog.png" width="35" height="35">Каталог</a>
 			</div>
 			<div class="modal-catalog">
 				<a href="" class="overlay" id="open-modal-catalog"></a>
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
-						<li><a href="../../laptops-and-computers.html"><img src="../../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
+						<li><a href="../../../laptops-and-computers.html"><img src="../../../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
+										<li><a href="../../../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
 										<li><a href="">Asus</a></li>
 										<li><a href="">HP</a></li>
 										<li><a href="">Lenovo</a></li>
@@ -233,8 +219,8 @@
 									</ul>
 
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../../computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
-										<li><a href="../../monitors/monitors.html">Мониторы</a></li>
+										<li><a href="../../../computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
+										<li><a href="../../../monitors/monitors.html">Мониторы</a></li>
 										<li><a href="">Мыши</a></li>
 										<li><a href="">Клавиатуры</a></li>
 										<li><a href="">Комплект: клавиатура+мышь</a></li>
@@ -263,7 +249,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -323,7 +309,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -379,7 +365,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -437,7 +423,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -482,7 +468,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -548,7 +534,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -603,7 +589,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -664,7 +650,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -734,132 +720,180 @@
 
 			<div class="log-in">
 				<div>
-					<a href="#open-modal-log-in"><img src="../../../../../img/log-in.png" width="30" height="30"></a>
+					<a href="#open-modal-log-in"><img src="../../../../../../img/log-in.png" width="30" height="30"></a>
 				</div>
 			</div>
 			<div class="modal-log-in">
 				<a href="" class="overlay" id="open-modal-log-in"></a>
 				<div class="modal-log-in-content">
 					<h2>Личный кабинет</h2>
-					<div class="modal-log-in-btn"><a href="../../../../authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../../../registration.html">Зарегистрировать</a></div>
+					<div class="modal-log-in-btn"><a href="../../../../../authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../../../../registration.html">Зарегистрировать</a></div>
 				</div>
 			</div>
 
 			<div class="basket">
-				<a href=""><img src="../../../../../img/basket.png" width="30" height="30"></a>
+				<a href=""><img src="../../../../../../img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
 
+		<aside>
+			
+		</aside>
+
 		<main>
-			<div class="page-tabs">
-				<a href="../../../../../index.html" style=" font-size: 16px; font-style: normal;">☖</a> <span>></span> <a href="../../laptops-and-computers.html">Компьютеры и ноутбуки</a> <span>></span> <a href="../gaming.html">Товары для геймеров</a>
-			</div>
+			<div class="power-supplies-content">
+				<div class="power-supplies-container">
+					<div class="card-product-row">
+						<div class="card-product-colum">
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/280/280.html">
+										<img src="../../../../../../products/280/0.jpg" width="280" height="300">
+										<h4>Chieftec Proton BDF-650C 650W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">4 713<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-			<h1>Комплектующие для геймеров</h1>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/281/281.html">
+										<img src="../../../../../../products/281/0.jpg" width="280" height="300">
+										<h4>Asus ROG Thor 850W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">20 825<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-			<div class="accessories-for-gamers-menu-catalog">
-				<div class="accessories-for-gamers-menu-catalog-row">
-					<div class="accessories-for-gamers-menu-catalog-colum">
-						<div class="container-btn">
-							<a href="video-cards/video-cards.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/0.jpg" width="368" height="245"><br>
-								<a href="video-cards/video-cards.html" style="padding-left: 135px;">Видеокарты</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/282/282.html">
+										<img src="../../../../../../products/282/0.jpg" width="280" height="300">
+										<h4>Aerocool VX 800 Plus 800W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">3 818<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="processors/processors.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/1.jpg" width="368" height="245"><br>
-								<a href="processors/processors.html" style="padding-left: 123px;">Процессоры</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/283/283.html">
+										<img src="../../../../../../products/283/0.jpg" width="280" height="300">
+										<h4>Zalman GigaMax ZM550-GVII APFC</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">3 660<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="ram/ram.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/2.jpg" width="368" height="245"><br>
-								<a href="ram/ram.html" style="padding-left: 92px;">Оперативная память</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/284/284.html">
+										<img src="../../../../../../products/284/0.jpg" width="280" height="300">
+										<h4>DeepCool 500W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">2 095<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="motherboards/motherboards.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/3.jpg" width="368" height="245"><br>
-								<a href="motherboards/motherboards.html" style="padding-left: 98px;">Материнские платы</a>
-							</a>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/285/285.html">
+										<img src="../../../../../../products/285/0.jpg" width="280" height="300">
+										<h4>be quiet! System Power 9 700W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">5 793<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="accessories-for-gamers-menu-catalog-row">
-					<div class="accessories-for-gamers-menu-catalog-colum">
-						<div class="container-btn">
-							<a href="hard-drives/hard-drives.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/4.jpg" width="368" height="245"><br>
-								<a href="hard-drives/hard-drives.html" style="padding-left: 130px;">Жесткие диски</a>
-							</a>
-						</div>
+					<div class="card-product-row">
+						<div class="card-product-colum">
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/286/286.html">
+										<img src="../../../../../../products/286/0.jpg" width="280" height="300">
+										<h4>be quiet! System Power 9 600W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">4 871<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="power-supplies/power-supplies.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/5.jpg" width="368" height="245"><br>
-								<a href="power-supplies/power-supplies.html" style="padding-left: 130px;">Блоки питания</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/287/287.html">
+										<img src="../../../../../../products/287/0.jpg" width="280" height="300">
+										<h4>be quiet! Straight Power 11 750W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">11 062<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="cooling-systems/cooling-systems.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/6.jpg" width="368" height="245"><br>
-								<a href="cooling-systems/cooling-systems.html" style="padding-left: 92px;">Системы охлаждения</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/288/288.html">
+										<img src="../../../../../../products/288/0.jpg" width="280" height="300">
+										<h4>Aerocool VX Plus 400 400W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">1 578<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../../img/laptops-and-computers/gaming/accessories-for-gamers/7.jpg" width="368" height="245"><br>
-								<a href="" style="padding-left: 150px;">Корпуса</a>
-							</a>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/289/289.html">
+										<img src="../../../../../../products/289/0.jpg" width="280" height="300">
+										<h4>Aerocool VX Plus 500 500W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">1 974<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
+
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/290/290.html">
+										<img src="../../../../../../products/290/0.jpg" width="280" height="300">
+										<h4>DeepCool 850W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">9 208<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
+
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/291/291.html">
+										<img src="../../../../../../products/291/0.jpg" width="280" height="300">
+										<h4>Chieftec Proton 750W</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">5 714<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<div class="page-description">
-				<div class="page-description-container">
-					<p>В киберспорте сложно переоценить важность качественных комплектующих для геймеров, от них напрямую зависит их эффективность в игре. Высокая производительность и запредельное быстродействие компьютера существенно расширяют возможности пользователя, делают его практически всемогущим. Мощные процессоры, емкие накопители и надежные блоки питания – вот далеко не полный перечень элементов, от которых зависит успех игрока и всей команды в турнирах.<br>
-					<br>
-					Каталог компьютерных комплектующих<br>
-					Интернет-магазин Барахолка Златоуст предлагает широкий выбор электронных компонентов для специализированных геймерских станций. Игровые компьютеры отличаются высочайшими техническими характеристиками, которые им необходимы для обработки ресурсоемкого контента. В данном разделе каталога представлен наиболее полный ассортимент качественных комплектующих от ведущих мировых производителей:</p>
-					<br>
-					<ul>
-						<li>Процессоры. Важнейшие характеристики: высокая производительность, тактовая частота и быстродействие.</li>
-						<li>Материнские платы. Это основа любого компьютера, обеспечивающая сопряжение всех компонентов, и от ее надежности зависит работоспособность игрового комплекса в целом.</li>
-						<li>Оперативная память. Большая емкость RAM позволяет обрабатывать огромные информационные массивы. На современных массивах используют ОЗУ типа GDDR5 и GDDR6 объемом 16 Гб и выше.</li>
-						<li>Видеокарты. Данный модуль имеет собственный процессор и оперативную память, которые и обеспечивают пиксельную и текстурную заполняемость экрана. На геймерских моделях применяются игровые видеоускорители,</li>обеспечивающие динамическое воспроизведение трехмерной графики.</li>
-						<li>Жесткие диски. Встраиваемая память для геймерских компьютеров отличается огромной емкостью не менее 500 Гб. В настоящее время наряду с традиционными винчестерами используются накопители типа SSD чудовищного</li>объема в 1 Тб.</li>
-						<li>Блоки питания. Обеспечивают стабильное электроснабжение всех электронных компонентов компьютера с необходимыми характеристиками.</li>
-						<li>Системы охлаждения. Работающие кулеры отводят избыточное тепло от электронных схем и производительность вентиляторов должна быть достаточной для исключения возможности их перегрева.</li>
-						<li>Корпуса. Современный дизайн предлагаемых изделий и мерцающая светодиодная подсветка ассоциируется с игровым процессом и позволяет настроиться должным образом.</li>
-						<li>Эффективность игрового компьютера напрямую зависит от каждого из его компонентов. Экономия на составляющих частях геймерской станции недопустима. Это часто приводит к ухудшению результативности пользователя.</li>
-					</ul>
-					<br>
-					<p>Использование фирменных комплектующих для создания и апгрейда игровых станций<br>
-					Часто профессиональные геймеры заказывают компьютеры в специальных версиях исполнения. Для этих целей нужны комплектующие с соответствующими характеристиками. Они также потребуются, если пользователь решил сделать апгрейд своего «железа». Установка более мощного и производительного процессора, а также быстрого SSD-накопителя позволяет разогнать компьютер. Модернизированная машина поддерживает самые требовательные ресурсоемкие игры.<br>
-					<br>
-					Преимущества оригинальных электронных компонентов<br>
-					Расширение возможностей вашего игрового компьютера возможно, если для его совершенствования будут использованы модули от ведущих мировых производителей. Применение оригинальных комплектующих для сборки и модернизации геймерских станций обеспечивает массу преимуществ:</p>
-					<br>
-					<ul>
-						<li>Повышает технические характеристики.</li>
-						<li>Улучшает эксплуатационные качества.</li>
-						<li>Расширяет функциональные возможности.</li>
-					</ul>
-					<br>
-					<p>Применение предлагаемых комплектующих позволит профессионалам добиться новых высот в киберспорте. Любителям же станут доступны самые продвинутые игры с запредельными требованиями к аппаратной части.<br>
-					<br>
-					Выбор и покупка комплектующих для геймеров: основные критерии<br>
-					Широкий ассортимент и разнообразие электронных компонентов в каталоге Барахолка Златоуст позволяют пользователю подобрать модули с нужными ему параметрами в нескольких вариантах. Персонал интернет-магазина предоставляет пользователям информационную поддержку и готов оказать помощь в выборе товаров и оформлении заказа на их приобретение.<br>
-					<br>
-					Воспользуйтесь возможностью купить комплектующие для игрового ПК онлайн. Цены на компьютерное оборудование для игр указаны в описаниях. Информация о стоимости и наличии товаров автоматических обновляется и в любой момент актуальна. Обеспечивается доставка приобретенных изделий почтовыми отправлениями или курьерами, забрать покупку можно также в одном из выставочных залов.</p>
 				</div>
 			</div>
 		</main>
@@ -879,15 +913,15 @@
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
 					</ul>
 				</div>
 			</div>
