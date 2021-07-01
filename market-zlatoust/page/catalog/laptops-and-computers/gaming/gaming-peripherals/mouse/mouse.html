@@ -1,142 +1,128 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="icon" href="../../../../../img/logo.png">
-		<link rel="stylesheet" href="../../../../../css/style.css">
+		<link rel="icon" href="../../../../../../img/logo.png">
+		<link rel="stylesheet" href="../../../../../../css/style.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-		<title>Игровая периферия</title>
+		<title>Мыши</title>
 
 		<style>
-			.page-tabs{
-				padding: 30px 175px;
-			}
-			@media(max-width: 768px){
-				.page-tabs{
-					padding: 10px 35px;
-				}	
-			}
-			.page-tabs a{
-				color: #1e90ff;
-				font-size: 14px;
+			aside{
+				border-right: 1px solid rgba(0, 0, 0, 0.3);
+				height: 100px;
+				float: left;
 				font-style: italic;
-				text-decoration: none;
-			}
-			.page-tabs a:hover{
-				color: #ff4500;
-				text-decoration: underline;
-			}
-			.page-tabs span{
-				color: rgba(0, 0, 0, 0.5);
-				font-weight: bold;
-				padding-left: 10px;
-				padding-right: 10px;
-			}
-
-			main h1{
-				font-size: 40px;
-				font-weight: normal;
-				padding: 15px 15px;
-				word-spacing: 10px;
+				width: 11.3%;
 			}
 			@media(max-width: 768px){
-				main h1{
-					font-size: 33px;
-					padding: 0;
-					padding-left: 5px;
-					word-spacing: 0;
+				aside{
+					display: none;
 				}
 			}
 
-			.gaming-peripherals-menu-catalog{
-				margin-top: 50px;
-			}
-			.gaming-peripherals-menu-catalog a{
-				color: #1e90ff;
-				font-size: 17px;
-				font-style: italic;
-				text-decoration: none;
-			}
-			.gaming-peripherals-menu-catalog a:hover{
-				color: #ff4500;
-				text-decoration: underline;
-			}
 
-			.gaming-peripherals-menu-catalog-row{
-				display: flex;
-				justify-content: center;
-				margin-top: 50px;
-			}
-
-			.gaming-peripherals-menu-catalog-colum{
-				display: flex;
-				flex-direction: none;
+			main{
+				margin-left: 227px;
+				width: 87.8%;
 			}
 			@media(max-width: 768px){
-				.gaming-peripherals-menu-catalog-colum{
-					flex-direction: column;
-				}
-			}
-
-			.container-btn{
-				border-right: 1px solid rgba(0, 0, 0, 0.1);
-				padding-left: 16px;
-				padding-right: 16px;
-			}
-			@media(max-width: 768px){
-				.container-btn{
-					margin-top: 5px;
-				}
-			}
-			@media(max-width: 400px){
-				.container-btn img{
-					width: 360px;
-				}
-			}
-
-			.page-description{
-				display: flex;
-				font-size: 14px;
-				justify-content: center;
-				margin-top: 30px;
-			}
-
-			.page-description-container{
-				width: 1200px;
-			}
-			@media(max-width: 400px){
-				.page-description-container p{
-					max-width: 395px;
-					width: 755px;
-				}
-			}
-			@media(max-width: 768px){
-				.page-description-container p{
-					padding-left: 3px;
-					width: 755px;
-				}
-			}
-			.page-description-container ul{
-				font-size: 13px;
-				padding-left: 15px;
-			}
-			@media(max-width: 400px){
-				.page-description-container ul{
-					max-width: 395px;
-					width: 755px;
-				}
-			}
-			@media(max-width: 768px){
-				.page-description-container ul{
-					padding-left: 19px;
-					width: 755px;
+				main{
+					margin-left: 0;
 				}
 			}
 
 			footer{
 				margin-top: 20px;
+			}
+
+			.computers-content{
+				height: auto;
+				width: 100%;
+			}
+
+			.card-product-row{
+				display: flex;
+				justify-content: center;
+				margin-top: 5px;
+				overflow: hidden;
+			}
+			@media(max-width: 768px){
+				.card-product-row{
+					margin-left: 62px;
+					margin-top: 0;
+					width: 100%;
+				}
+			}
+
+			.card-product-colum{
+				display: flex;
+				flex-direction: none;
+			}
+			@media(max-width: 400px){
+				.card-product-colum{
+					flex-direction: column;
+				}
+			}
+			@media(max-width: 768px){
+				.card-product-colum{
+					display: grid;
+					grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+					width: 100%;
+				}
+			}
+
+			.card-product{
+				background: rgba(255, 255, 255, 0.5);
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				transition: 0.3s;
+				width: 280px;
+			}
+			@media(max-width: 768px){
+				.card-product{
+					margin-top: 3px;
+				}
+			}
+			.card-product a{
+				color: #000000;
+				text-decoration: none;
+			}
+			.card-product img{
+				border: 1px solid rgba(0, 0, 0, 0.2);
+			}
+			.card-product:hover{
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+			}
+			.card-product-main{
+				width: 100%;
+			}
+			.card-product-main h4{
+				padding: 1px 5px;
+			}
+			.card-product-main p{
+				padding: 2px 16px;
+			}
+			.card-product-discount{
+				color: red;
+				float: right;
+			}
+			.card-product-btn{
+				background: rgb(231, 198, 67);
+				border: 1px solid #000000;
+				border-radius: 2px;
+				color: #000000;
+				cursor: pointer;
+				font-weight: bold;
+				outline: none;
+				width: 100%;
+				transition: all 0.3s;
+			}
+			.card-product-btn:hover{
+				background: rgb(234, 64, 64);
+				border: 1px solid rgba(0, 0, 0, 0.5);
+				color: #f5f6f8;
 			}
 		</style>
 	</head>
@@ -146,13 +132,13 @@
 			<div class="panel">
 				<label class="panel-btn-close" for="panel-checkbox">&#215;</label>
 
-				<div class="panel-name-market"><img src="../../../../../img/logo.png" width="30" height="30"><a href="../../../../../index.html">Барахолка Златоуст</a></div><br>
+				<div class="panel-name-market"><img src="../../../../../../img/logo.png" width="30" height="30"><a href="../../../../../../index.html">Барахолка Златоуст</a></div><br>
 
-				<div class="panel-contact"><img src="../../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
+				<div class="panel-contact"><img src="../../../../../../img/phone.jpg" width="30" height="30">+7 712 993 2898</div><br>
 
 				<div class="panel-log-in">
-					<img src="../../../../../img/log-in.png" width="30" height="30">
-					<p><a href="../../../../authorization.html">Вход</a> | <a href="../../../../registration.html">Регистрация</a></p>
+					<img src="../../../../../../img/log-in.png" width="30" height="30">
+					<p><a href="../../../../../authorization.html">Вход</a> | <a href="../../../../../registration.html">Регистрация</a></p>
 					<p class="panel-log-in-text">Авторизуйтесь для получения расширенных возможностей</p>
 				</div><br>
 
@@ -163,10 +149,10 @@
 				</button>
 
 				<ul class="panel-menu">
-					<a href="../../../catalog.html"><li><img src="../../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
-					<a href=""><li><img src="../../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
-					<a href=""><li><img src="../../../../../img/basket.png" width="30" height="30">Корзина</li></a>
-					<a href=""><li><img src="../../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
+					<a href="../../../../catalog.html"><li><img src="../../../../../../img/catalog.png" width="30" height="30">Каталог</li></a>
+					<a href=""><li><img src="../../../../../../img/question.png" width="30" height="30">Справочный центр</li></a>
+					<a href=""><li><img src="../../../../../../img/basket.png" width="30" height="30">Корзина</li></a>
+					<a href=""><li><img src="../../../../../../img/libra.png" width="30" height="30">Сравнения</li></a>
 				</ul>
 
 				<hr>
@@ -180,7 +166,7 @@
 
 				<hr>
 
-				<div class="panel-call-help"><a href=""><img src="../../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
+				<div class="panel-call-help"><a href=""><img src="../../../../../../img/phone.jpg" width="30" height="30">Служба поддержки</a></div>
 			</div>
 
 			<div class="panel-btn-wrap">
@@ -191,21 +177,21 @@
 			</div>
 
 			<div class="logo-name">
-				<a href="../../../../../index.html"><img src="../../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
+				<a href="../../../../../../index.html"><img src="../../../../../../img/logo.png" width="50" height="50">Барахолка Златоуст</a>
 			</div>
 
 			<div class="open-catalog">
-				<a href="#open-modal-catalog"><img src="../../../../../img/catalog.png" width="35" height="35">Каталог</a>
+				<a href="#open-modal-catalog"><img src="../../../../../../img/catalog.png" width="35" height="35">Каталог</a>
 			</div>
 			<div class="modal-catalog">
 				<a href="" class="overlay" id="open-modal-catalog"></a>
 				<div class="modal-catalog-content">
 					<ul class="modal-catalog-menu">
-						<li><a href="../../laptops-and-computers.html"><img src="../../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
+						<li><a href="../../../laptops-and-computers.html"><img src="../../../../../../img/icons-modal-catalog/notebook.png" width="25" height="25">Ноутбуки и компьюетры<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
+										<li><a href="../../../laptops/laptops.html" style="color: #1e90ff; font-size: 14px;">Ноутбуки</a></li>
 										<li><a href="">Asus</a></li>
 										<li><a href="">HP</a></li>
 										<li><a href="">Lenovo</a></li>
@@ -233,8 +219,8 @@
 									</ul>
 
 									<ul class="modal-catalog-submenu-block">
-										<li><a href="../../computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
-										<li><a href="../../monitors/monitors.html">Мониторы</a></li>
+										<li><a href="../../../computers/computers.html" style="color: #1e90ff; font-size: 14px;">Компьютеры</a></li>
+										<li><a href="../../../monitors/monitors.html">Мониторы</a></li>
 										<li><a href="">Мыши</a></li>
 										<li><a href="">Клавиатуры</a></li>
 										<li><a href="">Комплект: клавиатура+мышь</a></li>
@@ -263,7 +249,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/smartphone.png" width="25" height="25">Смартфоны, TV и электроника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -323,7 +309,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/washer.png" width="25" height="25">Бытовая техника<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -379,7 +365,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/armchair.png" width="25" height="25">Товары для дома<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -437,7 +423,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/rake.png" width="25" height="25">Дача, сад и огород<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -482,7 +468,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/shirt.png" width="25" height="25">Одежда, обувь и украшения<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -548,7 +534,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/bottle-of-perfume.png" width="25" height="25">Красота и здоровье<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -603,7 +589,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/panda.png" width="25" height="25">Детские товары<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -664,7 +650,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href=""><img src="../../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
+						<li><a href=""><img src="../../../../../../img/icons-modal-catalog/clip.png" width="25" height="25">Концтовары и книги<span style="float: right;">></span></a>
 							<div class="modal-catalog-submenu">
 								<div class="modal-catalog-submenu-row">
 									<ul class="modal-catalog-submenu-block">
@@ -734,141 +720,180 @@
 
 			<div class="log-in">
 				<div>
-					<a href="#open-modal-log-in"><img src="../../../../../img/log-in.png" width="30" height="30"></a>
+					<a href="#open-modal-log-in"><img src="../../../../../../img/log-in.png" width="30" height="30"></a>
 				</div>
 			</div>
 			<div class="modal-log-in">
 				<a href="" class="overlay" id="open-modal-log-in"></a>
 				<div class="modal-log-in-content">
 					<h2>Личный кабинет</h2>
-					<div class="modal-log-in-btn"><a href="../../../../authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../../../registration.html">Зарегистрировать</a></div>
+					<div class="modal-log-in-btn"><a href="../../../../../authorization.html">Войти</a><span style="font-size: 40px;">|</span><a href="../../../../../registration.html">Зарегистрировать</a></div>
 				</div>
 			</div>
 
 			<div class="basket">
-				<a href=""><img src="../../../../../img/basket.png" width="30" height="30"></a>
+				<a href=""><img src="../../../../../../img/basket.png" width="30" height="30"></a>
 			</div>
 		</header>
 
+		<aside>
+			
+		</aside>
+
 		<main>
-			<div class="page-tabs">
-				<a href="../../../../../index.html" style=" font-size: 16px; font-style: normal;">☖</a> <span>></span> <a href="../../laptops-and-computers.html">Компьютеры и ноутбуки</a> <span>></span> <a href="../gaming.html">Товары для геймеров</a>
-			</div>
+			<div class="mouse-content">
+				<div class="mouse-container">
+					<div class="card-product-row">
+						<div class="card-product-colum">
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/328/328.html">
+										<img src="../../../../../../products/328/0.jpg" width="280" height="300">
+										<h4>Мышь Logitech G Pro Gaming Wireless Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">12 056<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-			<h1>Игровая периферия</h1>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/329/329.html">
+										<img src="../../../../../../products/329/0.jpg" width="280" height="300">
+										<h4>Мышь Razer Viper Ultimate Wireless & Mouse Dock</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">12 324<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-			<div class="gaming-peripherals-menu-catalog">
-				<div class="gaming-peripherals-menu-catalog-row">
-					<div class="gaming-peripherals-menu-catalog-colum">
-						<div class="container-btn">
-							<a href="headphones/headphones.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/0.jpg" width="352" height="184"><br>
-								<a href="headphones/headphones.html" style="padding-left: 132px;">Наушники</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/330/330.html">
+										<img src="../../../../../../products/330/0.jpg" width="280" height="300">
+										<h4>Мышь Razer DeathAdder V2 Mini USB Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">3 213<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="mouse/mouse.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/1.jpg" width="352" height="184"><br>
-								<a href="mouse/mouse.html" style="padding-left: 145px;">Мыши</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/331/331.html">
+										<img src="../../../../../../products/331/0.jpg" width="280" height="300">
+										<h4>Мышь Logitech G305 Wireless Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">5 062<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="keyboards/keyboards.html">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/2.jpg" width="352" height="184"><br>
-								<a href="keyboards/keyboards.html" style="padding-left: 120px;">Клавиатуры</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/332/332.html">
+										<img src="../../../../../../products/332/0.jpg" width="280" height="300">
+										<h4>Мышь Logitech G Pro X Superlight Wireless Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">13 395<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/3.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 105px;">Игровые коврики</a>
-							</a>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/333/333.html">
+										<img src="../../../../../../products/333/0.jpg" width="280" height="300">
+										<h4>Мышь Razer Basilisk Ultimate Wireless & Mouse Dock</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">13 395<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="gaming-peripherals-menu-catalog-row">
-					<div class="gaming-peripherals-menu-catalog-colum">
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/4.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 64px;">Манипуляторы, джойстики</a>
-							</a>
-						</div>
+					<div class="card-product-row">
+						<div class="card-product-colum">
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/334/334.html">
+										<img src="../../../../../../products/334/0.jpg" width="280" height="300">
+										<h4>Мышь Asus ROG Pugio II Wireless/Bluetooth/USB Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">8 036<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/5.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 88px;">Геймейрские креса</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/335/335.html">
+										<img src="../../../../../../products/335/0.jpg" width="280" height="300">
+										<h4>Мышь Xtrfy M4 RGB USB Glossy Gray</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">5 089<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/6.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 85px;">Компьютерные столы</a>
-							</a>
-						</div>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/336/336.html">
+										<img src="../../../../../../products/336/0.jpg" width="280" height="300">
+										<h4>Мышь HyperX Pulsefire Surge USB Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">4 553<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 
-						<div class="container-btn">
-							<a href="">
-								<img src="../../../../../img/laptops-and-computers/gaming/gaming-peripherals/7.jpg" width="352" height="184"><br>
-								<a href="" style="padding-left: 85px;">Геймерские рюкзаки</a>
-							</a>
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/337/337.html">
+										<img src="../../../../../../products/337/0.png" width="280" height="300">
+										<h4>Мышь Hator Pulsar Essential USB Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">1 606<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
+
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/338/338.html">
+										<img src="../../../../../../products/338/0.jpg" width="280" height="300">
+										<h4>Мышь Bloody W70 Max USB Stone Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">2 409<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
+
+							<div class="card-product">
+								<div class="card-product-main">
+									<a href="../../../../../../products/339/339.html">
+										<img src="../../../../../../products/339/0.jpg" width="280" height="300">
+										<h4>Мышь HyperX Pulsefire Haste USB Black</h4>
+										<p style="font-size: 13px; color: green;">В наличии</p>
+										<p style="font-weight: bold">3 749<span style="font-family: Rouble">i</span></p>
+									</a>
+									<button class="card-product-btn">В корзину</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<div class="page-description">
-				<div class="page-description-container">
-					<p>Для настоящего продвинутого геймера игровая периферия – не роскошь, а насущная необходимость. Качественные гаджеты и аксессуары позволяют существенно улучшить свои показатели, заметно поднять уровень своего мастерства. Специализированные устройства расширяют возможности человека, позволяют быстрее получать информацию об игровом процессе и оставляют больше времени на адекватное реагирование на ситуацию в игре.<br>
-					<br>
-					Для тех, кто занимается киберспортом на профессиональном уровне, хорошая фирменная периферия является одним из условий высоких достижений в виртуальных турнирах. Качественные брендовые гаджеты существенно повышают статус геймера или команды в сообществе, играют на повышение их имиджа. Этот момент не является определяющим и решающим, но в совокупности с другими факторами может поколебать уверенность соперников в своих силах и помочь в достижении победы.<br>
-					<br>
-					Каталог геймерской периферии
-					В каталоге ROZETKA представлен обширный ассортимент разнообразных устройств, обеспечивающих взаимодействие пользователя с компьютером. Геймерам предлагаются следующие разновидности устройств игровой периферии от ведущих мировых производителей:</p>
-					<br>
-					<ul>
-						<li>Мониторы. Устройства отображения визуальной информации с высоким разрешением, отличной цветопередачей и хорошей детализацией позволяют отслеживать и контролировать игровой процесс. Качественная динамичная картинка обеспечивает возможность предугадывания намерений соперника.</li>
-						<li>Геймпады. Джойстики с анатомическими ручками и удобно расположенными кнопками необходимы не только тем, кто использует консоли и мобильные устройства, их можно использовать и с обычными компьютерами и ноутбуками.</li>
-						<li>Мышки. Геймеру приходится удерживать в руке манипулятор в течение долгих часов, и от его формы и используемых материалов зависит многое. Продуманная эргономика и приятная фактура поверхностей снимают усталость с кисти, а быстрые и точные реакции на нажатие кнопок способствуют повышению игровой эффективности.</li>
-						<li>Акустика и микрофоны. Объемный стереозвук – это не просто сопровождение игры, но еще и ценная информация о ходе процесса. Качественные колонки и наушники позволяют слушать и улавливать малейшие нюансы. Гарнитуры или настольные микрофоны позволяют поддерживать связь с партнерами по команде.</li>
-						<li>Клавиатуры. Профессиональное геймерское устройство должно выдержать множество нажатий на клавиши и часто довольно сильных, а значит, лучше выбирать механические модели. Мягкая светодиодная подсветка является приятным бонусом.</li>
-						<li>Дополнительное оборудование и аксессуары. Источники бесперебойного питания, оптические приводы и накопители, встраиваемые и внешние, также коврики, USB-хабы и другие устройства необходимы для обеспечения работы компьютера и успешного игрового процесса.</li>
-					</ul>
-					<br>
-					<p>В игре на профессиональном уровне нет мелочей. Важно все – от удобства компьютерного стола и эргономики геймерского кресла до надежности контактов в соединениях. В каталоге вы найдете фирменные кабели с разъемами всех существующих стандартов для подключения перечисленных устройств.<br>
-					<br>
-					Особенности использования игровой периферии<br>
-					<br>
-					Применение профессиональных гаджетов для комплектования геймерских станций оправдано не только в киберспорте. Если вы желаете получить настоящее удовольствие от процесса игры – не экономьте на периферии:</p>
-					<br>
-					<ul>
-						<li>Большой монитор, а лучше пара или тройка в сочетании с качественной акустикой обеспечивают глубокое погружение в игровой мир.</li>
-						<li>Использование очков. Шлемы виртуальной реальности и специальные перчатки и вовсе создают эффект присутствия.</li>
-						<li>В ходе игры важна скорость реакции геймера не те или иные события, и обеспечить их может только специальная мышка или джойстик с большим набором дополнительных кнопок и клавиш, удобно расположенных и очень чувствительных к нажатиям.</li>
-						<li>Максимально полное удовольствие от симуляторов позволяют получить соответствующие антуражу системы управления: автомобильные рули, педали, штурвалы и джойстики в виде рычага.</li>
-					</ul>
-					<br>
-					<p>Для переноски компьютерной периферии рекомендуется использовать специальные рюкзаки с множеством карманов. Они отличаются вместительностью, в них ничего не теряется и не ломается.<br>
-					<br>
-					Преимущества фирменной компьютерной периферии<br>
-					Для каждого вида деятельности нужен специализированный инструмент и снаряжение, киберспорт не является исключением из этого правила. Добиться значимых результатов возможно только полностью используя все возможности игрового компьютера и преимущества профессиональной периферии:</p>
-					<br>
-					<ul>
-						<li>высокая надежность гаджетов;</li>
-						<li>отличная эргономика;</li>
-						<li>превосходные технические параметры.</li>
-					</ul>
-					<br>
-					<p>Выбор и приобретение игровой периферии
-					Интернет-магазин Барахолка Златоуст предлагает фирменные компьютерные устройства и сопутствующие товары. При выборе нужной вам геймерской периферии необходимо обращать внимание на технические параметры и совместимость с имеющимся оборудованием. Приобретая тот или иной девайс, не забудьте о кабелях для его подключения.<br>
-					<br>
-					У вас есть возможность выбрать и купить аксессуары для геймеров с доставкой в любой из населенных пунктов Украины. Транспортировка приобретаемых товаров клиентов осуществляется почтовыми и курьерскими службами. В ряде городов имеются выставочные залы, где можно самостоятельно забрать ваши покупки</p>
 				</div>
 			</div>
 		</main>
@@ -888,15 +913,15 @@
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/phone.jpg" width="30" height="30" style="float: left; margin-right: 10px;"> +7 712 993 2898</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/post-office.png" width="30" height="30" style="float: left; margin-right: 10px;">info@market-zlatust.ru</a></li>
 					</ul>
 
 					<ul class="footer-menu-block">
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
-						<li style="line-height: 32px;"><a href=""><img src="../../../../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/facebook.png" width="30" height="30" style="float: left; margin-right: 10px;">Facebook</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/vk.png" width="30" height="30" style="float: left; margin-right: 10px;">VK</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/instagram.png" width="30" height="30" style="float: left; margin-right: 10px;">Instagram</a></li>
+						<li style="line-height: 32px;"><a href=""><img src="../../../../../../img/footer-social-networks-icons/twitter.png" width="30" height="30" style="float: left; margin-right: 10px;">Twitter</a></li>
 					</ul>
 				</div>
 			</div>
