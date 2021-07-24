@@ -23,14 +23,14 @@ header{
 .header-1 a{
 	color: rgb(255, 36, 12);
 	font-weight: bold;
-	padding-left: 395px;
-	padding-right: 395px;
+	padding-left: 400px;
+	padding-right: 400px;
 	transition: 1.5s all;
 }
 @media(max-width: 400px){
 	.header-1 a{
-		padding-left: 23px;
-		padding-right: 23px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 .header-1 a:hover{
