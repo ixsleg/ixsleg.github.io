@@ -29,8 +29,11 @@ header{
 }
 @media(max-width: 400px){
 	.header-1 a{
-		padding-left: 19px;
-		padding-right: 19px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 .header-1 a:hover{
