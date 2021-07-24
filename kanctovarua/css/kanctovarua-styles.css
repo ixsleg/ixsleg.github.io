@@ -66,7 +66,6 @@ header{
 .navigation-menu-site ul{
 	background: rgb(255, 36, 12);
 	list-style: none;
-	width: 100%;
 }
 .navigation-menu-site ul li a{
 	color: #ffffff;
@@ -81,8 +80,8 @@ header{
 }
 
 .pc-version-navmenu li{
-	padding-left: 130px;
-	padding-right: 130px;
+	padding-left: 122px;
+	padding-right: 122px;
 }
 .pc-version-navmenu li a{
 	font-size: 20px;
@@ -92,11 +91,29 @@ header{
 .pc-version-navmenu li a:hover{
 	background: rgba(255, 255, 255, 0.5);
 }
+.pc-version-navmenu li:hover .pc-version-submenu{
+	display: block;
+} 
 @media(max-width: 400px){
 	.pc-version-navmenu{
 		display: none;
 	}
 }
+
+.pc-version-submenu{
+	display: none;
+	left: 1px;
+	position: absolute;
+	width: 500px;
+}
+.pc-version-submenu li{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pc-version-submenu li a{
+	font-size: 16px;
+}
+
+
 @media(min-width: 401px){
 	.mob-version-navmenu{
 		display: none;
@@ -104,5 +121,6 @@ header{
 }
 
 .mob-version-navmenu li{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 0 139px;
 }
