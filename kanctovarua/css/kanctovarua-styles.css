@@ -23,8 +23,8 @@ header{
 .header-1 a{
 	color: rgb(255, 36, 12);
 	font-weight: bold;
-	padding-left: 400px;
-	padding-right: 400px;
+	padding-left: 395px;
+	padding-right: 395px;
 	transition: 1.5s all;
 }
 @media(max-width: 400px){
@@ -60,33 +60,46 @@ header{
 	}
 }
 
-.navigation-menu-site{
-	background: rgb(255, 36, 12);
-	width: 100%;
-}
 .navigation-menu-site ul{
-	display: inline-flex;
+	background: rgb(255, 36, 12);
 	list-style: none;
-}
-
-.navigation-menu-site ul li{
-	padding-left: 130px;
-	padding-right: 130px;
+	width: 100%;
 }
 .navigation-menu-site ul li a{
 	color: #ffffff;
-	font-size: 20px;
 	font-style: italic;
 	font-weight: bold;
-	padding: 0 20px;
 	text-decoration: none;
+}
+
+.pc-version-navmenu{
+	display: inline-flex;
+	width: 100%;
+}
+
+.pc-version-navmenu li{
+	padding-left: 130px;
+	padding-right: 130px;
+}
+.pc-version-navmenu li a{
+	font-size: 20px;
+	padding: 0 20px;
 	transition: 1s all;
 }
-.navigation-menu-site ul li a:hover{
+.pc-version-navmenu li a:hover{
 	background: rgba(255, 255, 255, 0.5);
 }
 @media(max-width: 400px){
-	.navigation-menu-site{
+	.pc-version-navmenu{
 		display: none;
 	}
+}
+@media(min-width: 401px){
+	.mob-version-navmenu{
+		display: none;
+	}
+}
+
+.mob-version-navmenu li{
+	padding: 0 139px;
 }
