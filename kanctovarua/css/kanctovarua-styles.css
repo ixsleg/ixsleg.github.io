@@ -68,7 +68,7 @@ header{
 	list-style: none;
 }
 .navigation-menu-site ul li a{
-	color: #ffffff;
+	color: #f5f6f8;
 	font-style: italic;
 	font-weight: bold;
 	text-decoration: none;
@@ -112,6 +112,11 @@ header{
 .pc-version-submenu li a{
 	font-size: 16px;
 }
+.pc-version-submenu li a::after{
+	color: #f5f6f8;
+	content: '»';
+	float: right;
+}
 
 
 @media(min-width: 401px){
@@ -123,4 +128,14 @@ header{
 .mob-version-navmenu li{
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 0 139px;
+}
+.mob-version-navmenu li a::after{
+	color: #f5f6f8;
+	content: '»';
+	float: right;
+}
+
+h1{
+	text-align: center;
+	font-style: italic;
 }
