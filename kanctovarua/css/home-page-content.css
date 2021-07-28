@@ -1,0 +1,120 @@
+section{
+	margin-top: 15px;
+}
+
+section h1{
+	text-align: center;
+	font-style: italic;
+	padding-top: 20px;
+}
+
+@media(max-width: 400px){
+	.mob-scroll-x{
+		display: flex;
+   		flex-wrap: nowrap;
+   		overflow-x: auto;
+   		-webkit-overflow-scrolling: touch;
+   		-ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+	.mob-scroll-x a{
+		flex: 0 0 auto;
+	}
+}
+
+.wrapper{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 50px;
+}
+
+.box{
+	border-radius: 4px;
+	box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017), 0 3.3px 4px rgba(0, 0, 0, 0.024), 0 6.3px 7.5px rgba(0, 0, 0, 0.03), 0 11.2px 13.4px rgba(0, 0, 0, 0.036), 0 20.9px 25.1px rgba(0, 0, 0, 0.043), 0 50px 60px rgba(0, 0, 0, 0.06);
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	width: 250px;
+}
+.box h2, .box p{
+	color: #f5f6f8;
+	position: absolute;
+	transition: opacity 0.2s, transform 0.3s;
+	width: 100%;
+	z-index: 2;
+}
+.box h2{
+	font-size: 22px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+.box p{
+	bottom: 0;
+  	font-size: 14px;
+  	letter-spacing: 1px;
+}
+.box:hover{
+	transition: all 0.3s ease-in-out;
+}
+.box:hover::before{
+	transition: all 0.3s ease-in-out;
+}
+.box img{
+	height: 100%;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	z-index: 1;
+}
+.box img:hover{
+	transition: all 0.3s ease-in-out;
+}
+.box img:after{
+	background-color: rgba(0, 0, 0, 0.6);
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0;
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+}
+.box img:hover{
+	transition: all 0.3s ease-in-out;
+}
+
+.vintage h2{
+	text-align: center;
+	top: 50%;
+  	transform: translate3d(0, 60px, 0);
+}
+.vintage p{
+	bottom: 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	opacity: 0;
+	text-align: center;
+	transform: translate3d(0, -10px, 0);
+}
+.vintage:before{
+	background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+	bottom: -100%;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+.vintage:hover:before{
+	bottom: 0;
+}
+.vintage:hover h2{
+	bottom: 40px;
+  	transform: translate3d(0, 20px, 0);
+}
+.vintage:hover p{
+	opacity: 1;
+  	transform: translate3d(0, -30px, 0);
+}

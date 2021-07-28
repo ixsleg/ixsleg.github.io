@@ -1,4 +1,5 @@
 *{
+	box-sizing: border-box;
 	font-family: Open Sans;
 	margin: 0;
 	padding: 0;
@@ -7,6 +8,12 @@
 @font-face{
 	font-family: Open Sans;
 	src: ulr(../fonts/open-sans.ttf);
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 header{
@@ -80,8 +87,8 @@ header{
 }
 
 .pc-version-navmenu li{
-	padding-left: 122px;
-	padding-right: 122px;
+	padding-left: 120px;
+	padding-right: 120px;
 }
 .pc-version-navmenu li a{
 	font-size: 20px;
@@ -133,9 +140,4 @@ header{
 	color: #f5f6f8;
 	content: '»';
 	float: right;
-}
-
-h1{
-	text-align: center;
-	font-style: italic;
 }
