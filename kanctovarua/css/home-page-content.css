@@ -123,13 +123,8 @@ section h1{
 	background: #f5f6f8;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	height: 340px;
-	overflow: hidden;
+	height: 355px;
 	width: 215px;
-}
-.card-size-frame:hover{
-	box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017), 0 3.3px 4px rgba(0, 0, 0, 0.024), 0 6.3px 7.5px rgba(0, 0, 0, 0.03), 0 11.2px 13.4px rgba(0, 0, 0, 0.036), 0 20.9px 25.1px rgba(0, 0, 0, 0.043), 0 50px 60px rgba(0, 0, 0, 0.06);
-	height: auto;
 }
 
 .img-product img{
@@ -138,7 +133,8 @@ section h1{
 }
 
 .product-name h3{
-	font-size: 18px;
+	padding-left: 2px;
+	font-size: 17px;
 	font-weight: normal;
 }
 
@@ -149,7 +145,7 @@ section h1{
 
 .product-price{
 	margin-left: 5px;
-	margin-top: 5px;
+	margin-top: 6px;
 }
 .product-price p{
 	font-size: 20px;
@@ -158,12 +154,4 @@ section h1{
 }
 .product-price p::after{
 	content: "\20B4";
-}
-
-.product-description{
-	margin-top: 10px;
-}
-.product-description p{
-	font-size: 15px;
-	font-style: italic;
 }
