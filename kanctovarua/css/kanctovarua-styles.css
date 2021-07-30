@@ -16,6 +16,17 @@
 	justify-content: center;
 }
 
+body{
+	background: url(../img/bg-website.jpg) no-repeat;
+	background-attachment: fixed;
+}
+@media(max-width: 400px){
+	body{
+		background: url(../img/bg-website-mob.jpg) no-repeat;
+		background-attachment: fixed;
+	}
+}
+
 header{
 	display: flex;
 	flex-wrap: wrap;
@@ -109,7 +120,7 @@ header{
 
 .pc-version-submenu{
 	display: none;
-	left: 1px;
+	left: 3px;
 	position: absolute;
 	width: 500px;
 }
