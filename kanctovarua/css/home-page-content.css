@@ -126,10 +126,23 @@ section h1{
 	height: 355px;
 	width: 215px;
 }
+.card-size-frame a{
+	text-decoration: none;
+}
 
 .img-product img{
 	height: 255px;
 	width: 213px;
+}
+
+.discount-percentage{
+	color: rgb(255, 5, 42);
+	font-size: 16px;
+	font-weight: bold;
+	float: right;
+	left: -3px;
+	position: relative;
+	top: -255px;
 }
 
 .product-name h3{
@@ -154,4 +167,32 @@ section h1{
 }
 .product-price p::after{
 	content: "\20B4";
+}
+
+.promotional-price{
+	display: flex;
+}
+.promotional-price p{
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	padding-left: 5px;
+	text-decoration: line-through;
+}
+.promotional-price p::after{
+	content: "\20B4";
+}
+
+.promotional-price-product{
+	color: rgb(255, 63, 76);
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+.promotional-price-product::after{
+	content: "\20B4";
+}
+
+.top-promotions{
+	margin-top: 20px;
 }
