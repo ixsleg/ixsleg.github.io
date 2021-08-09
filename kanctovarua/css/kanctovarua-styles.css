@@ -257,11 +257,9 @@ footer a:hover{
 }
 @media(max-width: 400px){
 	#btnScrollUp{
-		bottom: 5px;
 		height: 30px;
 		font-size: 18px;
 		padding: 2px 5px;
-		right: 5px;
 		width: 30px;
 	}
 }
