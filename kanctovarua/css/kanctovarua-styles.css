@@ -39,24 +39,27 @@ header{
 }
 
 .header-1{
-	border-bottom: 3px solid rgba(255, 36, 12, 1);
+	display: flex;
+	justify-content: space-evenly;
 	width: 100%;
+}
+@media(max-width: 400px){
+	.header-1{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .header-1 a{
 	color: rgb(255, 36, 12);
 	font-weight: bold;
-	padding-left: 400px;
-	padding-right: 400px;
 	transition: 1.5s all;
 }
 @media(max-width: 400px){
 	.header-1 a{
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
-		padding-left: 0px;
-		padding-right: 0px;
+		line-height: 25px;
 	}
 }
 .header-1 a:hover{
@@ -102,13 +105,9 @@ header{
 	width: 100%;
 }
 
-.pc-version-navmenu li{
-	padding-left: 120px;
-	padding-right: 120px;
-}
 .pc-version-navmenu li a{
 	font-size: 20px;
-	padding: 0 20px;
+	padding: 0 140px;
 	transition: 1s all;
 }
 .pc-version-navmenu li a:hover{
@@ -156,6 +155,65 @@ header{
 	color: #f5f6f8;
 	content: '»';
 	float: right;
+}
+
+.header-3{
+	background: rgb(255, 36, 12);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+#searchForm{
+	display: flex;
+	margin-left: 100px;
+}
+
+input[name="search-field"]{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	flex-grow: 1;
+	outline: none;
+	width: 600px;
+}
+input[name="search-field"]:focus{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+#btnSearchForm{
+	background: rgba(255, 178, 127);
+	border: none;
+	cursor: pointer;
+	transition: 1s all;
+}
+#btnSearchForm:hover{
+	background: rgb(255, 210, 193);
+}
+#btnSearchForm img{
+	height: 31px;
+	padding: 3px;
+	width: 35px;
+}
+
+.authorization{
+	display: block;
+	flex-grow: 1;
+	margin-left: 50%;
+}
+.authorization button{
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	transition: 1s all;
+}
+.authorization button:hover{
+	opacity: 0.65;
+}
+.authorization img{
+	height: 31px;
+	width: 35px;
 }
 
 footer{
