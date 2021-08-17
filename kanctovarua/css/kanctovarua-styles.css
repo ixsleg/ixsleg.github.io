@@ -39,31 +39,59 @@ header{
 }
 
 .header-1{
+	background: rgb(255, 36, 12);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
 }
 @media(max-width: 400px){
 	.header-1{
-		display: flex;
-		flex-direction: column;
+		margin-top: 0;
 	}
 }
 
-.header-1 a{
-	color: rgb(255, 36, 12);
-	font-weight: bold;
-	transition: 1.5s all;
+.nav-menu-site{
+	list-style: none;
+}
+.nav-menu-site li{
+	display: inline-block;
 }
 @media(max-width: 400px){
-	.header-1 a{
-		display: flex;
-		justify-content: center;
-		line-height: 25px;
+	.nav-menu-site li{
+		display: block;
 	}
 }
-.header-1 a:hover{
+.nav-menu-site li a{
+	color: #f5f6f8;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+	padding: 13px 10px;
 	text-decoration: none;
+	transition: 0.4s all;
+}
+@media(max-width: 400px){
+	.nav-menu-site li a{
+		font-size: 16px;
+		line-height: 20px;
+		padding: 0 10px;
+	}
+}
+.nav-menu-site li a:hover{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.authorization a{
+	transition: 0.4s all;
+}
+.authorization a:hover{
+	opacity: 0.65;
+}
+.authorization img{
+	height: 35px;
+	margin-top: 3px;
+	width: 35px;
 }
 
 .header-2{
@@ -72,6 +100,11 @@ header{
 	height: 500px;
 	justify-content: center;
 	width: 100%;
+}
+@media(max-width: 400px){
+	.header-2{
+		margin-top: 0;
+	}
 }
 .header-2 img{
 	margin-top: 400px;
@@ -89,131 +122,85 @@ header{
 	}
 }
 
-.navigation-menu-site ul{
-	background: rgb(255, 36, 12);
-	list-style: none;
-}
-.navigation-menu-site ul li a{
-	color: #f5f6f8;
-	font-style: italic;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.pc-version-navmenu{
-	display: inline-flex;
-	width: 100%;
-}
-
-.pc-version-navmenu li a{
-	font-size: 20px;
-	padding: 0 140px;
-	transition: 1s all;
-}
-.pc-version-navmenu li a:hover{
-	background: rgba(255, 255, 255, 0.5);
-}
-.pc-version-navmenu li:hover .pc-version-submenu{
-	display: block;
-} 
-@media(max-width: 400px){
-	.pc-version-navmenu{
-		display: none;
-	}
-}
-
-.pc-version-submenu{
-	display: none;
-	left: 3px;
-	position: absolute;
-	width: 500px;
-}
-.pc-version-submenu li{
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.pc-version-submenu li a{
-	font-size: 16px;
-}
-.pc-version-submenu li a::after{
-	color: #f5f6f8;
-	content: '»';
-	float: right;
-}
-
-
-@media(min-width: 401px){
-	.mob-version-navmenu{
-		display: none;
-	}
-}
-
-.mob-version-navmenu li{
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-	padding: 0 139px;
-}
-.mob-version-navmenu li a::after{
-	color: #f5f6f8;
-	content: '»';
-	float: right;
-}
-
 .header-3{
 	background: rgb(255, 36, 12);
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
 }
+@media(max-width: 400px){
+	.header-3{
+		display: block;
+		margin-top: 0;
+		justify-content: normal;
+	}
+}
 
-#searchForm{
+form[name="searchForm"]{
 	display: flex;
-	margin-left: 100px;
+	justify-content: center;
+}
+@media(max-width: 400px){
+	form[name="searchForm"]{
+		float: left;
+	}
 }
 
-input[name="search-field"]{
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	flex-grow: 1;
+input[name="searchField"]{
+	border: 1px solid rgba(0, 0, 0, 0.4);
 	outline: none;
-	width: 600px;
+	padding: 5px;
+	width: 800px;
 }
-input[name="search-field"]:focus{
-	border: 1px solid rgba(0, 0, 0, 0.3);
+@media(max-width: 400px){
+	input[name="searchField"]{
+		height: 32px;
+		margin-left: 10px;
+		margin-right: 40px;
+		width: 300px;
+	}
+}
+input[name="searchField"]:focus{
+	border: 1px solid rgba(0, 0, 0, 1);
 }
 
-
-#btnSearchForm{
-	background: rgba(255, 178, 127);
+button[name="btnSearchForm"]{
+	background: rgb(255, 144, 40);
 	border: none;
+	color: rgb(255, 252, 244);
 	cursor: pointer;
-	transition: 1s all;
-}
-#btnSearchForm:hover{
-	background: rgb(255, 210, 193);
-}
-#btnSearchForm img{
-	height: 31px;
-	padding: 3px;
-	width: 35px;
-}
-
-.authorization{
-	display: block;
-	flex-grow: 1;
-	margin-left: 50%;
-}
-.authorization button{
-	background: none;
-	border: none;
-	cursor: pointer;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: bold;
 	outline: none;
-	transition: 1s all;
+	padding: 0 5px;
+	transition: 0.7s all;
 }
-.authorization button:hover{
-	opacity: 0.65;
+button[name="btnSearchForm"]:hover{
+	background: rgba(255, 144, 40, 0.8);
 }
-.authorization img{
-	height: 31px;
-	width: 35px;
+@media(max-width: 400px){
+	button[name="btnSearchForm"]{
+		display: none;
+	}
+}
+
+
+@media(max-width: 400px){
+	.basket{
+		margin-top: 0;
+	}
+}
+.basket img{
+	height: 33px;
+	width: 33px;
+}
+@media(max-width: 400px){
+	.basket img{
+		height: 28px;
+		width: 28px;
+	}
 }
 
 footer{
