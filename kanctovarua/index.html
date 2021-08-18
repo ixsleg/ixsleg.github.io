@@ -14,8 +14,9 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="js/btnScrollUp.js"></script>
+		<script src="js/searchForm.js"></script>
 	</head>
-	<body>
+	<body onload="searchFormParameters();">
 		<header>
 			<div class="header-1">
 				<nav>
@@ -39,7 +40,7 @@
 			<div class="header-3">
 				<form name="searchForm">
 					<input type="search" name="searchField" placeholder="Что ищете?">
-					<button type="button" name="btnSearchForm">Найти</button>
+					<button type="button" id="btnSearchForm">Найти</button>
 				</form>
 
 				<div class="basket">
@@ -51,6 +52,38 @@
 		<main>
 			<section>
 				<h1>Популярные категории</h1>
+
+				<div class="popular-category">
+					<div class="mob-scroll-x">
+						<div class="figure-popular-category">
+							<a href="">
+								<img src="img/home-page-content/popular-category/paper.jpg">
+							</a>
+							<br>
+							<a href="" style="padding-left: 91px;">Бумага</a>
+						</div>
+	
+						<div class="figure-popular-category">
+							<a href="">
+								<img src="img/home-page-content/popular-category/school-supplies.jpg">
+							</a>
+							<br>
+							<a href="" style="padding-left: 8px;">Школьные принадлежности</a>
+						</div>
+	
+						<div class="figure-popular-category">
+							<a href="">
+								<img src="img/home-page-content/popular-category/office-tools.jpg">
+							</a>
+							<br>
+							<a href="" style="padding-left: 14px;">Офисные принадлежности</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h1>Топ товары</h1>
 			</section>
 		</main>
 

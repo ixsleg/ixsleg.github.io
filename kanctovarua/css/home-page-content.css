@@ -6,3 +6,41 @@ h1{
 	font-style: italic;
 	text-align: center;
 }
+
+.mob-scroll-x{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+@media(max-width: 400px){
+	.mob-scroll-x::-webkit-scrollbar{
+		display: none;
+	}
+}
+
+.popular-category{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.figure-popular-category{
+	padding-right: 25px;
+}
+.figure-popular-category img{
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	height: 300px;
+	transition: 0.4s all;
+	width: 235px;
+}
+.figure-popular-category img:hover{
+	-webkit-filter: grayscale(100%);
+}
+.figure-popular-category a{
+	color: rgb(7, 127, 255);
+	font-size: 18px;
+}
+.figure-popular-category a:hover{
+	color: rgb(255, 65, 17);
+	text-decoration: none;
+}
