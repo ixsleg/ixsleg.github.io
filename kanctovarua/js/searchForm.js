@@ -1,6 +1,6 @@
 function searchFormParameters(){
 	document.forms.searchForm.method = "get";
-	document.forms.searchForm.action = "index.html";
+	document.forms.searchForm.action = "";
 
 	document.getElementById("btnSearchForm").addEventListener('click', submitForm);
 }
