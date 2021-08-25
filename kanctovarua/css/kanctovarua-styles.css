@@ -106,6 +106,20 @@ header{
 .pc-submenu-site li a:hover{
 	background: transparent;
 }
+.pc-submenu-site li:hover .pc-submenu-site0{
+	transform: scaleX(1);
+}
+
+.pc-submenu-site0{
+	background: rgb(255, 36, 12);
+	position: absolute;
+	left: 230px;
+	top: 0;
+	transform: scaleX(0);
+	transform-origin: 0 0;
+	transition: 0.4s all;
+	width: 100px;
+}
 
 .mob-menu-site{
 	display: none;
@@ -218,6 +232,12 @@ header{
 	overflow: hidden;
 	padding: 0 18px;
 	transition: 0.4s all;
+}
+.panel a{
+	color: #f5f6f8;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .authorization a{
