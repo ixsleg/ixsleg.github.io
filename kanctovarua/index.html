@@ -20,24 +20,63 @@
 		<header>
 			<div class="header-1">
 				<nav>
-					<ul class="nav-menu-site">
+					<ul class="nav-menu-site pc-menu-site">
 						<li><a href="index.html">На главную</a></li>
 						<li><a href="">Каталог</a>
-							<ul class="nav-submenu-site">
-								<li><a href="">Письменные принадлежности</a>
-									<ul class="nav-submenu-site0">
-										<li><a href="catalog/writing-utensils/pencils.html">Карандаши</a></li>
-									</ul>
-								</li>
+							<ul class="nav-menu-site pc-submenu-site">
+								<li><a href="">Письменные принадлежности</a></li>
 								<li><a href="">Офисные принадлежности</a></li>
 								<li><a href="">Школьные принадлежности</a></li>
-								<li><a href="">Бумага и изделия из бумаги</a></li>
 							</ul>
 						</li>
 						<li><a href="">Новости</a></li>
 						<li><a href="">О нас</a></li>
 						<li><a href="">Сотрудничество</a></li>
 					</ul>
+
+					<div class="mob-menu-site">
+						<input type="checkbox" id="sideCheckbox">
+
+						<div class="side-panel">
+							<label class="side-btn-2" for="sideCheckbox">+</label>
+							<div class="side-title">Каталог</div>
+
+							<div class="acc-menu">
+								<button class="accordion">Письменные принадлежности</button>
+								<div class="panel">Text</div>
+
+								<button class="accordion">Офисные принадлежности</button>
+								<div class="panel">Text</div>
+
+								<button class="accordion">Школьные принадлежности</button>
+								<div class="panel">Text</div>
+
+								<script>
+									var acc = document.getElementsByClassName("accordion");
+									var i;
+
+									for (i = 0; i < acc.length; i++) {
+									  acc[i].addEventListener("click", function() {
+									    this.classList.toggle("active");
+									    var panel = this.nextElementSibling;
+									    if (panel.style.maxHeight){
+									      panel.style.maxHeight = null;
+									    } else {
+									      panel.style.maxHeight = panel.scrollHeight + "px";
+									    } 
+									  });
+									}
+								</script>
+							</div>
+						</div>
+
+						<div class="side-btn-1-wr">
+							<label class="side-btn-1" for="sideCheckbox">
+								<div class="side-b open">&equiv;</div>
+								<div class="side-b close">&equiv;</div>
+							</label>
+						</div>
+					</div>
 				</nav>
 
 				<div class="authorization">
