@@ -1,11 +1,31 @@
 aside{
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-	border-right: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
 	height: 500px;
+	float: left;
 	width: 300px;
 }
 @media(max-width: 400px){
 	aside{
 		display: none;
+	}
+}
+
+main{
+	margin-left: 300px;
+}
+@media(max-width: 400px){
+	main{
+		margin-left: 0;
+	}
+}
+
+.grid-of-goods{
+	display: grid;
+	grid-template-columns: 270px 270px 270px 270px 270px 270px;
+}
+@media(max-width: 400px){
+	.grid-of-goods{
+		grid-template-columns: 200px 200px;
 	}
 }
