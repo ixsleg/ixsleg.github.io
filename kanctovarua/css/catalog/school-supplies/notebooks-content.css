@@ -1,5 +1,4 @@
 aside{
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	border-right: 1px solid rgba(0, 0, 0, 0.2);
 	height: 500px;
 	float: left;
@@ -22,19 +21,11 @@ main{
 
 .grid-of-goods{
 	display: grid;
-	grid-template-columns: 270px 270px 270px 270px 270px 270px;
+	grid-template-columns: 267px 267px 267px 267px 267px 267px;
 }
 @media(max-width: 400px){
 	.grid-of-goods{
+		margin-top: 0;
 		grid-template-columns: 195px 195px;
-	}
-}
-
-#btn-card{
-	margin-top: 13px;
-}
-@media(max-width: 400px){
-	#btn-card{
-		margin-top: 17px;
 	}
 }
