@@ -26,6 +26,15 @@ main{
 }
 @media(max-width: 400px){
 	.grid-of-goods{
-		grid-template-columns: 200px 200px;
+		grid-template-columns: 195px 195px;
+	}
+}
+
+#btn-card{
+	margin-top: 13px;
+}
+@media(max-width: 400px){
+	#btn-card{
+		margin-top: 17px;
 	}
 }

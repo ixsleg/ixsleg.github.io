@@ -8,7 +8,7 @@
 	.card-product{
 		height: 330px;
 		margin-top: 0;
-		width: 200px;
+		width: 195px;
 	}
 }
 .card-product img{
@@ -18,7 +18,7 @@
 @media(max-width: 400px){
 	.card-product img{
 		height: 195px;
-		width: 199px;
+		width: 194px;
 	}
 }
 .card-product p{
@@ -56,7 +56,7 @@
 }
 @media(max-width: 400px){
 	.card-product button{
-		margin-top: 13px;
+		margin-top: 12px;
 	}
 }
 .card-product button:hover{
