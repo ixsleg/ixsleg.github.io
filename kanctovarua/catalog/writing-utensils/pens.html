@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 	<head>
 		<link rel="icon" href="../../img/logo-icon.png">
+		<link rel="stylesheet" href="../../css/card-product.css">
+		<link rel="stylesheet" href="../../css/catalog/writing-utensils/pens-content.css">
 		<link rel="stylesheet" href="../../css/kanctovarua-styles.css">
-		<link rel="stylesheet" href="../../css/catalog/writing-utensils/pencils-content.css">
 
 		<meta charset="utf-8">
-		<meta name="description" content="КарнцтоварUA - Письменные принадлежности - Карандаши">
+		<meta name="description" content="КарнцтоварUA - Письменные принадлежности - Ручки">
 		<meta name="keywords" content="kanctovarua, канцтоварua, онлайн-магазин">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Письменные принадлежности - Карандаши</title>
+		<title>Письменные принадлежности - Ручки</title>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="../../js/btnScrollUp.js"></script>
@@ -20,28 +21,75 @@
 		<header>
 			<div class="header-1">
 				<nav>
-					<ul class="nav-menu-site">
+					<ul class="nav-menu-site pc-menu-site">
 						<li><a href="../../index.html">На главную</a></li>
 						<li><a href="">Каталог</a>
-							<ul class="nav-submenu-site">
+							<ul class="nav-menu-site pc-submenu-site">
 								<li><a href="">Письменные принадлежности</a>
-									<ul class="nav-submenu-site0">
-										<li><a href="pencils.html">Карандаши</a></li>
+									<ul class="nav-menu-site pc-submenu-site0">
+										<li><a href="../../catalog/writing-utensils/pens.html">Ручки</a></li>
 									</ul>
 								</li>
 								<li><a href="">Офисные принадлежности</a></li>
 								<li><a href="">Школьные принадлежности</a>
-									<ul class="nav-submenu-site0">
-										<li><a href="../school-supplies/notebooks.html">Тетради</a></li>
+									<ul class="nav-menu-site pc-submenu-site0">
+										<li><a href="../../catalog/school-supplies/notebooks.html">Тетради</a></li>
 									</ul>
 								</li>
-								<li><a href="">Бумага и изделия из бумаги</a></li>
 							</ul>
 						</li>
 						<li><a href="">Новости</a></li>
 						<li><a href="">О нас</a></li>
 						<li><a href="">Сотрудничество</a></li>
 					</ul>
+
+					<div class="mob-menu-site">
+						<input type="checkbox" id="sideCheckbox">
+
+						<div class="side-panel">
+							<label class="side-btn-2" for="sideCheckbox">+</label>
+							<div class="side-title">Каталог</div>
+
+							<div class="acc-menu">
+								<button class="accordion">Письменные принадлежности</button>
+								<div class="panel">
+									<a href="pens.html">Ручки</a>
+								</div>
+
+								<button class="accordion">Офисные принадлежности</button>
+								<div class="panel">Text</div>
+
+								<button class="accordion">Школьные принадлежности</button>
+								<div class="panel">
+									<a href="../../catalog/school-supplies/notebooks.html">Тетради</a>
+								</div>
+
+								<script>
+									var acc = document.getElementsByClassName("accordion");
+									var i;
+
+									for (i = 0; i < acc.length; i++) {
+									  acc[i].addEventListener("click", function() {
+									    this.classList.toggle("active");
+									    var panel = this.nextElementSibling;
+									    if (panel.style.maxHeight){
+									      panel.style.maxHeight = null;
+									    } else {
+									      panel.style.maxHeight = panel.scrollHeight + "px";
+									    } 
+									  });
+									}
+								</script>
+							</div>
+						</div>
+
+						<div class="side-btn-1-wr">
+							<label class="side-btn-1" for="sideCheckbox">
+								<div class="side-b open">&equiv;</div>
+								<div class="side-b close">&equiv;</div>
+							</label>
+						</div>
+					</div>
 				</nav>
 
 				<div class="authorization">
@@ -61,7 +109,31 @@
 			</div>
 		</header>
 
-		<main></main>
+		<aside></aside>
+
+		<main>
+			<div class="grid-of-goods">
+				<div class="card-product">
+					<img src="../../products/11/0.jpg">
+					<p>Ручка шариковая D*1 синия</p>
+					<p class="product-availability no">Нет в наличии</p>
+					<div class="price">
+						<p>4&#8372;</p>
+					</div>
+					<button type="button">Посмотреть</button>
+				</div>
+
+				<div class="card-product">
+					<img src="../../products/12/0.webp">
+					<p>Ручка Axent гелевая красная</p>
+					<p class="product-availability no">Нет в наличии</p>
+					<div class="price">
+						<p>8&#8372;</p>
+					</div>
+					<button type="button">Посмотреть</button>
+				</div>
+			</div>
+		</main>
 
 		<footer>
 			<div class="colum">
