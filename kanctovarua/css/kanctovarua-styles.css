@@ -196,6 +196,17 @@ header{
 	z-index: 1;
 }
 
+.link-on-home{
+	color: #f5f6f8;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.acc-menu{
+	margin-top: 30px;
+}
+
 .accordion{
 	background: transparent;
 	border: none;
