@@ -23,9 +23,14 @@ main{
 	display: grid;
 	grid-template-columns: 267px 267px 267px 267px 267px 267px;
 }
-@media(max-width: 400px){
+@media(min-width: 1px) and (max-width: 400px){
 	.grid-of-goods{
 		margin-top: 0;
 		grid-template-columns: 195px 195px;
+	}
+}
+@media(min-width: 963px) and (max-width: 1000px){
+	.grid-of-goods{
+		grid-tamplate-columns: 267px 267px 267px 267px;
 	}
 }
