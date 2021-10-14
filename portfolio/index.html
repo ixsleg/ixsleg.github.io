@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>D. Timonov</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
     <header>
@@ -24,6 +26,35 @@
                             <li><a href="">Портфолио</a></li>
                             <li><a href="">Контакты</a></li>
                         </ul>
+
+                        <div class="mb-menu">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Главная</a></li>
+                                    <li><a href="">Блок новостей</a></li>
+                                    <li><a href="">Услуги</a></li>
+                                    <li><a href="">Портфолио</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <script>
+                            $('.mb-menu div').on('click', () => {
+                                $('.mb-menu div').toggleClass('.active');
+                                $('.mb-menu nav').toggleClass('open');
+                                $('.mb-menu nav ul').toggleClass('show');
+                            });
+
+                            for(let a = 1; a <= $(".mb-menu ul li").length; a++){
+                                $(".mb-menu ul li:nth-child("+ a +")").css("animation-delay", "." + (a+1) + "s");
+                            }
+                        </script>
                     </nav>
                 </div>
 

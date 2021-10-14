@@ -69,6 +69,9 @@ header{
 .menu li a:hover{
     border: 1px solid #fff;
 }
+.mb-menu{
+    display: none;
+}
 
 .office{
     align-items: center;
@@ -179,15 +182,115 @@ footer ul li:hover{
         width: 720px;
     }
     .menu{
+        display: none;
+    }
+    .mb-menu{
+        display: block;
+    }
+    .mb-menu div{
+        background-color: #337ab7;
+        border: 2px solid #bfe2ff;
+        border-radius: 50%;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+        box-sizing: content-box;
+        cursor: pointer;
+        height: 40px;
+        position: fixed;
+        right: 60px;
+        top: 50px;
+        width: 40px;
+        z-index: 9999999;
+    }
+    .mb-menu div span{
+        background: #fff;
+        border-radius: 13px;
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        transition: all 0.4s;
+        width: 30px;
+    }
+    .mb-menu div span:nth-child(1) {
+        top: 14px;
+    }
+    .mb-menu div span:nth-child(2) {
+        top: 23px;
+    }
+    .mb-menu div span:nth-child(3) {
+        bottom: 14px;
+    }
+    .mb-menu div.active span:nth-child(1) {
+        transform: translate(-15px, 9px) rotate(-45deg);
+    }
+    .mb-menu div.active span:nth-child(2) {
+        opacity: 0;
+        transition-duration: 0s;
+    }
+    .mb-menu div.active span:nth-child(3) {
+        transform: translate(-15px, -9px) rotate(45deg);
+    }
+    .mb-menu nav{
+        align-items: center;
+        border-radius: 50%;
+        display: block;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        position: fixed;
+        right: 60px;
+        overflow: hidden;
+        top: 50px;
+        transition: all 0.4s;
+        width: 50px;
+        z-index: 9999990;
+    }
+    .mb-menu nav.open{
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 0;
+        height: 100vh;
+        right: 0px;
+        width: 100vw;
+    }
+    .mb-menu nav ul {
+        display: none;
+    }
+    .mb-menu nav ul.show{
+        display: flex;
         flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
-    .menu li{
-        border: 1px solid #fff;
-        line-height: 30px;
-        padding: 5px 0;
+    .mb-menu ul li{
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: fadein;
+        background: transparent;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        width: 100%;
     }
-    .foot-container{
-        width: 668px;
+    .mb-menu ul li:not(:last-child) {
+        margin-bottom: 22px;
+    }
+    .mb-menu ul li a{
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+             
+        }
+        100% {
+            opacity: 1;
+        }
     }
     .header-foot h1{
         font-size: 42px;
