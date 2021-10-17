@@ -268,8 +268,13 @@ footer p{
     .wrapper{
         flex-direction: column;
     }
-    .mb-menu{
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .mb-menu2{
         margin-top: 15px;
+        width: 280px;
     }
     .blocks{
         flex-direction: column;
@@ -286,6 +291,7 @@ footer p{
         flex-direction: column;
     }
     .bg-btn-sec2{
+        margin: 0 auto;
         width: 290px;
     }
     .heading-sec3{
