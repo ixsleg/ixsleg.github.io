@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Плотников</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hed1">
+                <h1 class="name-site">ПЛОТНИКОВ</h1>
+
+                <ul class="menu">
+                    <li><a href="">О НАС</a></li>
+                    <li><a href="">УСЛУГИ</a></li>
+                    <li><a href="">ГАЛЕРЕЯ</a></li>
+                    <li><a href="">КОНТАКТЫ</a></li>
+                </ul>
+
+                <div class="mb-menu">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="">О НАС</a></li>
+                            <li><a href="">УСЛУГИ</a></li>
+                            <li><a href="">ГАЛЕРЕЯ</a></li>
+                            <li><a href="">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <script>
+                    $('.mb-menu div').on('click', () => {
+                        $('.mb-menu div').toggleClass('.active');
+                        $('.mb-menu nav').toggleClass('open');
+                        $('.mb-menu nav ul').toggleClass('show');
+                    });
+
+                    for(let a = 1; a <= $(".mb-menu ul li").length; a++){
+                        $(".mb-menu ul li:nth-child("+ a +")").css("animation-delay", "." + (a+1) + "s");
+                    }
+                </script>
+
+                <p class="contact">ЗВОНИТЕ: +7(495)-000-0000</p>
+            </div>
+
+            <div class="hed2">
+                <div class="headings-hed2">
+                    <h3 class="heading1">Страна</h3>
+                    <h3 class="heading2">Мастеров</h3>
+                </div>
+                <p class="text-hed2">Здесь может быть ваш текс-контент</p>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="container">
+            <div class="foot1">
+                <p class="footer-text">© 2021 Плотников все права защищены</p>
+
+                <div class="social-media">
+                    <a href=""><img src="img/footer/vk.webp"></a>
+                    <a href=""><img src="img/footer/facebook.webp"></a>
+                    <a href=""><img src="img/footer/twitter.webp"></a>
+                    <a href=""><img src="img/footer/youtube.webp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+@font-face {
+    font-family: Opens Sans Condensed-Bold;
+    src: url(../fonts/OpenSansCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: Times New Roman Italic;
+    src: url(../fonts/timesnrcyrmt_inclined.ttf);
+}
+
+body{
+    color: #fff;
+    font-family: Opens Sans Condensed-Bold;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+div, p, input, button, form, span, a, ul, li{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.contact{
+    background: rgb(247, 213, 127);
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    left: 81%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 15px;
+}
+
+header{
+    background: url(../img/bg-website.webp) no-repeat;
+    padding: 50px 0 50px;
+}
+.hed1{
+    display: flex;
+}
+.name-site{
+    color: rgb(247, 213, 127);
+}
+.menu{
+    display: flex;
+    line-height: 15px;
+    list-style: none;
+}
+.menu a{
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0 35px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: rgb(247, 213, 127);
+}
+.mb-menu{
+    display: none;
+}
+.hed2{
+    margin: 200px auto;
+    text-align: center;
+}
+.headings-hed2{
+    font-family: Times New Roman Italic;
+    font-size: 88px;
+    font-weight: lighter;
+}
+.heading1{
+    color: rgb(247, 213, 127);
+}
+.text-hed2{
+    font-size: 19px;
+    margin: 15px auto;
+    width: 477px;
+}
+
+footer{
+    background: rgb(247, 213, 127);
+    padding: 25px 0 25px;
+}
+.foot1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text{
+    font-family: 'times new roman', times, serif;
+    font-size: 14px;
+    color: #000;
+}
+.social-media img{
+    height: 28px;
+    padding: 0 5px;
+    width: 28px;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .contact{
+        left: 750px;
+    }
+}
+@media screen and (max-width: 992px){
+    .container{
+        width: 720px;
+    }
+    .contact{
+        left: 500px;
+        top: 80px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 540px;
+    }
+    .hed1{
+        background: rgb(22, 22, 22);
+        padding: 0 10px;
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    .mb-menu{
+        display: block;
+    }
+    .mb-menu div{
+        box-sizing: content-box;
+        cursor: pointer;
+        height: 40px;
+        position: absolute;
+        right: 60px;
+        top: 50px;
+        width: 40px;
+        z-index: 9999999;
+    }
+    .mb-menu div span{
+        background: rgb(247, 213, 127);
+        border-radius: 13px;
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        transition: all 0.4s;
+        width: 30px;
+    }
+    .mb-menu div span:nth-child(1) {
+        top: 14px;
+    }
+    .mb-menu div span:nth-child(2) {
+        top: 23px;
+    }
+    .mb-menu div span:nth-child(3) {
+        bottom: 14px;
+    }
+    .mb-menu div.active span:nth-child(1) {
+        transform: translate(-15px, 9px) rotate(-45deg);
+    }
+    .mb-menu div.active span:nth-child(2) {
+        opacity: 0;
+        transition-duration: 0s;
+    }
+    .mb-menu div.active span:nth-child(3) {
+        transform: translate(-15px, -9px) rotate(45deg);
+    }
+    .mb-menu nav{
+        align-items: center;
+        border-radius: 50%;
+        display: block;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        position: fixed;
+        right: 60px;
+        overflow: hidden;
+        top: 50px;
+        transition: all 0.4s;
+        width: 50px;
+        z-index: 9999990;
+    }
+    .mb-menu nav.open{
+        background: rgb(247, 213, 127);
+        border-radius: 0;
+        height: 100vh;
+        right: 0px;
+        width: 100vw;
+    }
+    .mb-menu nav ul {
+        display: none;
+    }
+    .mb-menu nav ul.show{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .mb-menu ul li{
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: fadein;
+        background: transparent;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        width: 100%;
+    }
+    .mb-menu ul li:not(:last-child) {
+        margin-bottom: 22px;
+    }
+    .mb-menu ul li a{
+        color: #000;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+             
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .contact{
+        left: 0;
+        margin-top: 50px;
+        position: relative;
+        top: 0;
+    }
+}
+@media screen and (max-width: 576px){
+    .container{
+        width: 90%;
+    }
+    .contact{
+        font-size: 13px;
+    }
+    .headings-hed2{
+        font-size: 50px;
+    }
+    .text-hed2{
+        width: 280px;
+    }
+    .foot1{
+        flex-direction: column;
+    }
+    .social-media{
+        margin: 10px auto;
+    }
+}
