@@ -44,6 +44,10 @@ header{
     padding: 50px 0 50px;
 }
 .hed1{
+    margin: 0 auto;
+    width: 1000px;
+}
+.wrapper{
     display: flex;
 }
 .name-site{
@@ -106,6 +110,9 @@ footer{
 }
 
 @media screen and (max-width: 1200px){
+    .hed1{
+        width: 960px;
+    }
     .container{
         width: 960px;
     }
@@ -114,6 +121,9 @@ footer{
     }
 }
 @media screen and (max-width: 992px){
+    .hed1{
+        width: 720px;
+    }
     .container{
         width: 720px;
     }
@@ -123,6 +133,9 @@ footer{
     }
 }
 @media screen and (max-width: 768px){
+    .hed1{
+        width: 100%;
+    }
     .container{
         width: 540px;
     }
@@ -240,18 +253,22 @@ footer{
         }
     }
     .contact{
+        background: transparent;
+        color: rgb(247, 213, 127);
         left: 0;
-        margin-top: 50px;
-        position: relative;
-        top: 0;
+        position: static;
     }
 }
 @media screen and (max-width: 576px){
+    .hed1{
+        width: 100%;
+    }
     .container{
         width: 90%;
     }
     .contact{
         font-size: 13px;
+        left: 0;
     }
     .headings-hed2{
         font-size: 50px;
