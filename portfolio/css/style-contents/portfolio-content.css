@@ -5,6 +5,9 @@ section{
     color: #000;
 }
 
+.projects{
+    margin-top: 20px;
+}
 .project-link{
     color: rgb(92, 37, 37);
     font-weight: bold;
