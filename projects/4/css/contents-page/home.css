@@ -1,0 +1,109 @@
+.sec2{
+    padding: 25px 0 25px;
+}
+.sec2 img{
+    margin: 0 auto;
+    width: 100%;
+}
+.name-sec2{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+.bold-sec2{
+    font-weight: bold;
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.feedback a{
+    background: rgb(222, 177, 0);
+    color: #fff;
+    font-size: 26px;
+    padding: 7px 25px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.feedback a:hover{
+    background: rgb(165, 132, 0);
+}
+.grid-table{
+    display: grid;
+    grid-template-columns: 327px 327px 327px;
+    margin-top: 60px;
+}
+.grid-table div{
+    background: rgb(247, 246, 246);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 45px 28px 45px;
+}
+.name-cell{
+    font-size: 20px;
+}
+.grid-table hr{
+    background: #000;
+    color: #000;
+}
+.text-cells{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+}
+.list-cells{
+    list-style: inside;
+}
+.list-cells li{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 25px;
+}
+.links-cells{
+    color: #000;
+    font-size: 12px;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.links-cells:hover{
+    color: rgb(222, 177, 0);
+}
+
+@media screen and (max-width: 1200px){
+    .grid-table{
+        grid-template-columns: 320px 320px 320px;
+    }
+    .grid-table div{
+        padding: 45px 25px 45px;
+    }
+}
+@media screen and (max-width: 992px){
+    .grid-table{
+        grid-template-columns: 240px 240px 240px;
+    }
+    .grid-table div{
+        padding: 40px 15px 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .name-sec2{
+        font-size: 30px;
+    }
+    .grid-table{
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 576px){
+    .name-sec2{
+        font-size: 20px;
+    }
+    .feedback a{
+        font-size: 23px;
+        width: 100%;
+    }
+}

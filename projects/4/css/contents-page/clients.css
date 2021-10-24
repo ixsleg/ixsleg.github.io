@@ -1,0 +1,68 @@
+.sec2{
+    padding: 30px 0 30px;
+}
+.page-title-and-text h2{
+    font-size: 25px;
+}
+.page-title-and-text p{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    width: 735px;
+}
+.grid-table{
+    display: grid;
+    grid-template-columns: 324px 324px 324px;
+    margin-top: 70px;
+}
+.grid-table div{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.grid-table img{
+    height: 324px;
+    width: 324px;
+}
+.grid-table h6, .grid-table p{
+    text-align: center;
+}
+.grid-table h6{
+    font-size: 20px;
+}
+.grid-table p{
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1200px){
+    .grid-table img{
+        height: 324px;
+        width: 99%;
+    }
+}
+@media screen and (max-width: 992px){
+    .page-title-and-text p{
+        width: 100%;
+    }
+    .grid-table{
+        grid-template-columns: 360px 360px;
+    }
+    .grid-table img{
+        height: 358px;
+    }
+}
+@media screen and (max-width: 768px){
+    .grid-table{
+        grid-template-columns: 270px 270px;
+    }
+    .grid-table img{
+        height: 268px;
+    }
+}
+@media screen and (max-width: 576px){
+    .grid-table{
+        grid-template-columns: 100%;
+    }
+    .grid-table img{
+        height: 270px;
+    }
+}
