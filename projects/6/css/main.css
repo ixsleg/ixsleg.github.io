@@ -596,22 +596,24 @@ footer{
         display: none;
     }
     .image-frame{
-        background-position: center, 40px 170px;
-        background-size: 280px, 200px;
+        background-position: center, center 144px;
+        background-size: 280px, 251px;
     }
     .image-frame h1{
         font-size: 30px;
-        left: 70px;
+        left: 9px;
         line-height: 20px;
+        margin: 0 auto;
         top: 205px;
     }
     .image-frame h1 span{
         font-size: 17px;
     }
     .image-frame-shadow{
-        left: 70px;
+        left: 17px;
+        margin: 0 auto;
         top: 253px;
-        width: 190px;
+        width: 183px;
     }
     .image-frame-shadow svg{
         width: 100%;
@@ -630,7 +632,7 @@ footer{
         width: 100%;
     }
     .card-product-mini{
-        margin: 10px 0 10px;
+        margin: 10px auto 10px;
         width: 277px;
     }
     .name-price-product p{
