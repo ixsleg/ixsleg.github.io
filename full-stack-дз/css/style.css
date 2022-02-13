@@ -1,35 +1,20 @@
-header {
-  background: url(../img/bg-nature.jpg) no-repeat center center fixed;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, .6);
-  color: #fff;
-  padding: 300px 0;
+* {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
 }
 
-.sec2 {
-  color: #fff;
-  padding: 150px 0;
-}
-.sec2__block {width: 257px}
-@media(max-width: 576px) {
-  .sec2 .d-flex {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .sec2__block {
-    width: 100%;
-  }
-  .sec2__block:not(:last-of-type) {
-    margin-bottom: 30px;
-  }
+#car {
+  height: 300px;
+  width: 500px;
 }
 
-footer {
-  background: url(../img/bg-footer.png) no-repeat center center fixed;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, .6);
-  background-size: cover;
-  color: #fff;
-  padding: 320px 0;
+#wheel {
+  fill: #464655;
+}
+#wheel:hover {
+  cursor: pointer;
+  fill: #14b57d;
 }
