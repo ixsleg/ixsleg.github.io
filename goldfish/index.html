@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>GoldFish</title>
+
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo.svg">
+          </div>
+
+          <div class="search">
+            <input type="search" placeholder="Найти игру">
+            <span><img src="img/header/header-top/btn-search-icon.svg"></span>
+          </div>
+
+          <div class="phone">
+            <img src="img/header/header-top/phone-icon.svg">
+            <p>+7 (495) 911-10-11</p>
+          </div>
+
+          <div class="cabinet-basket">
+            <div class="cabinet">
+              <img src="img/header/header-top/cabinet-icon.svg">
+            </div>
+            <div class="basket">
+              <img src="img/header/header-top/basket-icon.svg">
+              <div class="number-product">
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <div class="btn-open-catalog">
+            <img src="img/header/header-bottom/catalog-icon.svg"> Каталог
+          </div>
+
+          <nav class="menu">
+            <ul>
+              <li><a href="">Wharhammer</a></li>
+              <li><a href="">Magic:the Cathering</a></li>
+              <li><a href="">Мероприятия</a></li>
+              <li><a href="">О центре</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="social">
+            <a href=""><img src="img/header/header-bottom/instagram.svg"></a>
+            <a href=""><img src="img/header/header-bottom/vk.svg"></a>
+            <a href=""><img src="img/header/header-bottom/facebook.svg"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="sec1">
+      <div class="slider">
+        <div class="slider-item item1">
+            <div class="content">
+              <div class="text">
+                <p>Настольная игра варгейм</p>
+                <h3>Wharhmmer</h3>
+              </div>
+
+              <button>Подробнее</button>
+            </div>
+        </div>
+        <div class="slider-item item2">
+          <div class="content">
+            <div class="text">
+              <p>Самая популярная карточная игра</p>
+              <h3>Magic: the Gathering</h3>
+            </div>
+
+            <button>Подробнее</button>
+          </div>
+        </div>
+        <div class="slider-item item3">
+          <div class="content">
+            <div class="text">
+              <p>Попробуй игры разных жанров</p>
+              <h3>Весь каталог</h3>
+            </div>
+
+            <button>Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec2 container">
+      <h2>Каталог</h2>
+
+      <div class="grid">
+        <div class="col">
+          <div class="block b-1">
+            <h3>Настольные игры</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="block b-2">
+            <h3>Варгеймы</h3>
+          </div>
+          <div class="block b-3">
+            <h3>Magic:the Cathering</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="block b-4">
+            <h3>Краски</h3>
+          </div>
+          <div class="block b-5">
+            <h3>Весь каталог</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3 container">
+      <h2>Успей купить</h2>
+
+      <div class="slider-app" id="app">
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[0] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[1]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[1] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[2]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[2] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[3] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[0] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[1]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[1] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[2]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[2] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <div class="image">
+              <img :src="productImage[0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ productName[3] }}</h3>
+            <span class="price">{{ productPrice[0] }} &#8381;</span>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec4 container">
+      <h2>Специальные предложения</h2>
+
+      <div class="slider-app" id="discountProduct">
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][0] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][1]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][1] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][2]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][2] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][3] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][0] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][1]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][1] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][2]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][2] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="card-product">
+            <span class="discount-percentage">-15%</span>
+            <div class="image">
+              <img :src="discountProduct[0][0]">
+            </div>
+            <div class="characteristic">
+              <p><img src="img/card-product/audience.svg"> 2-4</p>
+              <p><img src="img/card-product/timer.svg"> 30-60</p>
+              <p>18+</p>
+            </div>
+            <h3>{{ discountProduct[1][3] }}</h3>
+            <div class="discount-block">
+              <span class="discount-price">{{ discountProduct[2][0] }} &#8381;</span><span class="price">{{ discountProduct[2][1] }} &#8381;</span>
+            </div>
+            <button class="go-to-basket">В корзину <img src="img/card-product/basket.svg"></button>
+            <button class="buy-click">Купить в 1 клик</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="js/index.min.js"></script>
+    <script src="js/block.min.js"></script>
+  </body>
+</html>
