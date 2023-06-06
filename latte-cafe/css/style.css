@@ -1,0 +1,103 @@
+@import url(root.css);
+
+@font-face {
+	font-family: "InterRegular";
+	src: url("../fonts/inter/Inter-Regular.ttf");
+}
+
+* {
+	border: 0;
+	font-family: "InterRegular";
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+
+body {font-size: 18px}
+
+h1, h2, h3, h4, h5, h6, ul, p, img {margin: 0}
+
+a {text-decoration: none}
+
+ul {list-style: none}
+
+.container {
+	margin: 0 auto;
+	width: 1400px;
+}
+
+.mb-menu-active {left: 0!important}
+.mb-menu {
+	background: var(--color-rouse);
+	display: none;
+	height: 100vh;
+	left: -1000px;
+	padding: 10px 10px;
+	position: absolute;
+	width: 100%;
+	transition: left 1s ease;
+	top: 0;
+	z-index: 9999;
+}
+.mb-menu .btn-close-mb-menu {margin-bottom: 30px}
+.mb-menu .btn-close-mb-menu img {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+.mb-menu ul {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.mb-menu ul li:not(last-of-type) {margin-bottom: 5px}
+.mb-menu ul li a {
+	color: rgba(255, 255, 255, .75);
+	text-decoration: underline;
+}
+.mb-menu ul li a:active {text-decoration: none}
+
+footer {
+	padding: 56px 0 16px 0;
+}
+footer .elements {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+footer a {
+	color: #000;
+	font-family: "InterRegular";
+	font-size: 15px;
+}
+footer a:hover {text-decoration: underline}
+footer ul {display: flex}
+footer ul li:not(last-of-type) {margin-right: 32px}
+footer .elements .footer-menu1 {margin-bottom: 7px}
+footer .elements .footer-menu2 {margin-bottom: 20px}
+footer .copyright {
+	color: var(--color-silver2);
+	font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+	p {font-size: 15px}
+	.container {width: 960px}
+}
+@media (max-width: 992px) {
+	.container {width: 720px}
+	footer ul li:not(last-of-type) {margin-right: 10px}
+}
+@media (max-width: 768px) {
+	.container {width: 540px}
+	footer ul {flex-direction: column}
+	footer ul li {
+		line-height: 22px;
+		text-align: center;
+	}
+	footer ul li:not(last-of-type) {margin-right: 0px}
+	footer .elements .footer-menu1 {margin-bottom: 20px}
+}
+@media (max-width: 576px) {
+	.container {width: 95%}
+	.mb-menu {display: block}
+}

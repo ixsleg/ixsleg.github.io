@@ -1,0 +1,209 @@
+@import url(root.css);
+
+@font-face {
+	font-family: "AzeretMonoBold";
+	font-style: bold;
+	src: url("../fonts/Azeret-Mono/AzeretMono-Bold.ttf");
+}
+
+/*Первая секция*/
+
+.section-1 {
+	background: var(--bg-color);
+}
+.section-1 .menu {
+	align-items: center;
+	justify-content: space-between;
+	padding: 44px 36px;
+	position: relative;
+}
+.section-1 .menu .menu-ul li:not(last-of-type) {margin-right: 20px}
+.section-1 .menu .menu-ul li a {
+	color: var(--color-rouse);
+	font-size: 15px;
+	position: relative;
+	transition: all 1.5s ease;
+}
+.section-1 .menu .menu-ul li a::before {
+	background: var(--color-rouse);
+	content: '';
+	height: 1.5px;
+	left: 0; bottom: -5px;
+	position: absolute;
+	transition: width 0.35s;
+	width: 0;
+}
+.section-1 .menu .menu-ul li a:hover::before {
+	width: 100%;
+}
+.section-1 .menu .btn-open-mb-menu {display: none}
+.section-1 .menu .btn-open-mb-menu div {
+	background: #ffffff;
+	height: 2px;
+	width: 30px;
+}
+.section-1 .menu .btn-open-mb-menu div:not(last-of-type) {margin-bottom: 8px}
+.section-1 .contacts .contacts-menu {align-items: center}
+.section-1 .contacts .contacts-menu li:not(last-of-type) {margin-right: 16px}
+.section-1 .contacts .contacts-menu li a {transition: opacity .5s ease-in-out}
+.section-1 .contacts .contacts-menu li a:hover {opacity: .65}
+.section-1 img {width: 100%}
+
+@media (max-width: 992px) {
+	.section-1 .menu {
+		flex-direction: column;
+		padding: 44px 24px 14px 24px;
+	}
+	.section-1 .menu ul {margin-bottom: 20px}
+	.section-1 .menu div:not(last-of-type) {margin-bottom: 20px}
+	.section-1 .menu .menu-ul li a {text-decoration: underline}
+}
+
+@media (max-width: 576px) {
+	.section-1 .menu .menu-ul {display: none}
+	.section-1 .menu .btn-open-mb-menu {display: block}f
+}
+
+/*Вторая секция*/
+
+.section-2 {
+	padding: 5rem 5rem 5rem 5rem;
+	text-align: center;
+}
+.section-2 h2 {margin-bottom: 5px}
+.section-2 p {
+	font-size: 1.5em;
+}
+
+@media (max-width: 576px) {
+	.section-2 {padding: 2.5rem 2.5rem 2.5rem 2.5rem}
+	.section-2 p {font-size: 14px}
+}
+
+/*Третья секция*/
+
+.section-3 {
+	background: var(--color-silver);
+	padding: 5% 2.5%;
+}
+.section-3 .elements {
+	justify-content: space-between;
+}
+.section-3 .elements .block-1 {color: var(--color-silverBold)}
+.section-3 .elements .block-1 h3 {margin-bottom: 17px}
+.section-3 .elements .block-1 p {margin-bottom: 60px}
+.section-3 .elements .block-1 .menu {text-align: center}
+.section-3 .elements .block-1 .menu li {
+	border: 2px solid var(--color-silverBold);
+	padding: 17px 0;
+	transition: background .5s ease-in-out;
+}
+.section-3 .elements .block-1 .menu li:hover {
+	background: var(--color-silverBold);
+	cursor: pointer;
+}
+.section-3 .elements .block-1 .menu li:hover a {color: #fff}
+.section-3 .elements .block-1 .menu li:not(last-of-type) {margin-bottom: 12px}
+.section-3 .elements .block-1 .menu li a {color: var(--color-silverBold)}
+.section-3 .elements .block-2 {
+	background: #fff;
+	padding: 75px 85px;
+	text-align: center;
+}
+.section-3 .elements .block-2 h1 {margin-bottom: 50px}
+.section-3 .elements .block-2 .sec h2 {margin-bottom: 25px}
+.section-3 .elements .block-2 .sec .mini-block {
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+.section-3 .elements .block-2 .sec .mini-block p {font-size: 15px}
+.section-3 .elements .block-2 .sec .mini-block .price {font-weight: bold}
+.section-3 .elements .block-2 .sec .mini-block-bottom {margin-bottom: 30px}
+
+@media (max-width: 1200px) {
+	.section-3 .elements .block-1 {margin-right: 10px}
+	.section-3 .elements .block-1 p {font-size: 15px}
+}
+@media (max-width: 768px) {
+	.section-3 .elements {flex-direction: column}
+	.section-3 .elements .block-1 h3 {text-align: center}
+	.section-3 .elements .block-1 p {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 576px) {
+	.section-3 .elements .block-1 p {font-size: 15px}
+	.section-3 .elements .block-2 {padding: 20px 10px}
+	.section-3 .elements .block-2 h1 {
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+}
+
+/*Четвертая секция*/
+
+.section-4 {
+	background: var(--bg-color-2);
+	color: #fff;
+	padding: 120px 0;
+	text-align: center;
+}
+.section-4 .elements {justify-content: space-between}
+.section-4 .elements .blocks h2 {
+	font-family: "AzeretMonoBold";
+	margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+	.section-4 .elements {flex-direction: column}
+	.section-4 .elements .blocks:not(last-of-type) {margin-bottom: 50px}
+	.section-4 .elements .blocks p {font-size: 15px}
+}
+
+/*Пятая секция*/
+
+.section-5 {padding: 150px 55px 120px 55px}
+.section-5 .elements {align-items: start}
+.section-5 .elements .block1 .bottom {margin-bottom: 35px}
+
+@media (max-width: 1200px) {
+	.section-5 {
+		padding: 80px 40px 60px 40px;
+	}
+	.section-5 .elements {
+		align-items: center;
+		flex-direction: column;
+	}
+	.section-5 .elements .blocks img {width: 100%}
+	.section-5 .elements .block1 {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 35px;
+	}
+}
+
+/*Шестая секция*/
+
+.section-6 {
+	background: var(--bg-violet);
+	color: var(--color-rouse);
+	padding: 100px 55px;
+}
+.section-6 .elements {justify-content: space-between}
+.section-6 .elements .block2 {width: 40%}
+
+@media (max-width: 1200px) {
+	.section-6 {padding: 75px 50px}
+	.section-6 .elements .block2 {width: 50%}
+}
+
+@media (max-width: 576px) {
+	.section-6 {padding: 75px 25px}
+	.section-6 .elements {flex-direction: column}
+	.section-6 .elements .block1 {margin-bottom: 20px}
+	.section-6 .elements .block1 h1 {font-size: 18px}
+	.section-6 .elements .block2 {width: 100%}
+}
